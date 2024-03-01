@@ -1,6 +1,6 @@
 import LandingHero from ".";
 export default {
-  title: 'component/LandingHero',
+  title: 'Molecules/LandingHero',
   component: LandingHero,
 
   

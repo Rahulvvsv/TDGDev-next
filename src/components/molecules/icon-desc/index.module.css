@@ -1,0 +1,17 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+}
+.first{
+    color: black;
+    font-weight: 500;
+    font-size: 20px;
+}
+.second{
+    color: #333333;
+    font-weight: 400;
+    font-size: 18px;
+}

@@ -1,0 +1,22 @@
+.main{
+    display: flex;
+    width: 80%;
+    margin-left: auto;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: auto;
+}
+
+.main  > h1{
+    color: #797572 ;
+    font-size: 24px;
+}
+
+
+@media screen and (max-width:400px) {
+
+    .main{
+        flex-direction: column;
+        gap:20px;
+    } 
+}

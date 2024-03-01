@@ -34,10 +34,13 @@
 }
 
 .insideDiv{
-    position: relative;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
     z-index: 2;
-    margin-top: 230px;
-    margin-left: 35%;
+    /* margin-top: 230px; */
+    /* margin-left: 35%; */
     background: #585552;
     width: 250px;
 
@@ -62,6 +65,6 @@ font-size: 20px;
 font-weight: 500;
 line-height: 24px;
 letter-spacing: -0.09527089446783066px;
-text-align: left;
+text-align: center;
 
 }
