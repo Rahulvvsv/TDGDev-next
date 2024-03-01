@@ -1,0 +1,67 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.image1{
+    width: 50%;
+    height: 593px;
+    position: relative;
+    border-radius: "8px";
+    transition: all 0.5s ease-in-out;
+}
+
+.image2{
+    width: 50%;
+    height: 593px;
+    position: relative;
+    
+    transition: all 0.5s ease-in-out;
+    border-radius: "8px";
+}
+.main{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.image1:hover{
+    width: 70%;
+}
+
+.image2:hover{
+    width: 70%;
+}
+
+.insideDiv{
+    position: relative;
+    z-index: 2;
+    margin-top: 230px;
+    margin-left: 35%;
+    background: #585552;
+    width: 250px;
+
+    padding: 32px 16px 32px 16px !important;
+    border-radius: 8px;
+    border: 3px;
+    gap: 10px;
+    color: white;
+    text-align: center;
+    border: 3px solid white;
+ 
+
+}
+.insideDiv:hover{
+    cursor: pointer;
+}
+
+
+.insideDiv>h1{
+    font-family: Montserrat;
+font-size: 20px;
+font-weight: 500;
+line-height: 24px;
+letter-spacing: -0.09527089446783066px;
+text-align: left;
+
+}
