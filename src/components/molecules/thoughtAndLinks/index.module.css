@@ -1,0 +1,37 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 370px;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 100%;
+    text-align: center  ;
+    background-color: #948F8C;
+}
+
+.heading{
+    font-weight: 400;
+    color: white;
+    font-size: 22px;
+    margin-left: 50px !important;
+    margin-right: 30px !important;
+}
+.name{
+    font-weight: 400;
+    color: white;
+    font-size: 22px;
+    margin-left: 30px !important;
+    margin-right: 30px !important;
+}
+
+
+@media screen and (max-width:420px) {
+    .main{
+        height: auto;
+        padding-bottom: 20px !important;
+    }
+    
+}

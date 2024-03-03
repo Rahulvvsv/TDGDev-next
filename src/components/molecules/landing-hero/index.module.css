@@ -1,7 +1,3 @@
-*{
-    margin: 0px;
-    padding: 0px;
-}
 .image1{
     width: 50%;
     height: 593px;
@@ -26,11 +22,11 @@
 }
 
 .image1:hover{
-    width: 70%;
+    width: 85%;
 }
 
 .image2:hover{
-    width: 70%;
+    width: 85%;
 }
 
 .insideDiv{

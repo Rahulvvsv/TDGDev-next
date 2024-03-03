@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+.main *{
+    margin: 0px;
+    padding: 0px !important;
+    font-family: Montserrat;
+    overflow-x: hidden;
+}
+
+.main1{
+    margin-top:60px;
+}
+.main3{
+    margin-top: 30px;
+    margin-bottom: 80px;;
+}
+
+.main4{
+    margin-bottom: 50px;
+}
+
+.main5{
+    margin-bottom: 50px;
+}
