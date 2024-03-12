@@ -1,0 +1,43 @@
+.main{
+    width: 80%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    /* align-items: center; */
+    justify-content: space-between;
+}
+
+.main2{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    flex-shrink: 1;
+}
+
+.main a{
+    padding-right: 20px !important;
+    padding-left: 20px !important;
+}
+
+
+.main3{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 40%;
+}
+
+.main4{
+    display: flex;
+    flex-direction: row;
+    width: 400px;
+    align-items: center;
+    gap:5px;
+}
+.subHeading{
+    font-weight: 400;
+    font-size: 18px;
+}

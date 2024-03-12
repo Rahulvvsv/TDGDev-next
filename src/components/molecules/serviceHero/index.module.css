@@ -1,0 +1,40 @@
+.main{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    /* gap: 20px; */
+    justify-content: space-between;
+}
+
+
+.image{
+    position: relative;
+    height: 350px;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+.imageCont{
+    width: 100%;
+    border-radius: 8px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(rgba(146, 135, 123, 0),rgba(146, 135, 123, 1));
+}
+.image a{
+    position: relative;
+    z-index: 3;
+}
+
+
+
+.image img{
+    object-fit: cover;
+    border-radius: 8px;
+}
