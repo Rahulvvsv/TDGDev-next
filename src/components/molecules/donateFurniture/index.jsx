@@ -18,6 +18,9 @@ const DonateFurniture = ({leftHeading,leftCont,leftImg,rightCont,rightHeading,ri
             <div className={style.right}>
                 <div className={style.image}>
                     <Image src={rightImg} fill></Image>
+                    <div className={style.divdiv}>
+
+                    </div>
 
                 </div>
                 <h1 className={style.desc}>{rightCont}</h1>

@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+ *{
+    /* margin: 0px;s */
+    /* padding: 0px !important ; */
+    font-family: Montserrat;
+    overflow-x: hidden;
+    box-sizing:border-box;
+
+}
+::placeholder{
+    color:rgba(146, 135, 123, 1);
+    /* position: absolute; */
+    font-size: 12px !important;
+    /* top:kj20px; */
+
+
+}

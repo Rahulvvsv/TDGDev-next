@@ -8,7 +8,7 @@ const UploadForm = () => {
 
             <div className={style.left}>
                 <div className={style.imageUpload}>
-                    <label for="files" class="btn"><Image src={"Icon/plus.png"} width={78} height={78}></Image></label>
+                    <label for="files" class="btn"><Image src={"/Icon/plus.png"} width={78} height={78}></Image></label>
                     <input id="files" style={{visibility:"hidden"}} type="file"/>
                     <h1 className={style.heading}>UPLOAD IMAGE</h1>
                 </div>

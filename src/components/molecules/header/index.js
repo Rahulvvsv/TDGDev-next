@@ -12,16 +12,16 @@ const Header = () => {
             </div>
 
             <div className={style.main3}>
-                <Link href={""}>
+                <Link href={"/"}>
                 <h1   className={selected==0?style.selected:style.heading} onClick={()=>{setSelected(0)}}> Home</h1>
                 </Link>
-                <Link href={""}>
+                <Link href={"/services"}>
                 <h1    className={selected==1?style.selected:style.heading} onClick={()=>{setSelected(1)}}> Services</h1>
                 </Link>
-                <Link href="">
+                <Link href="/aboutUs">
                 <h1     className={selected==2?style.selected:style.heading} onClick={()=>{setSelected(2)}}> About us</h1>
                 </Link>
-                <Link href="">
+                <Link href="/contactUs">
                 <h1     className={selected==3?style.selected:style.heading}onClick={()=>{setSelected(3)}}> Contact</h1>
                 </Link>
             </div>

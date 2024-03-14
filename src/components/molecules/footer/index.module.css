@@ -19,6 +19,7 @@
     padding-bottom: 50px !important;
     border-top: 1px solid #92877B;
     border-bottom: 1px solid #92877B;
+    margin-top: 80px;
 }
 
 .main2{
@@ -33,6 +34,7 @@
     width: 250px;
     align-items: flex-start;
     gap:5px;
+    /* margin-top: 50px; */
 }
 
 .main3 img{

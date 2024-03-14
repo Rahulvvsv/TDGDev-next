@@ -9,16 +9,12 @@
     font-size: 12px !important;
 position: relative;
 width: 100%;
+max-width: 100%;
+/* background-color: red; */
 }
 
-::placeholder{
-    color:rgba(146, 135, 123, 1);
-    /* position: absolute; */
-    font-size: 12px !important;
-    /* top:kj20px; */
 
 
-}
 .input2{
     padding-top:20px !important;
 }
