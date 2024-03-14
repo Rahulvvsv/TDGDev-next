@@ -12,5 +12,65 @@
     justify-content: center;
     align-items: center;
     background: #92877B;
+    position: relative;
     color: white;
+    /* transition: all 1s ease; */
+}
+.button1{
+    border: 1px solid #959595;
+    font: monteserrat;
+    height: 62px;
+    width: 234px;
+    /* padding: 64px 16px 64px 16px !important; */
+    text-decoration: none;
+    border-radius: 8px;
+    gap: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #92877B;
+    position: relative;
+    color: white;
+    /* transition: all 1s ease; */
+}
+.button1::before {
+  content: '';
+  position: absolute;
+    border-radius: 8px;
+  top: 0;
+  bottom: 0;
+  right: 100%;
+  left: 0;
+  background: rgb(255, 255, 255);
+  opacity: 0;
+  /* z-index: -1; */
+  transition: all 0.5s;
+  /* color: #000000; */
+}
+
+
+.button1:hover::before {
+  left: 0;
+  /* color: #000000; */
+  right: 0;
+  opacity: 1;
+}
+.main{
+    position: relative;
+    /* background-color: black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btntext{
+    position: absolute;
+
+    z-index: 2;
+}
+
+.main:hover{
+    color:black !important;
+    cursor: pointer;
 }

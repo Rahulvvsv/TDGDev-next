@@ -4,7 +4,7 @@ const SecondHeading = ({heading,contactHeading}) =>{
     return (
         <div className={style.main}>
             <h1 className={style.fonts}>{heading}</h1>
-            <Button href={"/contactus"} content={contactHeading}></Button>
+            <Button href={"/contactUs"} content={contactHeading} effect={true}></Button>
         </div>
     )
 }
