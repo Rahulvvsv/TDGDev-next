@@ -38,3 +38,32 @@
     object-fit: cover;
     border-radius: 8px;
 }
+
+
+@media screen and ( max-width:860px) {
+
+    .main{
+        width: 95%;
+    }
+    
+}
+
+
+@media screen and (max-width:600px) {
+
+    .main{
+        flex-direction: column;
+        height: 90vh; 
+        gap: 30px;
+    }
+
+    .image{
+        width: 100%;
+        align-items: flex-end;
+        padding-bottom: 20px !important;
+    }
+   
+    .image a{
+        width: 90% !important;
+    }
+}

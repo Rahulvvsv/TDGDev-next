@@ -16,7 +16,7 @@
     align-items: center;
     text-align: center;
     gap: 30px;
-    flex-shrink: 1;
+    /* flex-shrink: 1; */
 }
 
 .main a{
@@ -42,4 +42,19 @@
 .subHeading{
     font-weight: 400;
     font-size: 18px;
+}
+
+@media screen and (max-width:600px) {
+
+    .main{
+        flex-direction: column;
+        /* width: 100%; */
+        gap: 40px;
+        align-items: center;
+    }
+
+    .main2 , .main3{
+        width: 100%;
+    }
+    
 }
