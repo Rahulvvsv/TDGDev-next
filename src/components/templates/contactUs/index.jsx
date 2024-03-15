@@ -11,9 +11,9 @@ const ContactUS = () => {
             <section className={style.main2}>
                 <ContactForm></ContactForm>
             </section>
-            <section className={style.main3}>
+            {/* <section className={style.main3}>
                 <HereToAssist></HereToAssist>
-            </section>
+            </section> */}
         </section>
     );
 }

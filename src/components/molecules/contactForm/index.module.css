@@ -35,7 +35,7 @@
 .main4{
     display: flex;
     flex-direction: row;
-    width: 400px;
+    /* width: 400px; */
     align-items: center;
     gap:5px;
 }
@@ -48,12 +48,16 @@
 
     .main{
         flex-direction: column;
-        /* width: 100%; */
+        width: 100%;
         gap: 40px;
         align-items: center;
     }
 
-    .main2 , .main3{
+    .main2 {
+        width: 80%;
+    }
+
+    .main3{
         width: 100%;
     }
     
