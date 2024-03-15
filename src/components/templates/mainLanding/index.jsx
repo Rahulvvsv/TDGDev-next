@@ -6,8 +6,8 @@ import ThoughtAndLink from "../../molecules/thoughtAndLinks";
 import SecondHeading from "../../molecules/landing-secondHeading";
 export default function Landing() {
   return (
-    <section>
-        <section className={style.main1}>
+    <section className={style.main1}>
+        <section >
             <LandingHero></LandingHero>
         </section>
         <section className={style.main3}>

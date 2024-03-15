@@ -5,3 +5,13 @@
     margin-left: auto ;
     margin-right: auto;
 }
+
+
+@media screen and (max-width:680px) {
+
+    .main{
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+}

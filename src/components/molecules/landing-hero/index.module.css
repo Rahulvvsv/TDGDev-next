@@ -15,7 +15,7 @@
     border-radius: "8px";
 }
 .main{
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: row;
     gap: 20px;
@@ -63,4 +63,26 @@ line-height: 24px;
 letter-spacing: -0.09527089446783066px;
 text-align: center;
 
+}
+
+
+@media screen and (max-width:680px) {
+
+    .main{
+        flex-direction: column;
+        width: 90%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .image1{
+        width: 100%;
+        height: 40vh;
+    }
+
+    .image2{
+        width: 100%;
+        height:40vh;
+    }
+    
 }

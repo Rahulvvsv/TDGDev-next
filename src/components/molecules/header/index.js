@@ -74,6 +74,9 @@ const Header = () => {
                       style={{width:"100%",position:"absolute",marginTop:10,height:3,backgroundColor:"#797572"}}></motion.div> :""}
                 </Link>
             </div>
+            <div className={style.main4}>
+                <Image src={"/Icon/hamb.png"} width={29} height={22}></Image>
+            </div>
         </div>
         </AnimatePresence>
      );
