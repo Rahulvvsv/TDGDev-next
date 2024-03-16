@@ -33,3 +33,50 @@
     font-size: 16px;
     color: rgba(121, 117, 114, 1);
 }
+@media screen and (max-width:1000px) {
+    .main{
+        width: 95%;
+        margin-left: 0px;
+        margin-right: 0px;
+        /* gap: 10px; */
+        /* justify-content: space-around; */
+    }
+
+    .left{
+        width: 50%;
+    }
+    .right{
+        width: 45%;
+    }
+    .imageUpload{
+        width: 85%;
+    }
+    
+}
+
+
+@media screen and (max-width:600px) {
+
+    .main{
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+    }
+
+    .imageUpload{
+        width: 100% !important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .left{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .right{
+        width: 100%;
+    }
+    
+}
