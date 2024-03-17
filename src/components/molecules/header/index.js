@@ -154,13 +154,15 @@ const Header = () => {
             height={22}
           ></Image>
         </div>
-
+        
+      </div>
+        <AnimatePresence>
         {toggleNavbar && (
-          <motion.section layout initial={{x:250}} animate={{x:0}} exit={{x:250}}  style={{ position: "absolute",zIndex:5,width:"100vw",height:"100vh", top: 0, left: 0 }}>
+          <motion.section layout initial={{x:250,opacity:0}} animate={{x:0,opacity:1}} exit={{x:550,opacity:0}}  style={{ position: "absolute",zIndex:5, top: 0, left: 0,width:"100vw",height:"100vh" }}>
             <MobileHeader toggler={setToggleNavbar}></MobileHeader>
           </motion.section>
         )}
-      </div>
+        </AnimatePresence>
     </AnimatePresence>
   );
 };
