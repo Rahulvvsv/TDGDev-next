@@ -156,7 +156,7 @@ const Header = () => {
         </div>
 
         {toggleNavbar && (
-          <motion.section initial={{x:250}} animate={{x:0}} exit={{x:250}}  style={{ position: "absolute", top: 0, left: 0 }}>
+          <motion.section initial={{x:250}} animate={{x:0}} exit={{x:250}}  style={{ position: "absolute",zIndex:5, top: 0, left: 0 }}>
             <MobileHeader toggler={setToggleNavbar}></MobileHeader>
           </motion.section>
         )}
