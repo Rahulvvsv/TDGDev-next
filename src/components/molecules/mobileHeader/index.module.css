@@ -1,0 +1,41 @@
+.main{
+    width: 100vw;
+    height: 100vh;
+    background-color: #92877B;
+    gap: 30px;
+    padding-top: 65px !important;
+    padding-left: 30px !important;
+}
+
+.name{
+    text-decoration: none;
+    color: white !important;
+    font-size: 24px;
+    font-weight: 500;
+    
+}
+
+.subnames{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    gap: 10px;
+}
+
+.image{
+    position: absolute;
+    right: 50px;
+}
+
+.name2{
+    font-size: 16px;
+    text-decoration: none;
+    color: white !important;
+
+}
+
+.main2{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}

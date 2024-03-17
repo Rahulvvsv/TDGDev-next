@@ -17,7 +17,7 @@ const Button = ({
           href={href}
           className={style.button1}
           style={{
-            width: width,
+            // width: width,
             backgroundColor: backgroundColor,
             color: fontColor,
             border: borderthick,

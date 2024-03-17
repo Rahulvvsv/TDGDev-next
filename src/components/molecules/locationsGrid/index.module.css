@@ -39,3 +39,43 @@
     font-size: 18px;
     font-weight: 400px;
 }
+
+@media screen and (max-width:900px) {
+    .main{
+        width: 95%;
+    }
+    
+}
+
+@media screen and (max-width:600px) {
+    
+    .main2 {
+        flex-wrap: wrap;
+        /* height: fit-content; */
+        /* height: 100%; */
+        /* height: auto; */
+        /* min-height: 360px; */
+        height: auto;
+        /* height: 1080px; */
+
+    }
+
+.main2 > div:hover{
+    width: 100%;
+}
+    .main2 > div{
+        width: 100%;
+    }
+    /* .main:last-child{
+        width: 100% !important;
+        text-align: center;
+        align-items: center;
+    }
+    .main:last-child a{
+        width: 100%;
+        text-align: center;
+    } */
+    .main div{
+       width: 100% !important; 
+    }
+}
