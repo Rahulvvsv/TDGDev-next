@@ -33,6 +33,10 @@
     color: white !important;
 
 }
+.name2:hover{
+    cursor: pointer;
+
+}
 
 .main2{
     display: flex;

@@ -21,7 +21,7 @@ const MobileHeader = ({ toggler }) => {
           className={style.name}
           onClick={() => {
             toggler(false);
-            setTimeout(()=>{router.push("/")},500)
+            setTimeout(()=>{router.push("/")},1000)
           }}
         >
           Home
@@ -32,7 +32,7 @@ const MobileHeader = ({ toggler }) => {
             href={"/services"}
             onClick={() => {
               toggler(false);
-            setTimeout(()=>{router.push("/services")},500)
+            setTimeout(()=>{router.push("/services")},1000)
             }}
             className={style.name2}
           >
@@ -42,7 +42,7 @@ const MobileHeader = ({ toggler }) => {
             href={"/services/getFurniture"}
             onClick={() => {
               toggler(false);
-            setTimeout(()=>{router.push("/services/getFurniture")},500)
+            setTimeout(()=>{router.push("/services/getFurniture")},1000)
             }}
             className={style.name2}
           >
@@ -53,7 +53,7 @@ const MobileHeader = ({ toggler }) => {
           href={"/aboutUs"}
           onClick={() => {
             toggler(false);
-            setTimeout(()=>{router.push("/aboutUs")},500)
+            setTimeout(()=>{router.push("/aboutUs")},1000)
           }}
           className={style.name}
         >
@@ -63,7 +63,7 @@ const MobileHeader = ({ toggler }) => {
           href={"/contactUs"}
           onClick={() => {
             toggler(false);
-            setTimeout(()=>{router.push("/contactUs")},500)
+            setTimeout(()=>{router.push("/contactUs")},1000)
           }}
           className={style.name}
         >
