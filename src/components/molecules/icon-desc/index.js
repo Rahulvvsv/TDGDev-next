@@ -1,8 +1,8 @@
 import style from "./index.module.css"
 import Image from "next/image";
-const Icondesc = ({src,first,second}) => {
+const Icondesc = ({src,first,second,aos,time}) => {
     return (
-    <div className={style.main}>
+    <div className={style.main} data-aos={aos} data-aos-duration={time}>
         <Image src={"/Icon/"+src} width={108} height={108}></Image>
         <div className={style.main}>
 

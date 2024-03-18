@@ -30,6 +30,7 @@ const Header = () => {
     }
   }, [search]);
   return (
+    <>
     <AnimatePresence>
       <div className={style.main}>
         <div className={style.main2}>
@@ -42,25 +43,25 @@ const Header = () => {
               onClick={() => {
                 setSelected(0);
               }}
-            >
+              >
               {" "}
               Home
             </h1>
             {selected === 0 ? (
               <motion.div
-                transition={{ type: "spring" }}
-                layoutId="underline"
-                style={{
-                  width: "100%",
-                  position: "absolute",
-                  marginTop: 10,
-                  height: 3,
-                  backgroundColor: "#797572",
-                }}
+              transition={{ type: "spring" }}
+              layoutId="underline"
+              style={{
+                width: "100%",
+                position: "absolute",
+                marginTop: 10,
+                height: 3,
+                backgroundColor: "#797572",
+              }}
               ></motion.div>
-            ) : (
-              ""
-            )}
+              ) : (
+                ""
+                )}
           </Link>
 
           <Link href={"/services"} style={{ position: "relative" }}>
@@ -69,26 +70,26 @@ const Header = () => {
               onClick={() => {
                 setSelected(1);
               }}
-            >
+              >
               {" "}
               Services
             </h1>
 
             {selected === 1 ? (
               <motion.div
-                transition={{ type: "spring" }}
-                layoutId="underline"
-                style={{
-                  width: "100%",
-                  position: "absolute",
-                  marginTop: 10,
-                  height: 3,
-                  backgroundColor: "#797572",
-                }}
+              transition={{ type: "spring" }}
+              layoutId="underline"
+              style={{
+                width: "100%",
+                position: "absolute",
+                marginTop: 10,
+                height: 3,
+                backgroundColor: "#797572",
+              }}
               ></motion.div>
-            ) : (
-              ""
-            )}
+              ) : (
+                ""
+                )}
           </Link>
 
           <Link href="/aboutUs" style={{ position: "relative" }}>
@@ -97,25 +98,25 @@ const Header = () => {
               onClick={() => {
                 setSelected(2);
               }}
-            >
+              >
               {" "}
               About us
             </h1>
             {selected === 2 ? (
               <motion.div
-                transition={{ type: "spring" }}
-                layoutId="underline"
-                style={{
-                  width: "100%",
-                  position: "absolute",
-                  marginTop: 10,
-                  height: 3,
-                  backgroundColor: "#797572",
-                }}
+              transition={{ type: "spring" }}
+              layoutId="underline"
+              style={{
+                width: "100%",
+                position: "absolute",
+                marginTop: 10,
+                height: 3,
+                backgroundColor: "#797572",
+              }}
               ></motion.div>
-            ) : (
-              ""
-            )}
+              ) : (
+                ""
+                )}
           </Link>
           <Link href="/contactUs" style={{ position: "relative" }}>
             <h1
@@ -123,25 +124,25 @@ const Header = () => {
               onClick={() => {
                 setSelected(3);
               }}
-            >
+              >
               {" "}
               Contact
             </h1>
             {selected === 3 ? (
               <motion.div
-                transition={{ type: "spring" }}
-                layoutId="underline"
-                style={{
-                  width: "100%",
-                  position: "absolute",
-                  marginTop: 10,
-                  height: 3,
-                  backgroundColor: "#797572",
-                }}
+              transition={{ type: "spring" }}
+              layoutId="underline"
+              style={{
+                width: "100%",
+                position: "absolute",
+                marginTop: 10,
+                height: 3,
+                backgroundColor: "#797572",
+              }}
               ></motion.div>
-            ) : (
-              ""
-            )}
+              ) : (
+                ""
+                )}
           </Link>
         </div>
         <div className={style.main4}>
@@ -152,18 +153,20 @@ const Header = () => {
             }}
             width={29}
             height={22}
-          ></Image>
+            ></Image>
         </div>
         
       </div>
-        <AnimatePresence>
+    </AnimatePresence>
+    <AnimatePresence>
+
         {toggleNavbar && (
           <motion.section layout initial={{x:250,opacity:0}} animate={{x:0,opacity:1}} exit={{x:550,opacity:0}}  style={{ position: "absolute",zIndex:5, top: 0, left: 0,width:"100vw",height:"100vh" }}>
             <MobileHeader toggler={setToggleNavbar}></MobileHeader>
           </motion.section>
         )}
         </AnimatePresence>
-    </AnimatePresence>
+        </>
   );
 };
 

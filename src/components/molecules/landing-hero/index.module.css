@@ -3,7 +3,7 @@
     height: 593px;
     position: relative;
     border-radius: "8px";
-    transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out !important;
 }
 
 .image2{
@@ -11,7 +11,7 @@
     height: 593px;
     position: relative;
     
-    transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out !important;
     border-radius: "8px";
 }
 .main{

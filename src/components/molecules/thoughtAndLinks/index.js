@@ -1,5 +1,6 @@
 import style from "./index.module.css"
 import Button from "../../atoms/button";
+
 const ThoughtAndLink = ({Description,name,ButtonContent,href=""}) => {
     return ( 
         <div className={style.main}>
