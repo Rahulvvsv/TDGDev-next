@@ -7,11 +7,12 @@ const Button = ({
   backgroundColor,
   fontColor = "white",
   borderthick,
+  onClick,
   effect = true,
 }) => {
   let EffectButton = () => {
     return (
-      <div className={style.main} style={{ color: fontColor,width:width }}>
+      <div onClick={onClick} className={style.main} style={{ color: fontColor,width:width }}>
         <span className={style.btntext}>{content}</span>
         <Link
           href={href}

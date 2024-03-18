@@ -5,7 +5,7 @@ import UploadForm from "../../molecules/uploadImagesForm";
 const DonateMoney = () => {
     return (  
         <section>
-            <section>
+            <section className={style.main}>
                 <UploadForm></UploadForm>
             </section>
             <section className={style.main2}>
