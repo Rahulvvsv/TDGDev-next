@@ -23,7 +23,7 @@ export  const  Firebase = async ()=>{
 
 
 export const fetchData = async () => {
-    const querySnapshot = await getDocs(collection(db, 'formData'));
+    const querySnapshot = await getDocs(collection(db, 'newData'));
     const fetchedData = [];
     querySnapshot.forEach((doc) => {
     fetchedData.push({ id: doc.id, ...doc.data() });
@@ -55,11 +55,15 @@ export const upLoadData = async (formData) =>{
           // Add data (including image URL) to Firebase Firestore
           console.log("hereees",{
             name: formData.fullname,
+            productName:formData.tof,
+            description:formData.desc,
             email: formData.email,
             imageUrl: imageUrls
           })
           const docRef = await addDoc(collection(db, 'newData'), {
             name: formData.fullname,
+            productName:formData.tof,
+            description:formData.desc,
             email: formData.email,
             imageUrl: imageUrls
           });

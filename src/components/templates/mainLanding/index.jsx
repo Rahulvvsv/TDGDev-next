@@ -4,7 +4,7 @@ import LandingHero from "../../molecules/landing-hero";
 import IconGroupDesc from "../../molecules/icon-group-desc";
 import ThoughtAndLink from "../../molecules/thoughtAndLinks";
 import SecondHeading from "../../molecules/landing-secondHeading";
-import AOSComponent from "@/components/molecules/AOS";
+import AOSComponent from "../../molecules/AOS";
 export default function Landing() {
   return (
     <section className={style.main1}>

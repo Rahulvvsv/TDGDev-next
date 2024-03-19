@@ -4,7 +4,7 @@ import InputField from "../../atoms/inputField";
 import Button from "../../atoms/button";
 import Image from "next/image";
 import { useState } from "react";
-import { upLoadData } from "@/components/firebase";
+import { upLoadData } from "../../../lib/firebase";
 const UploadForm = () => {
     const [data,setData] = useState({})
     const dataSetter = (e) =>{
@@ -45,7 +45,7 @@ const UploadForm = () => {
                 <InputField onChange={dataSetter} placeholder={"PHONE*"} name={"phone"}></InputField>
                 <InputField onChange={dataSetter} placeholder={"LOCATION*"} name={"location"}></InputField>
                 <InputField onChange={dataSetter} placeholder={"TYPE OF FURNITURE*"} name={"tof"}></InputField>
-                <InputField onChange={dataSetter} placeholder={"DESCRIBE YOUR FURNITURE*"} name={"fullname"} type="text-area"></InputField>
+                <InputField onChange={dataSetter} placeholder={"DESCRIBE YOUR FURNITURE*"} name={"desc"} type="text-area"></InputField>
                 <Button onClick={handleSubmit} placeholder={"Submit"} content={"Submit"} href={""} fontColor={"white"}></Button>
             </div>
         </div>

@@ -1,0 +1,25 @@
+.something{
+    width: 348px ;
+    height: 290px;
+    aspect-ratio: 1;
+}
+
+.something > img{
+    object-fit: cover;
+    border-radius: 8px;
+}
+@media screen and (max-width:1000px) {
+    
+.something{
+    width: 200px ;
+    height: 200px;
+}
+}
+
+@media screen and (max-width:700px) {
+    
+.something{
+    width: 103px ;
+    height: 108px;
+}
+}
