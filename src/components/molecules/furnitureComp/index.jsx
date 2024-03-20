@@ -1,9 +1,9 @@
 import style from "./index.module.css"
 import Image from "next/image";
 import Button from "../../atoms/button";
-const FurnitureComp = ({Img,name,desc}) => {
+const FurnitureComp = ({Img,name,desc,key}) => {
     return ( 
-        <div className={style.main}>
+        <div className={style.main} key={key}>
             <div className={style.image}>
                 <Image src={Img} fill></Image>
             </div>

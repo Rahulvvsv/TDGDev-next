@@ -13,7 +13,7 @@ const AllFurnitureProducts = ({data}) => {
     // },[])
     return ( 
             <div className={style.mains}>
-            {data.map((e,key)=>{console.log(e);return <FurnitureComp Img={e.imageUrl[0]} name={e.productName} desc={e.description}></FurnitureComp>})}
+            {data.map((e,key)=>{console.log(e);return <FurnitureComp key={key} Img={e.imageUrl[0]} name={e.productName} desc={e.description}></FurnitureComp>})}
             </div>
      );
 }
