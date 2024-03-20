@@ -24,6 +24,7 @@ export default function Landing() {
           name={"- Blima Ehrentreu, The Designers Group"} ButtonContent={"About Us"} href="/aboutUs"
           ></ThoughtAndLink>
         </section>
+        
           </AOSComponent>
     </section>
   );

@@ -15,6 +15,7 @@
     align-items: center;
     width: 30% !important;
     gap: 10px;
+    background-color: white;
     /* width: ; */
 
 }
@@ -27,7 +28,7 @@
     letter-spacing: -0.09527089446783066px;
     text-align: center;
     max-width: 400px;
-
+    z-index: 10;
 }
 
 

@@ -22,6 +22,7 @@ const AboutUs = () => {
             <section>
                 <TestimonialSlider></TestimonialSlider>
             </section>
+            
         </section>
       );
 }
