@@ -14,17 +14,23 @@ import { Autoplay } from "swiper/modules";
 import { EffectCoverflow } from "swiper/modules";
 
 function Scroll() {
+  const [views,setViews] = useState(1.1)
+  useEffect(()=>{
+    if(window.innerWidth<=370){
+      setViews(1.5)
+    }
+  },[])
   return (
     <>
       <Swiper
       effect="coverflow"
         spaceBetween={10}
         // centeredSlides={true}
-        slidesPerView={1.1}
-        // autoplay={{
-        //   delay: 1000,
-        //   disableOnInteraction: false,
-        // }}
+        slidesPerView={views}
+        autoplay={{
+          delay: 1000,
+          disableOnInteraction: false,
+        }}
         loop={true}
         freeMode={true}
         coverflowEffect={{
@@ -35,7 +41,7 @@ function Scroll() {
     slideShadows: false,
     direction: "ltr",
   }}
-        modules={[EffectCoverflow]}
+        modules={[EffectCoverflow,Autoplay]}
         className="mySwiper"
       >
         <SwiperSlide>
