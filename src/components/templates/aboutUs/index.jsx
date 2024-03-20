@@ -3,6 +3,7 @@ import MissionHeader from "../../molecules/missionHeader";
 import MissionSecondHeader from "../../molecules/missionSecondHeader";
 import SecondHeading from "../../molecules/landing-secondHeading";
 import InfiniteSwiper from "../../molecules/infiniteSwiper/index"
+import TestimonialSlider from "../../molecules/testimonialSlider"
 const AboutUs = () => {
     return (
         <section>
@@ -17,6 +18,9 @@ const AboutUs = () => {
             </section>
             <section style={{marginBottom:20,marginTop:20}}>
                 <InfiniteSwiper></InfiniteSwiper>
+            </section>
+            <section>
+                <TestimonialSlider></TestimonialSlider>
             </section>
         </section>
       );

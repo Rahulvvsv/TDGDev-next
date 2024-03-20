@@ -1,7 +1,6 @@
 
-import React, { useRef, useState } from "react";
+import {  useState,useEffect } from "react";
 // Import Swiper React components
-import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import SingleTestimonial from "../SingleTestimonial";
@@ -12,28 +11,42 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 // import required modules
-import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import { Autoplay } from "swiper/modules";
 
 export default function App() {
+  const [slidesPerView, setSlidesPerView] = useState(2.4);
+  useEffect(() => {
+    const handleResize = () => {
+        if (window.innerWidth<400){
+            setSlidesPerView(1.25);
+          }
+        else if (window.innerWidth < 980) {
+            setSlidesPerView(1.4);
+        } 
+        else {
+        setSlidesPerView(2.4);
+      }
+    };
+
+    handleResize();
+
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
   return (
     <>
       <Swiper
         spaceBetween={10}
         centeredSlides={true}
-        // loopedSlides={8}
-        slidesPerView={2.4}
-        a11y={false}
+        slidesPerView={slidesPerView}
         autoplay={{
-            delay:2500,
+          delay:1000,
           disableOnInteraction: false,
         }}
-        // pagination={{
-        //   clickable: true,
-        // }}
         loop={true}
-        // speed={16000}
-        // navigation={true}
-        // freeMode={true}
+        freeMode={true}
         modules={[Autoplay]}
         className="mySwiper"
       >

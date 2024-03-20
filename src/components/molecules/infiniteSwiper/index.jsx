@@ -1,4 +1,3 @@
-import React, { useRef, useState } from "react";
 // Import Swiper React components
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -29,7 +28,7 @@ export default function App() {
         //   clickable: true,
         // }}
         loop={true}
-        speed={16000}
+        speed={8000}
         // navigation={true}
         freeMode={true}
         modules={[Autoplay]}
