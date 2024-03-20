@@ -1,10 +1,22 @@
 import AllFurnitureProducts from "@/components/molecules/allFurnitureProducts";
+import style from "./index.module.css"
 import { fetchData } from "@/lib/firebase";
+import { locationsData } from "../[location]";
+import Link from "next/link";
 const index = ({data}) => {
+  console.log(locationsData)
     return (
-        <>
+        <section className={style.main}>
+          <section className={style.left}>
+              {locationsData.map((e,key)=>{
+              return  <Link href={"/services/getFurniture/"+e} key={key} className={style.lists}>{e}</Link>
+              })}
+          </section>
+          <section className={style.right}>
+
           <AllFurnitureProducts data={data}></AllFurnitureProducts>
-        </>
+          </section>
+        </section>
       );
 }
 

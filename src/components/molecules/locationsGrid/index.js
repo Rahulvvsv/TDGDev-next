@@ -30,7 +30,7 @@ const LocationsGrid = () => {
         <br></br>
         <br></br>
 
-        <Button width={"40%"} content={"SEE ALL FURNITURE"} href={""}></Button>
+        <Button width={"40%"} content={"SEE ALL FURNITURE"} href={"/services/getFurniture/all"}></Button>
     </div>
       );
 }

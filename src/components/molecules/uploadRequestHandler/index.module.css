@@ -1,0 +1,59 @@
+.main{
+    display: flex;
+    align-items:flex-start;
+    height: fit-content;
+    gap: 20px;
+}
+
+.heading{
+
+font-family: Montserrat;
+font-size: 18px;
+font-weight: 400;
+line-height: 25.2px;
+text-align: left;
+
+}
+
+.buttons{
+    display: flex;
+    gap: 20px;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* background-color: red; */
+    height: 300px;
+    justify-content: center;
+}
+
+.heading1{
+    font-family: Montserrat;
+font-size: 40px;
+font-weight: 500;
+line-height: 56px;
+text-align: left;
+color:  #92877B;
+
+}
+
+.subheading1{
+    font-family: Montserrat;
+font-size: 20px;
+font-weight: 400;
+line-height: 28px;
+text-align: left;
+
+}
+
+.main2{
+    margin-bottom: 30px;
+}
+
+.main3{
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+}

@@ -1,6 +1,6 @@
 import style from "./index.module.css"
 import Image from "next/image"
-const LocationGridSingle = ({location="baltimore.jpg",name="BALTIMORE"}) => {
+const LocationGridSingle = ({location="baltimore.jpg",name="Baltimore"}) => {
     return ( 
         <div className={style.main}>
 

@@ -6,7 +6,7 @@ const ThoughtAndLink = ({Description,name,ButtonContent,href=""}) => {
         <div className={style.main}>
            <h1 className={style.heading}>{Description}</h1> 
            <h1 className={style.name}>{name}</h1>
-           <Button content={ButtonContent} backgroundColor={"white"} fontColor={"black"} href={href}></Button>
+           <Button content={ButtonContent} backgroundColor={"white"} fontColor={"black"} btnClass={2} href={href}></Button>
         </div>
      );
 }

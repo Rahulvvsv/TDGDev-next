@@ -1,0 +1,14 @@
+.heading{
+    font-family: Montserrat;
+font-size: 70px;
+font-weight: 500;
+line-height: 98px;
+text-align: left;
+color:  #92877B;;
+}
+
+.main{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
