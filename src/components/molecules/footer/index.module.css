@@ -60,7 +60,9 @@
 
 
 }
-
+.main7{
+    display: none;
+}
 .main5{
     margin-top: 20px;
     margin-left: 100px ;
@@ -68,6 +70,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 10px;
 }
 
 .main6{
@@ -86,15 +89,88 @@
 @media screen  and (max-width:700px){
     .main{
         /* width: 50%; */
-        gap: 40px;
+        /* gap: 10px; */
+        justify-content: space-evenly;
+        margin: 0px;
+        border-top: 0px;
+        flex-wrap: wrap;
+        /* align-items: center; */
+        /* overflow: hidden; */
+    }
+   
+    .main .imageDiv{
+        display: none;
     }
     
+    .main2:nth-child(2){
+        /* background-color: red !important; */
+        /* border-bottom: 1px solid #92877B; */
+        width: 45%;
+    }
+    .main2:nth-child(3){
+        align-items: right;
+        text-align: right;
+        /* background-color: red !important; */
+        width: 45%;
+    }
+    .main7{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: block;
+        width: 100%;
+        border-bottom: 1px solid #92877B;
+    }
+    .main2:nth-child(5){
+        /* align-items: right;
+        text-align: right; */
+        /* background-color: red !important; */
+        /* text-align:center; */
+        align-self: center;
+        /* background-color: red; */
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    .main2:nth-child(6){
+        width: 100%;
+        display: flex;
+        align-items: center;
+        /* transform: translateX(-40px); */
+    }
+    .main6{
+        display: none;
+    }
+    .main5{
+        /* background-color: red; */
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+    }
+
 }
 
-@media screen and (max-width:380px) {
+@media screen  and (max-width:400px){
+
     .main{
-        flex-direction: column;
-        align-items: center ;
+        justify-content: space-between;
+    }
+
+    .main2:nth-child(2){
+        /* background-color: red !important; */
+        /* border-bottom: 1px solid #92877B; */
+        width: 30%;
+        padding-left: 5px !important;
+    }
+    .main2:nth-child(3){
+        align-items: right;
+        text-align: right;
+        padding-right: 5px !important;
+        /* background-color: red !important; */
+        width: 30%;
     }
     
 }

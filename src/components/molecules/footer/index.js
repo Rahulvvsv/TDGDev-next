@@ -34,6 +34,9 @@ const Footer = () => {
                 <h1 className={style.subHeading}>Donate</h1>
                 </Link>
             </div>
+            <div className={style.main7}>
+
+            </div>
 
             <div className={style.main2}>
                 <div className={style.main3}>
