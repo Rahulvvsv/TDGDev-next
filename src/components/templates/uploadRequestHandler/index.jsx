@@ -1,4 +1,5 @@
 "use client";
+import { Suspense } from "react";
 import { fetchData } from "@/lib/firebase";
 import style from "./index.module.css";
 import FurnitureComp from "../../molecules/furnitureComp";
@@ -159,10 +160,13 @@ return (
           </div>
         </div>
       </div>
+      <Suspense fallback={<h1>Loading</h1>}>
+
       {dataToShow.map((e, key) => {
         if(e!=undefined){
-
+          
           return (
+            
             <UploadRequestHandlerComp
             unqid={e.id}
             key={e.id}
@@ -176,7 +180,8 @@ return (
             ></UploadRequestHandlerComp>
             );
           }
-      })}
+        })}
+        </Suspense>
     </section>
   );
 };

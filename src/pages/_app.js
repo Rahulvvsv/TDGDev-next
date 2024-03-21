@@ -14,7 +14,10 @@ export default function MyApp({ Component, pageProps }) {
     <section style={{position:"relative"}}>
     <Header></Header>
     </section>
+    <section className="mainss">
+
       <Component {...pageProps} />
+    </section>
       <Footer></Footer>
     </section>
       )

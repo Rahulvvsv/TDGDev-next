@@ -15,7 +15,7 @@ const index = ({data}) => {
           </section>
           <section className={style.right}>
 
-          <AllFurnitureProducts data={data}></AllFurnitureProducts>
+          <AllFurnitureProducts data={JSON.parse(data)}></AllFurnitureProducts>
           </section>
         </section>
       );
@@ -26,6 +26,7 @@ const index = ({data}) => {
 export async function getStaticProps({ params }) {
   // Fetch data for the specified page
         let data = await fetchData();
+        data = JSON.stringify(data)
         // setDataList(data)
   // Example data fetching, replace this with your actual data fetching logic
 

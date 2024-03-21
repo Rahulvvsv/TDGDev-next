@@ -47,7 +47,7 @@ const FurnitureComp = ({ Img, name, desc, key = "", showButton = true,unqId }) =
         subtitle="popup"
       >
         <section className={style.main9}>
-          <ContactDonarPopUP data={data}></ContactDonarPopUP>
+          <ContactDonarPopUP data={data} setData={setData} modalCloser={closeModal}></ContactDonarPopUP>
         </section>
       </Modal>
     </div>

@@ -12,3 +12,13 @@ color:  #92877B;;
     margin-left: auto;
     margin-right: auto;
 }
+
+@media screen and (max-width:420px) {
+
+    .heading{
+        font-size: 28px ;
+line-height: 28px;
+margin-bottom: 20px;
+    }
+    
+}

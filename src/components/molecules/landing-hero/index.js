@@ -1,7 +1,7 @@
 import style from "./index.module.css";
 import Link from "next/link";
 import Image from "next/image";
-
+import Button from "../../atoms/button";
 import { useRouter } from "next/router";
 import AOSComponent from "../AOS";
 const LandingHero = () =>{
@@ -12,9 +12,11 @@ const LandingHero = () =>{
             <div data-aos="fade-right"  className={style.image1} > 
                 <div style={{position:'absolute',width:"100%",height:"100%",background:"#79757280",zIndex:"1",borderRadius:"8px"}}></div>
                 
-                <Link href="/services/donateFurniture" className={style.insideDiv}  >
-                    <h1>Donate Furniture</h1>
+                <Link href="/services/donateFurniture"  >
+                    {/* <h1>Donate Furniture</h1> */}
+                <Button content={"Donate Furniture"} btnClass={2} borderthick={"1.45px solid white"} backgroundColor={"#585552"}href={"/services/donateFurniture"} ></Button>
                 </Link>
+
 
                 <Image src="/landing/first.jfif" fill style={{objectFit:'cover',borderRadius:"8px"}}   ></Image>
             </div>

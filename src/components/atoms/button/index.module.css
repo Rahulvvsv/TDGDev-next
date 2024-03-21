@@ -32,6 +32,7 @@
   background: #92877b;
   position: relative;
   color: white;
+  z-index: 2;
   /* transition: all 1s ease; */
 }
 .button1::before {

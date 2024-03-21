@@ -92,4 +92,19 @@ text-align: center;
     width: 100%;
 }
     
+
+
+
+}
+
+
+@media screen and (max-width:420px) {
+
+    .image1{
+        height: 250px;
+    }
+    .image2{
+        height: 250px;
+    }
+    
 }

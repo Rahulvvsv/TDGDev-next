@@ -4,6 +4,7 @@ import {
   collection,
   addDoc,
   getDocs,
+  getDoc,
   updateDoc,
   deleteDoc,
   doc,
@@ -28,6 +29,13 @@ const firebaseConfig = {
   appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
   storageBucket: "gs://tdgdev.appspot.com",
 };
+function sortByTimestamp(array) {
+    return array.sort((a, b) => {
+        const timestampA = new Date(a.timestamp);
+        const timestampB = new Date(b.timestamp);
+        return timestampB - timestampA; // Sort in descending order (newer data first)
+    });
+}
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
@@ -46,7 +54,19 @@ export const  updateDocument = async (documentId, newData) => {
   let result = await    setDoc(docRef, newData, { merge: true })
 
 }
+
+export const  updateClientDetails = async (documentId, newData) => {
+    // Reference to the document you want to update
+    let docRef = doc(db,"contactDonarList",documentId)
+
+
+    // Update the document
+  let result = await    setDoc(docRef, newData, { merge: true })
+
+}
+
 export const fetchDataLocation = async (location) => {
+  console.log("heree")
   const q = query(collection(db, "newData"), where("location", "==", location));
 
   const querySnapshot = await getDocs(q);
@@ -57,6 +77,26 @@ export const fetchDataLocation = async (location) => {
   });
   return fetchedData;
 };
+export const fetchDataBasedOnId  = async () =>{
+
+  let AllData = await fetchClientData();
+  
+  let OwnerAndClientDetails =  AllData.map(async(e)=>{
+    if(e.donarId!=undefined){
+
+      let docRef = doc(db,"newData",e.donarId)
+      const querySnapshot = await getDoc(docRef);
+      let donarDetails = querySnapshot.data();
+      return {"client":e,"owner":donarDetails}
+
+    }
+
+  
+
+  })
+
+  return  Promise.all( OwnerAndClientDetails);
+}
 export const fetchData = async () => {
   const querySnapshot = await getDocs(collection(db, "newData"));
   const fetchedData = [];
@@ -83,6 +123,7 @@ export const upLoadData = async (formData) => {
       email: formData.email || "",
       location: formData.location || "",
       imageUrl: imageUrls,
+      date:new Date(),
       status:"hidden"
     });
     console.log("Document written with ID: ", docRef.id);
@@ -100,10 +141,24 @@ export const uploadContactForm = async (formData) =>{
       email: formData.email || "",
       phone:formData.phone ||"",
       anyQuestions: formData.question || "",
+      donarId:formData.donarId || "",
+      date:new Date(),
       status:"newReq"
+
     });
     console.log("Document written with ID: ", docRef.id);
   } catch (error) {
     console.error("Error adding document: ", error);
   }
+}
+
+
+export const fetchClientData =  async () =>{
+
+  const querySnapshot = await getDocs(collection(db, "contactDonarList"));
+  const fetchedData = [];
+  querySnapshot.forEach((doc) => {
+    fetchedData.push({ id: doc.id, ...doc.data() });
+  });
+  return fetchedData;
 }

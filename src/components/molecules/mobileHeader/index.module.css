@@ -5,6 +5,9 @@
     gap: 30px;
     padding-top: 65px !important;
     padding-left: 30px !important;
+    position:absolute; 
+    top: 0;
+    left: 0;
 }
 
 .name{

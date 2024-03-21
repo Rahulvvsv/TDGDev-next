@@ -5,8 +5,11 @@ import Button from "../../atoms/button";
 import Image from "next/image";
 import { useState } from "react";
 import { uploadContactForm } from "../../../lib/firebase";
-const ContactDonarPopUP = ({data,setData}) => {
+import toast from "react-hot-toast";
+const ContactDonarPopUP = ({data,setData,modalCloser}) => {
+    const [submitted,setSubmitted] = useState(false)
     const dataSetter = (e) =>{
+
         e.preventDefault();
         let name = e.target.name;
         let value = e.target.value;
@@ -15,8 +18,10 @@ const ContactDonarPopUP = ({data,setData}) => {
     }
      const handleSubmit = async (e) => {
         e.preventDefault();
-        console.log("clicked")
+        console.log("clicked",data)
         uploadContactForm(data);
+        setSubmitted(true)
+        toast.success("Your request is received")
   };
   return (
     <div className={style.main}>
@@ -25,11 +30,18 @@ const ContactDonarPopUP = ({data,setData}) => {
       </div>
       <div className={style.main2}>
 
-      <InputField onChange={dataSetter} placeholder={"NAME"} name={"name"}></InputField>
-      <InputField onChange={dataSetter} placeholder={"EMAIL"} name={"email"}></InputField>{" "}
-      <InputField onChange={dataSetter} placeholder={"PHONE"} name={"phone"}></InputField>
-      <InputField onChange={dataSetter} placeholder={"ANY QUESTIONS"} name={"question"}></InputField>
-      <Button onClick={handleSubmit} content={"Submit"}></Button>
+{
+    submitted?<div><h1 className={style.heading}>Thank you for your generous offer to donate your service. We will notify you as soon as an opportunity comes up, and you can confirm your intent to donate. We appreciate your support!</h1>
+    <Button content={"Back"} onClick={modalCloser}></Button> 
+    </div>:
+    <>
+    <InputField onChange={dataSetter} placeholder={"NAME"} name={"name"}></InputField>
+    <InputField onChange={dataSetter} placeholder={"EMAIL"} name={"email"}></InputField>{" "}
+    <InputField onChange={dataSetter} placeholder={"PHONE"} name={"phone"}></InputField>
+    <InputField onChange={dataSetter} placeholder={"ANY QUESTIONS"} name={"question"}></InputField>
+    <Button onClick={handleSubmit} content={"Submit"}></Button>
+    </>
+}
       </div>
     </div>
   );

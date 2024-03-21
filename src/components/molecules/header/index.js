@@ -30,10 +30,10 @@ const Header = () => {
     }
   }, [search]);
   return (
-    <>
+    <div style={{position:"relative"}}>
     <AnimatePresence>
       <div className={style.main}>
-        <div className={style.main2}>
+        <div className={style.main2} onClick={()=>{router.push("/")}}>
           <Image src={"/Icon/logo.png"} fill></Image>
         </div>
         <div className={style.main3}>
@@ -161,12 +161,12 @@ const Header = () => {
     <AnimatePresence>
 
         {toggleNavbar && (
-          <motion.section layout initial={{x:250,opacity:0}} animate={{x:0,opacity:1}} exit={{x:550,opacity:0}}  style={{ position: "absolute",zIndex:5, top: 0, left: 0,width:"100vw",height:"100vh" }}>
+          <motion.section layout initial={{x:250,opacity:0,y:-30}} animate={{x:0,opacity:1,y:-30}} exit={{x:550,opacity:0}}  style={{ position: "absolute",zIndex:5, top: 0, left: 0,width:"100vw",height:"100vh" }}>
             <MobileHeader toggler={setToggleNavbar}></MobileHeader>
           </motion.section>
         )}
         </AnimatePresence>
-        </>
+        </div>
   );
 };
 

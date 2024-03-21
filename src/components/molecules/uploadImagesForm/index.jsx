@@ -4,9 +4,11 @@ import InputField from "../../atoms/inputField";
 import Button from "../../atoms/button";
 import Image from "next/image";
 import { useState } from "react";
+import { AnimatePresence,motion } from "framer-motion";
 import { upLoadData } from "../../../lib/firebase";
 const UploadForm = () => {
     const [data,setData] = useState({})
+    const [submitted,setSubmitted] = useState(false)
     const dataSetter = (e) =>{
         e.preventDefault();
         let name = e.target.name;
@@ -26,11 +28,13 @@ const UploadForm = () => {
         e.preventDefault();
         console.log("clicked")
         upLoadData(data);
+        setSubmitted(true);
   };
  
     return (  
-        <div className={style.main}>
 
+<div>
+{ !submitted?<motion.div layout initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}} className={style.main}>
             <div className={style.left}>
                 <div className={style.imageUpload}>
                     <label htmlFor="files" className="btn"><Image src={"/Icon/plus.png"} width={78} height={78}></Image></label>
@@ -39,16 +43,24 @@ const UploadForm = () => {
                 </div>
             </div>
 
-            <div className={style.right}>
+            <motion.div  className={style.right}>
                 <InputField onChange={dataSetter} placeholder={"FULL NAME*"} name={"fullname"}></InputField>
                 <InputField onChange={dataSetter} placeholder={"EMAIL*"} name={"email"}></InputField>
                 <InputField onChange={dataSetter} placeholder={"PHONE*"} name={"phone"}></InputField>
-                <InputField onChange={dataSetter} placeholder={"LOCATION*"} name={"location"}></InputField>
+                <InputField placeholder={"LOCATION*"} name={"location"} onChange={dataSetter} type="dropdown"></InputField>
+                <InputField onChange={dataSetter} placeholder={"Exact Location*"} name={"ExactLocation"}></InputField>
                 <InputField onChange={dataSetter} placeholder={"TYPE OF FURNITURE*"} name={"tof"}></InputField>
                 <InputField onChange={dataSetter} placeholder={"DESCRIBE YOUR FURNITURE*"} name={"desc"} type="text-area"></InputField>
                 <Button onClick={handleSubmit} placeholder={"Submit"} content={"Submit"} href={""} fontColor={"white"}></Button>
-            </div>
-        </div>
+            </motion.div>
+            </motion.div>
+            :
+            <motion.div  initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}}className={style.main2}>
+                <Image src={"/Icon/4.png"} width={190} height={190}></Image>
+                <h1 className="heading">Thank you for submitting the form</h1>
+            </motion.div>
+}
+</div>
     );
 }
  
