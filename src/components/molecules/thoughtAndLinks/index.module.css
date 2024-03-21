@@ -11,6 +11,21 @@
     text-align: center  ;
     background-color: #948F8C;
 }
+.swiper {
+  width: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
 .heading{
     font-weight: 400;
@@ -30,8 +45,18 @@
 
 @media screen and (max-width:420px) {
     .main{
-        height: auto;
+        /* height: auto; */
+        height: 250px;
         padding-bottom: 20px !important;
+    }
+    .heading,.name{
+        font-family: Montserrat;
+font-size: 12px;
+font-weight: 400;
+line-height: 14.63px;
+letter-spacing: -0.09527089446783066px;
+text-align: center;
+
     }
     
 }

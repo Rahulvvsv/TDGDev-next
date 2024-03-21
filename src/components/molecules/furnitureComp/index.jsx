@@ -22,7 +22,7 @@ const FurnitureComp = ({ Img, name, desc, key = "", showButton = true,unqId }) =
   }
 
   return (
-    <div className={style.main} key={key}>
+    <div className={style.main} id={style.something} key={key}>
       <div className={style.image}>
         <Image src={Img} fill></Image>
       </div>

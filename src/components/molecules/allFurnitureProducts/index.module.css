@@ -3,3 +3,11 @@
     gap: 30px;
     flex-wrap: wrap;
 }
+
+@media screen and (max-width:420px) {
+    .mains{
+        gap: 0px;
+        margin-bottom: 20px !important;
+    }
+    
+}

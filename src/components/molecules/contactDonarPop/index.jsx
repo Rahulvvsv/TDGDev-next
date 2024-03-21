@@ -25,6 +25,7 @@ const ContactDonarPopUP = ({data,setData,modalCloser}) => {
   };
   return (
     <div className={style.main}>
+      <Image src={"/Icon/cross.png"} width={25} height={25} style={{position:"absolute",right:10,top:15,filter:"invert(1)"}} onClick={modalCloser}></Image>
       <div className={style.image}>
         <Image src={"/Icon/4.png"} fill></Image>
       </div>

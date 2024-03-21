@@ -96,3 +96,23 @@
 .main:hover {
   cursor: pointer;
 }
+
+
+@media screen and (max-width:420px) {
+  .button1,.button2{
+    width: 124px !important;
+    height: 50px !important;
+    font-family: Montserrat;
+    font-size: 12px !important ;
+    font-weight: 500;
+line-height: 14.63px;
+letter-spacing: -0.0447484515607357px;
+text-align: left;
+border-radius: 4px;
+  }
+  .btntext{
+
+    font-size: 12px !important ;
+  }
+  
+}

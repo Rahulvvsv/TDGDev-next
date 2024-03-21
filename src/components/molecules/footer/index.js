@@ -35,7 +35,6 @@ const Footer = () => {
                 </Link>
             </div>
             <div className={style.main7}>
-
             </div>
 
             <div className={style.main2}>

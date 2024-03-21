@@ -12,19 +12,18 @@ const LandingHero = () =>{
             <div data-aos="fade-right"  className={style.image1} > 
                 <div style={{position:'absolute',width:"100%",height:"100%",background:"#79757280",zIndex:"1",borderRadius:"8px"}}></div>
                 
-                <Link href="/services/donateFurniture"  >
-                    {/* <h1>Donate Furniture</h1> */}
-                <Button content={"Donate Furniture"} btnClass={2} borderthick={"1.45px solid white"} backgroundColor={"#585552"}href={"/services/donateFurniture"} ></Button>
-                </Link>
+                <div   className={style.insideDiv}>
+                <Button content={"Donate Furniture"} width={250} height={100} btnClass={1} fontSize={20} fontWeight={500} borderthick={"2px solid white"} backgroundColor={"#585552"}href={"/services/donateFurniture"} ></Button>
+                </div>
 
 
                 <Image src="/landing/first.jfif" fill style={{objectFit:'cover',borderRadius:"8px"}}   ></Image>
             </div>
             <div data-aos="fade-left"  className={style.image2} >
                 <div style={{position:'absolute',width:"100%",height:"100%",background:"#79757280",zIndex:"1",borderRadius:"8px"}}></div>
-                <Link href="/services/getFurniture" className={style.insideDiv}>
-                    <h1>Get Furniture</h1>
-                </Link>
+                <div   className={style.insideDiv}>
+                <Button content={"Get Furniture"} width={250} height={100} btnClass={1} fontSize={20}fontWeight={500} borderthick={"2px solid white"} backgroundColor={"#585552"}href={"/services/getFurniture"} ></Button>
+                </div>
                 <Image src={"/landing/second.png"}  style={{objectFit:'cover',borderRadius:"8px"}} fill></Image>
             </div>
         </div>

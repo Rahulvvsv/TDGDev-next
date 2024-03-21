@@ -60,3 +60,29 @@ display: flex;
 align-items: center;
 justify-content: center;
 }
+
+
+@media screen and (max-width:420px) {
+    #something{
+        margin-top: 20px;
+        width: 50% !important;
+        /* height: 180px; */
+
+    }
+    .image{
+        width: 95% !important;
+        height: 180px !important;
+
+    } 
+    .image img{
+        object-fit: cover;
+    }
+    .main div{
+        width: 135px !important;
+    }
+
+    .main8{
+        width:90vw !important;
+        height: 60vh !important;
+    }
+}

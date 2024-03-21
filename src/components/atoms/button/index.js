@@ -5,11 +5,14 @@ const Button = ({
   href,
   content,
   width,
+  height,
   backgroundColor,
   fontColor = "white",
   borderthick,
   onClick ,
   effect = true,
+  fontSize,
+  fontWeight,
   btnClass =1
 }) => {
   const router = useRouter();
@@ -20,18 +23,18 @@ const Button = ({
   let EffectButton = () => {
 
     return (
-      <div onClick={onClick || rerouter} className={style.main} style={{ color: fontColor,width:width }}>
+      <div onClick={onClick || rerouter} className={style.main} style={{ color: fontColor,width:width ,height:height}}>
         <div
           type="button"
           className={  style["button"+btnClass]}
           style={{
             backgroundColor: backgroundColor,
             color: fontColor,
-            border: borderthick,
+            border: borderthick,width:width ,height:height
           }}
         >
 
-      <p className={style.btntext}>{content}</p>
+      <p className={style.btntext} style={{fontWeight:fontWeight,fontSize:fontSize}}>{content}</p>
         </div>
       </div>
     );
