@@ -17,8 +17,8 @@ export default function App() {
   const [slidesPerView, setSlidesPerView] = useState(2.4);
   useEffect(() => {
     const handleResize = () => {
-        if (window.innerWidth<400){
-            setSlidesPerView(1.25);
+        if (window.innerWidth<420){
+            setSlidesPerView(1);
           }
         else if (window.innerWidth < 980) {
             setSlidesPerView(1.4);
@@ -48,7 +48,7 @@ export default function App() {
         loop={true}
         freeMode={true}
         modules={[Autoplay]}
-        className="mySwiper"
+        className={style.Swiper}
       >
 
         <SwiperSlide>

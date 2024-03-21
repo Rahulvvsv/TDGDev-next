@@ -16,8 +16,8 @@ import { EffectCoverflow } from "swiper/modules";
 function Scroll() {
   const [views,setViews] = useState(1.1)
   useEffect(()=>{
-    if(window.innerWidth<=370){
-      setViews(1.5)
+    if(window.innerWidth<=420){
+      setViews(1.2)
     }
   },[])
   return (
@@ -25,10 +25,10 @@ function Scroll() {
       <Swiper
       effect="coverflow"
         spaceBetween={10}
-        // centeredSlides={true}
+        centeredSlides={false}
         slidesPerView={views}
         autoplay={{
-          delay: 1000,
+          delay: 2500,
           disableOnInteraction: false,
         }}
         loop={true}
@@ -42,7 +42,7 @@ function Scroll() {
     direction: "ltr",
   }}
         modules={[EffectCoverflow,Autoplay]}
-        className="mySwiper"
+        className={style.myswiper}
       >
         <SwiperSlide>
             <ImageAndDesc img={"/about/1.png"} content={"TDG Furniture Exchange fills a crucial need: providing a platform for furniture donations and distributions.Our mission is to foster sharing and connections, making a difference in people's lives."}></ImageAndDesc>

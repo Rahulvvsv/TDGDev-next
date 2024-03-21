@@ -16,20 +16,20 @@ const index = ({data,id}) => {
       );
 }
 
-export async function getStaticPaths(context) {
-    let mappedData = [];
-    for (let location of locationsData) {
-      mappedData.push({
-        params: { location: location },
-      });
-    }
-    return {
-      paths: mappedData,
-      fallback: false,
-    };
-  }
+// export async function getStaticPaths(context) {
+//     let mappedData = [];
+//     for (let location of locationsData) {
+//       mappedData.push({
+//         params: { location: location },
+//       });
+//     }
+//     return {
+//       paths: mappedData,
+//       fallback: false,
+//     };
+//   }
 
-export async function getStaticProps(context) {
+export async function getServerSideProps(context) {
     const {params} = context;
     let id  = params.location;
     console.log(id)

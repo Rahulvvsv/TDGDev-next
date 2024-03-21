@@ -73,5 +73,6 @@
 @media screen and (max-width:420px){
     .main{
         width: 310px !important;
+        height: 380px !important;
     }
 }

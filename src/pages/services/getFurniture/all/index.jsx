@@ -23,7 +23,7 @@ const index = ({data}) => {
 
 
 
-export async function getStaticProps({ params }) {
+export async function getServerSideProps({ params }) {
   // Fetch data for the specified page
         let data = await fetchData();
         data = JSON.stringify(data)
