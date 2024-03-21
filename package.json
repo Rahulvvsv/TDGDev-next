@@ -19,6 +19,8 @@
     "nextjs-progressbar": "^0.0.16",
     "react": "^18",
     "react-dom": "^18",
+    "react-hot-toast": "^2.4.1",
+    "react-modal": "^3.16.1",
     "swiper": "^11.0.7"
   },
   "devDependencies": {

@@ -25,3 +25,7 @@ body{
     overflow-x: hidden;
 }
 .swiper-wrapper { transition-timing-function: linear !important; }
+/* .overlay{
+    border: 0px solid black;
+    width: 500px;
+} */

@@ -9,6 +9,7 @@ const index = ({data}) => {
         <section className={style.main}>
           <section className={style.left}>
               {locationsData.map((e,key)=>{
+                
               return  <Link href={"/services/getFurniture/"+e} key={key} className={style.lists}>{e}</Link>
               })}
           </section>

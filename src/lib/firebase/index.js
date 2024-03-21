@@ -7,6 +7,7 @@ import {
   updateDoc,
   deleteDoc,
   doc,
+  setDoc,
   query,
   where,
 } from "firebase/firestore";
@@ -36,7 +37,15 @@ const storage = getStorage(app);
 export const Firebase = async () => {
   console.log(app);
 };
+export const  updateDocument = async (documentId, newData) => {
+    // Reference to the document you want to update
+    let docRef = doc(db,"newData",documentId)
 
+
+    // Update the document
+  let result = await    setDoc(docRef, newData, { merge: true })
+
+}
 export const fetchDataLocation = async (location) => {
   const q = query(collection(db, "newData"), where("location", "==", location));
 
@@ -60,31 +69,13 @@ export const fetchData = async () => {
 export const upLoadData = async (formData) => {
   try {
     const imageUrls = [];
-    console.log(formData.image, "dein gewew");
-    // Loop through each image in the formData
     for (const image of formData.image) {
-      // Upload image to Firebase Storage
-      console.log("started", image);
       const imageRef = ref(storage, `images/${image.name}`);
-      console.log("started 2");
       await uploadBytes(imageRef, image);
 
-      console.log("uploaded");
-
-      // Get the download URL for the uploaded image
       const downloadURL = await getDownloadURL(imageRef);
-      console.log(downloadURL);
       imageUrls.push(downloadURL);
     }
-    // Add data (including image URL) to Firebase Firestore
-    console.log("hereees", {
-      name: formData.fullname || "",
-      productName: formData.tof || "",
-      description: formData.desc || "",
-      email: formData.email || "",
-      location: formData.location || "",
-      imageUrl: imageUrls,
-    });
     const docRef = await addDoc(collection(db, "newData"), {
       name: formData.fullname || "",
       productName: formData.tof || "",
@@ -92,9 +83,27 @@ export const upLoadData = async (formData) => {
       email: formData.email || "",
       location: formData.location || "",
       imageUrl: imageUrls,
+      status:"hidden"
     });
     console.log("Document written with ID: ", docRef.id);
   } catch (error) {
     console.error("Error adding document: ", error);
   }
 };
+
+
+export const uploadContactForm = async (formData) =>{
+
+  try {
+    const docRef = await addDoc(collection(db, "contactDonarList"), {
+      name: formData.name || "",
+      email: formData.email || "",
+      phone:formData.phone ||"",
+      anyQuestions: formData.question || "",
+      status:"newReq"
+    });
+    console.log("Document written with ID: ", docRef.id);
+  } catch (error) {
+    console.error("Error adding document: ", error);
+  }
+}
