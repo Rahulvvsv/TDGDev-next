@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const MissionHeader = () => {
   return (
     <div className={style.main}>
-      <motion.div className={style.main2} initial={{width:18000000}} whileInView={{width:"60%"}} transition={{duration:3}}  >
+      <motion.div className={style.main2}   >
         <motion.h1 className={style.heading} initial={{opacity:0}} animate={{opacity:1}} transition={{delay:1}}> OUR MISSION</motion.h1>
         <motion.div className={style.content3}>
           <motion.h1 className={style.content} initial={{opacity:0}} animate={{opacity:1}} transition={{delay:1}}>

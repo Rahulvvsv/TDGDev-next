@@ -1,11 +1,15 @@
 .main {
   display: flex;
   flex-direction: column;
+  /* align-items: center; */
+  /* justify-content: center; */
   gap: 20px;
   padding: 20px !important;
   width: 30vw;
   background: rgba(245, 242, 237, 1);
   border-radius: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .image {
   position: relative;

@@ -24,12 +24,8 @@
   font-size: 20px;
   font-weight: 400;
   text-align: left;
+
   color: #292929;
-  border-radius: 8px;
-  /* width: 200px !important; */
-  padding: 20px !important;
-  border: 1px solid #797572;
-  text-align: center;
 }
 
 @media screen and (max-width: 1300px) {
@@ -37,10 +33,19 @@
     width: 100%;
     flex-direction: row;
     overflow: scroll;
-    height: 60px;
+    height: 90px;
   }
   .lists {
     font-size: 16px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* width: 200px !important; */
+  height: 60px;
+  padding: 20px !important;
+  border: 1px solid #797572;
+  text-align: center;
   }
   .main {
     flex-direction: column;

@@ -47,7 +47,7 @@ export default function App() {
   return (
     <>
       <Swiper
-        spaceBetween={4}
+        spaceBetween={10}
         centeredSlides={true}
         slidesPerView={slidesPerView}
       
@@ -61,17 +61,33 @@ export default function App() {
         className={style.Swiper}
       >
 
-        {arr.map((e,key)=>{
+        {/* {arr.map((e,key)=>{
 
           return(
 
             <SwiperSlide>
-        <SingleTestimonial index={0} testimonial={"Furniture exchange was smooth and perfect and very nice wow fantastic delivery service loved the process furniture also was nice not damaged and fast delivery"}  name={"Aaryaa Joshi"} surname={"Baltimore"} ></SingleTestimonial>
+        <SingleTestimonial index={0}  testimonial={"Furniture exchange was smooth and perfect and very nice wow fantastic delivery service loved the process furniture also was nice not damaged and fast delivery"}  name={"Aaryaa Joshi"} surname={"Baltimore"} ></SingleTestimonial>
         </SwiperSlide>
             )
           })
-        }
+        } */}
+            <SwiperSlide>
+        <SingleTestimonial index={0}  testimonial={"Furniture exchange was smooth and perfect and very nice wow fantastic delivery service loved the process furniture also was nice not damaged and fast delivery"}  name={"Aaryaa Joshi"} surname={"Baltimore"} ></SingleTestimonial>
+        </SwiperSlide>
+            <SwiperSlide>
+        <SingleTestimonial index={0}  testimonial={"Furniture exchange was smooth and perfect and very nice wow fantastic delivery service loved the process furniture also was nice not damaged and fast delivery"}  name={"Aaryaa Joshi"} surname={"Baltimore"} ></SingleTestimonial>
+        </SwiperSlide>
+            <SwiperSlide>
+        <SingleTestimonial index={0}  testimonial={"Furniture exchange was smooth and perfect and very nice wow fantastic delivery service loved the process furniture also was nice not damaged and fast delivery"}  name={"Aaryaa Joshi"} surname={"Baltimore"} ></SingleTestimonial>
+        </SwiperSlide>
+            <SwiperSlide>
+        <SingleTestimonial index={0}  testimonial={"Furniture exchange was smooth and perfect and very nice wow fantastic delivery service loved the process furniture also was nice not damaged and fast delivery"}  name={"Aaryaa Joshi"} surname={"Baltimore"} ></SingleTestimonial>
+        </SwiperSlide>
+            <SwiperSlide>
+        <SingleTestimonial index={0}  testimonial={"Furniture exchange was smooth and perfect and very nice wow fantastic delivery service loved the process furniture also was nice not damaged and fast delivery"}  name={"Aaryaa Joshi"} surname={"Baltimore"} ></SingleTestimonial>
+        </SwiperSlide>
        </Swiper>
+    <br></br>
     </>
   );
 }
