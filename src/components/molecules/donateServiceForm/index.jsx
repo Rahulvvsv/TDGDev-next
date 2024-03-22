@@ -31,6 +31,7 @@ const [data,setData] = useState({})
             <InputField type="textarea" height={100} onChange={dataSetter}  placeholder={"ENTER SERVICE*"}></InputField>
             <Button href={""} onClick={()=>{
                 setSubmitted(true)
+                window.location.href="https://buy.stripe.com/test_9AQg05cSu2p1gAU4gg"
             }} content={"Submit"}></Button>
 </>:<>
 
