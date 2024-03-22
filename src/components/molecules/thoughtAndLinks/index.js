@@ -12,6 +12,7 @@ const ThoughtAndLink = ({ Description, name, ButtonContent, href = "" }) => {
         freeMode={true}
         autoplay={{ delay: 2500 }}
         modules={[Autoplay]}
+        loop={true}
         className={style.swiper}
       >
         <SwiperSlide>

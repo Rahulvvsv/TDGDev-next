@@ -5,8 +5,16 @@
     margin-right: auto;
     justify-content: space-between;
     /* flex-wrap: wrap; */
+    position: relative;
 }
 .myswiper{
     width: 90% ;
     height: 420px !important;
+}
+.main2{
+    background-color: white;
+    z-index: 999;
+    position: absolute;
+    width: 100%;
+    height: 100%;
 }

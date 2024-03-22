@@ -1,5 +1,30 @@
 .Swiper{
-    width: 90%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
+}
+.fadeInSlide {
+  animation-name: fadeInSlide;
+  animation-duration: 1.5s;
+  animation-timing-function: cubic-bezier(1, 0.055, 0.32, 1);
+  animation-fill-mode: forwards;
+}
+.thumbContainer {
+  opacity: 1;
+  transform: translateY(60%);
+  /* img,
+  video {
+    display: block;
+    position: relative;
+    max-width: calc(380px + 43vh);
+    max-height: calc(255px + 43vh);
+  } */
+}
+@keyframes fadeInSlide {
+  0% {
+    transform: translateY(60%);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }

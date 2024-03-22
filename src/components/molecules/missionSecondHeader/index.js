@@ -8,7 +8,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-
+import {motion} from "framer-motion";
 // import required modules
 import { Autoplay } from "swiper/modules";
 import { EffectCoverflow } from "swiper/modules";
@@ -78,6 +78,11 @@ const MissionSecondHeader = () => {
   }, []);
     return ( mobileView?(<Scroll></Scroll>): 
     <div className={style.main}>
+      <motion.div initial={{y:0,opacity:1}} whileInView={{y:600,opacity:[1,1,1,0]}} transition={{duration:1}}  className={style.main2}>
+
+:1
+
+      </motion.div>
             <ImageAndDesc img={"/about/1.png"} content={"TDG Furniture Exchange fills a crucial need: providing a platform for furniture donations and distributions.Our mission is to foster sharing and connections, making a difference in people's lives."}></ImageAndDesc>
 
             <ImageAndDesc img={"/about/2.png"} height={475} width={450} content={"Rooted in the belief that everyone deserves a comfortable living space, we facilitate furniture donations and delivery at no cost to the donor or recipient. With the support of dedicated volunteers, partners, and ambassadors, we currently operate in nine locations, and aim to expand globally."}></ImageAndDesc>

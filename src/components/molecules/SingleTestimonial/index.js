@@ -1,8 +1,25 @@
+'use client'
 import style from "./index.module.css"
 import Image from "next/image";
-const SingleTestimonial = ({testimonial,name,surname,opacity}) => {
+import { useEffect } from "react";
+import { useState } from "react";
+const SingleTestimonial = ({testimonial,name,surname,opacity,index}) => {
+      const [isVisible, setIsVisible] = useState(false);
+      useEffect(() => {
+    const delay = index * 90;
+    const timeoutId = setTimeout(() => {
+      setIsVisible(true);
+    }, delay);
+
+    return () => {
+      clearTimeout(timeoutId);
+    };
+  }, [index]);
+
     return ( 
-    <div className={style.main} style={{opacity:opacity}}>
+    // <div className={style.main +" "+`${style.thumbContainer + " "} ${isVisible ? style.fadeInSlide : ''}`} style={{opacity:opacity}}>
+
+    <div className={style.main } style={{opacity:opacity}}>
             <div className={style.image}>
                     <Image src={"/Icon/quotes.png"} fill></Image>
             </div>
