@@ -36,7 +36,7 @@
   height: 300px;
   align-self: center;
 
-  border-radius: 30px;
+  border-radius: 8px;
 }
 
 .line {
@@ -48,7 +48,7 @@
 }
 .image > img {
   object-fit: cover;
-  border-radius: 30px;
+  border-radius: 8px;
 }
 
 .heading {
@@ -76,13 +76,13 @@
     width: 100%;
     background-color: rgba(245, 242, 237, 1);
     gap: 20px;
-    border-radius: 20px !important;
+    border-radius: 8px !important;
   }
   .right {
     width: 100%;
     background-color: rgba(245, 242, 237, 1);
     gap: 20px;
-    border-radius: 20px !important;
+    border-radius: 8px !important;
   }
 
   .image {
@@ -109,8 +109,8 @@
   .image,
   .divdiv,
   .image > img {
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
   }
   .image > img,
   .divdiv {

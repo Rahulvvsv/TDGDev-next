@@ -43,9 +43,9 @@ const UploadRequestHandlerComp = ({ client, owner, status }) => {
               <h1 className={style.heading}>
                 Date-{owner?.date?.toDate().toString().slice(0,16)}
               </h1>
-              <h1 className={style.heading}>Location-{owner.location}</h1>
-              <h1 className={style.heading}>Email-{owner.email}</h1>
-              <h1 className={style.heading}>Phone-{owner.phone}</h1>
+              <h1 className={style.heading}>Location-{owner.location || `None`}</h1>
+              <h1 className={style.heading}>Email-{owner.email || `None`}</h1>
+              <h1 className={style.heading}>Phone-{owner.phone|| `None`}</h1>
             </div>
             <div className={style.right}>
               <h1 className={style.heading + " " + style.heading2}>
@@ -54,9 +54,9 @@ const UploadRequestHandlerComp = ({ client, owner, status }) => {
               <h1 className={style.heading}>
                 Date-{client?.date?.toDate().toString().slice(0,16)}
               </h1>
-              <h1 className={style.heading}>Name-{client.name}</h1>
-              <h1 className={style.heading}>Email-{client.email}</h1>
-              <h1 className={style.heading}>Phone-{client.phone}</h1>
+              <h1 className={style.heading}>Name-{client.name|| `None`}</h1>
+              <h1 className={style.heading}>Email-{client.email|| `None`}</h1>
+              <h1 className={style.heading}>Phone-{client.phone|| `None`}</h1>
             </div>
           </div>
           {client.status == "newReq" ? (

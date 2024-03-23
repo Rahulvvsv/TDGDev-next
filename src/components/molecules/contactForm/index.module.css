@@ -55,10 +55,14 @@
         width: 100%;
         gap: 40px;
         align-items: center;
+        margin-top: 40px ;
     }
-
+    .main2 >div> div{
+        /* background-color: red; */
+        width: 100% !important;
+    }
     .main2 {
-        width: 80%;
+        width: 90%;
     }
 
     .main3{
@@ -66,3 +70,4 @@
     }
     
 }
+

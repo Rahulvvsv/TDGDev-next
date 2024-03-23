@@ -88,5 +88,15 @@
     .right{
         width: 100%;
     }
+
+
+    .right:last-child >div{
+        width: 100%;
+        /* background-color: blue; */
+    }
+    .right:last-child >div> div{
+        /* background-color: red; */
+        width: 100% !important;
+    }
     
 }

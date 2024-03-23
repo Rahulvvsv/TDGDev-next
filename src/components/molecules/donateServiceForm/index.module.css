@@ -50,4 +50,14 @@ width: 50%;
     .main2> div{
         width: 100%;
     }
+    .main:last-child > div:last-child {
+
+        /* background-color: red; */
+        width: 100%;
+    }
+
+    .main:last-child > div:last-child >div {
+        width: 100% !important;
+    }
+
 }

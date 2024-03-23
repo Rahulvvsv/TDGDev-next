@@ -24,7 +24,7 @@ function Scroll() {
     <>
       <Swiper
       effect="coverflow"
-        spaceBetween={10}
+        spaceBetween={-10}
         centeredSlides={false}
         slidesPerView={views}
         autoplay={{
@@ -35,9 +35,9 @@ function Scroll() {
         freeMode={true}
         coverflowEffect={{
     rotate: 0,
-    stretch: 0,
-    depth: 100,
-    modifier: 2,
+    stretch: -22,
+    depth: 200,
+    modifier: 1,
     slideShadows: false,
     direction: "ltr",
   }}

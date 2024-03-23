@@ -40,7 +40,7 @@
         width: 380px !important;
         gap: 0px;
         border-radius: 8px ;
-        box-shadow: 3px 3px 3px 2px grey ;
+        box-shadow: 1px 3px 3px 2px grey ;
     }
 
     .image {
@@ -56,6 +56,8 @@
     .content{
         /* height: 50% !important; */
         font-size: 13px !important;
+        padding-top: 15px !important;
+        width: 90%;
         overflow-y: scroll;
         text-align: left;
         /* background-color: green; */

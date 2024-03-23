@@ -81,7 +81,7 @@
   }
 
   #something {
-    margin-top: 20px;
+    /* margin-top: 20px; */
     width: 40% !important;
     /* height: 180px; */
   }
@@ -92,7 +92,7 @@
 
 @media screen and (max-width: 420px) {
   #something {
-    margin-top: 20px;
+    /* margin-top: 20px; */
     width: 50% !important;
     /* height: 180px; */
   }

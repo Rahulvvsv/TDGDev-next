@@ -22,16 +22,17 @@ text-align: left;
 
 .buttons{
     display: flex;
-    gap: 20px;
+    gap: 16px;
 }
 
 .right{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
+    /* align-items: flex-start; */
     /* background-color: red; */
-    height: 300px;
-    justify-content: center;
+    /* height: 300px; */
+    justify-content: flex-start;
 }
 
 .heading1{
@@ -97,7 +98,7 @@ text-align: left;
 }
 .div2{
     display: flex;
-    gap: 30px;
+    gap: 16px;
     align-items: center;
     margin-top: 20px;
     /* justify-content: center; */
@@ -128,8 +129,15 @@ text-align: left;
     /* width:         300px !important; */
     overflow-y: hidden;
     /* overflow-x: scroll !important; */
-    width: 700px;
+    width: 500px;
+    margin-bottom: 10px;
     /* background-color: red; */
     /* padding-bottom: 20px !important; */
+}
+.buttons > div >div{
+    /* width: 100% !important; */
+    /* background-color: red; */
+    /* margin-top: 5px; */
+    width: 200px !important;
 }
 }

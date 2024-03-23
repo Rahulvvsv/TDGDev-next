@@ -4,7 +4,7 @@ import Button from "../../atoms/button";
 import Modal from "react-modal";
 import { useState } from "react";
 import ContactDonarPopUP from "../contactDonarPop";
-const FurnitureComp = ({ Img, name, desc, key = "", showButton = true,unqId }) => {
+const FurnitureComp = ({ Img, name="None", desc="None", key = "", showButton = true,unqId }) => {
   const [modalIsOpen, setIsOpen] = useState(false);
   const [data,setData] = useState({})
   function openModal() {
@@ -36,6 +36,7 @@ const FurnitureComp = ({ Img, name, desc, key = "", showButton = true,unqId }) =
           content={"Contact Donor"}
           fontColor={"rgba(121, 117, 114, 1)"}
           onClick={openModal}
+          btnClass={2}
         ></Button>
       )}
       <Modal

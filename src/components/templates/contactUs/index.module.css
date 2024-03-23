@@ -8,3 +8,11 @@
 .main2{
     width: 100%;
 }
+
+@media screen and (max-width:420px) {
+
+    .main3{
+        margin-top: 30px;
+    }
+    
+}

@@ -46,9 +46,9 @@ const UploadRequestHandlerComp = ({
           ></FurnitureComp>
         </div>
         <div className={style.right}>
-          <h1 className={style.heading}>Date-{date}</h1>
-          <h1 className={style.heading}>Location-{location}</h1>
-          <h1 className={style.heading}>Email-{email}</h1>
+          <h1 className={style.heading}>Date-{date || `None`}</h1>
+          <h1 className={style.heading}>Location-{location || `None`} </h1>
+          <h1 className={style.heading}>Email-{email || `None`}</h1>
 
           {status == "hidden" ? (
             <div className={style.buttons}>
@@ -80,7 +80,7 @@ const UploadRequestHandlerComp = ({
                   onClick={() => {
                     acceptHandler(unqid);
                   }}
-                  content={"accept"}
+                  content={"Accept"}
                 ></Button>
               )}
               {status == "showOnPage" && (
@@ -88,7 +88,7 @@ const UploadRequestHandlerComp = ({
                   onClick={() => {
                     declineHandler(unqid);
                   }}
-                  content={"decline"}
+                  content={"Decline"}
                 ></Button>
               )}
             </div>

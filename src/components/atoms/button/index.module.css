@@ -116,3 +116,22 @@ border-radius: 4px;
   }
   
 }
+
+
+@media screen and (max-width:1000px) {
+
+.button1:hover::before ,.button2:hover::before{
+  left: 0;
+  right: 0;
+  opacity: 0;
+}
+  
+.button1:hover p {
+  color: #ffffff;
+  z-index: 2;
+}
+.button2:hover p{
+  color: rgb(0, 0, 0);
+  z-index: 2;
+}
+}

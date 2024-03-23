@@ -111,7 +111,8 @@
         bottom: 30px;
         /* margin-left: 50%; */
 
-        left: 30%;z-index: 2;
+        left: 30%;
+        z-index: 2;
 
         /* transform: translateX(-50%) !important; */
     }
@@ -122,5 +123,14 @@
     .content{
         font-size: 20px !important;
     }
+    
+}
+
+@media screen and (max-width:480px) {
+    .content{
+        width: 90%;
+        left: 5%;
+    }
+
     
 }
