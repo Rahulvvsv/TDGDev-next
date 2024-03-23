@@ -38,6 +38,7 @@
     left: 50%;
     transform:translate(-50%,-50%);
     color: white;
+    text-align: center !important;
 }
 
 @media screen and (max-width:420px) {

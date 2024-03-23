@@ -5,9 +5,22 @@
     justify-content: space-around;
     margin-left: auto ;
     margin-right: auto;
+    position: relative;
 }
 
-
+.dottedLine{
+    position: absolute;
+    width: 80%;
+    top: 30% ;
+    transform: translateY(-50%);
+    z-index: -1;
+    height: 2px;
+    object-fit: contain;
+    /* border: 1px dashed black; */
+}
+.dottedLine2{
+    display: none;
+}
 @media screen and (max-width:680px) {
 
     .main{
@@ -19,5 +32,26 @@
         margin-right: auto;
         /* align-items: baseline; */
     }
+    .dottedLine{
+        display: none;
+    }
+    .dottedLine2{
+        position: absolute;
+        display: block;
+        display: none;
+        align-self: flex-start;
+        /* left: 2; */
+        left: 25vw;
+        /* transform: translateX(-50%); */
+        z-index: -1;
+        width: 2px;
+        height: 90%;
+        /* left: 10; */
+        
+    }
+    .dottedLine2 img{
+        object-fit: contain;
+    }
+
     
 }

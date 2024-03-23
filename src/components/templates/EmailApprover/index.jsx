@@ -41,7 +41,7 @@ const UploadRequestHandlerComp = ({ client, owner, status }) => {
                 Owner Information
               </h1>
               <h1 className={style.heading}>
-                Date-{owner?.date?.toDate().toString()}
+                Date-{owner?.date?.toDate().toString().slice(0,16)}
               </h1>
               <h1 className={style.heading}>Location-{owner.location}</h1>
               <h1 className={style.heading}>Email-{owner.email}</h1>
@@ -52,7 +52,7 @@ const UploadRequestHandlerComp = ({ client, owner, status }) => {
                 Client Information
               </h1>
               <h1 className={style.heading}>
-                Date-{client?.date?.toDate().toString()}
+                Date-{client?.date?.toDate().toString().slice(0,16)}
               </h1>
               <h1 className={style.heading}>Name-{client.name}</h1>
               <h1 className={style.heading}>Email-{client.email}</h1>

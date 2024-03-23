@@ -5,7 +5,7 @@ import { AnimatePresence,motion } from "framer-motion";
 import Image from "next/image";
 import Button from "../../atoms/button";
 import { useState } from "react";
-const DonateServiceForm = () => {
+const DonateServiceForm = ({href}) => {
        const [submitted,setSubmitted] = useState(false)
 const [data,setData] = useState({})
     const dataSetter = (e) =>{
@@ -29,15 +29,18 @@ const [data,setData] = useState({})
                 </div>
             </div>
             <InputField type="textarea" height={100} onChange={dataSetter}  placeholder={"ENTER SERVICE*"}></InputField>
-            <Button href={""} onClick={()=>{
+            <Button  onClick={()=>{
+
                 setSubmitted(true)
-                window.location.href="https://buy.stripe.com/test_9AQg05cSu2p1gAU4gg"
+                if(href!=""){
+                    window.location.href=href
+                }
             }} content={"Submit"}></Button>
 </>:<>
 
             <motion.div  initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}}className={style.main5}>
                 <Image src={"/Icon/4.png"} width={190} height={190}></Image>
-                <h1 className="heading">Thank you for submitting the form</h1>
+                <h1 className={style.heading}>Thank you for your generous offer to donate your service. We will notify you as soon as an opportunity comes up, and you can confirm your intent to donate. We appreciate your support!</h1>
             </motion.div>
 </>
 } 

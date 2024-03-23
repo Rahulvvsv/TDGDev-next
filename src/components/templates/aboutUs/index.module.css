@@ -1,0 +1,36 @@
+.name{
+    font-family: Montserrat;
+font-size: 24px;
+font-weight: 400;
+line-height: 29.26px;
+letter-spacing: -0.09527089446783066px;
+text-align: center;
+color:#797572;
+border-top: 1px solid #797572;
+border-bottom: 1px solid #797572;
+padding-top: 30px !important;
+padding-bottom: 30px !important;
+}
+.divs{
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+@media screen and (max-width:420px) {
+    .name{
+        font-family: Montserrat;
+font-size: 16px;
+font-weight: 400;
+line-height: 19.5px;
+letter-spacing: -0.09527089446783066px;
+text-align: center;
+border: none;
+padding: 0px !important;
+    }
+    .divs{
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+    }
+    
+}

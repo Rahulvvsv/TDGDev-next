@@ -13,24 +13,26 @@ const Footer = () => {
 
             <div className={style.main2}>
                 <h1 className={style.mainHeading}>Company</h1>
-                <Link href={""}>
+                <Link href={"/"}>
                 <h1 className={style.subHeading}>Home</h1>
                 </Link>
-                <Link href={""}>
+                <Link href={"/aboutUs"}>
                 <h1 className={style.subHeading}>About Us</h1>
                 </Link>
-                <Link href={""}>
+                <Link href={"/contactUs"}>
                 <h1 className={style.subHeading}>Contact Us</h1>
                 </Link>
             </div>
 
             <div className={style.main2}>
 
+                <Link href={"/services"}>
                 <h1 className={style.mainHeading}>Services</h1>
-                <Link href={""}>
+                </Link>
+                <Link href={"/"}>
                 <h1 className={style.subHeading}>Location</h1>
                 </Link>
-                <Link href="">
+                <Link href="/services/donateFurniture">
                 <h1 className={style.subHeading}>Donate</h1>
                 </Link>
             </div>
@@ -39,16 +41,16 @@ const Footer = () => {
 
             <div className={style.main2}>
                 <div className={style.main3}>
-                    <Image src={"/Icon/globe.png"} width={16} height={16}></Image>
+                    <Image src={"/Icon/globe.png"} width={16} height={16} objectFit="cover"></Image>
                     <h1 className={style.subHeading}>info@mysite.com</h1>
                 </div>
                 <div className={style.main3}>
-                    <Image src={"/Icon/phone.png"} width={16} height={16}></Image>
+                    <Image src={"/Icon/phone.png"} width={16} height={16}objectFit="cover"></Image>
                     <h1 className={style.subHeading}>Tel: 123-456-7890</h1>
                 </div>
-                <div className={style.main3}>
-                    <Image src={"/Icon/map.png"} width={16} height={16}></Image>
-                    <h1 className={style.subHeading}>500 Terry Francine St.San Francisco CA 94158</h1>
+                <div className={style.main3+ " "+style.main9}>
+                    <Image src={"/Icon/map.png"} width={16} height={16}objectFit="cover"></Image>
+                    <h1 className={style.subHeading } >500 Terry Francine St.San Francisco CA 94158</h1>
                 </div>
             </div>
 
@@ -57,7 +59,7 @@ const Footer = () => {
                 <h1 className={style.mainHeading}>Follow us</h1>
                 <div className={style.main4}>
                     <Link href={""}>
-                    <Image src={"/Icon/facebook.png"} width={32} height={32}></Image>
+                    <Image src={"/Icon/facebook.png"} width={32} height={32} ></Image>
                     </Link>
                     
                     <Link href={""}>

@@ -1,6 +1,6 @@
-import DonateMoney from "@/components/templates/donateMoney";
+import DonateFurniture from "@/components/templates/donateFurniture";
 const index = () => {
-    return (  <DonateMoney></DonateMoney>);
+    return (  <DonateFurniture></DonateFurniture>);
 }
  
 export default index;

@@ -7,6 +7,7 @@
     margin-bottom: 30px;
     /* border: 1px solid black; */
     margin-top: 30px;
+    overflow-x: scroll;
 }
 
 .heading{
@@ -16,7 +17,7 @@ font-size: 18px;
 font-weight: 400;
 line-height: 25.2px;
 text-align: left;
-
+/* width: 320px; */
 }
 
 .buttons{
@@ -105,9 +106,30 @@ text-align: left;
 .rightop2{
     display: flex;
     /* width: ; */
-    width: 1000px;
+    /* padding-bottom: 20px; */
     gap: 40px;
 }
 .heading2{
     font-weight: 600;
+}
+
+
+@media screen and (max-width:420px) {
+    .heading{
+        font-size: 16px;
+    }
+
+    .buttons{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+.rightop2{
+    /* width:         300px !important; */
+    overflow-y: hidden;
+    /* overflow-x: scroll !important; */
+    width: 700px;
+    /* background-color: red; */
+    /* padding-bottom: 20px !important; */
+}
 }

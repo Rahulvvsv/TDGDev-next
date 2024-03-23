@@ -55,7 +55,7 @@ const LocationsGrid = () => {
         <br></br>
         <br></br>
 
-        <Button width={"40%"} content={"SEE ALL FURNITURE"} href={"/services/getFurniture/all"}></Button>
+        <Button width={"60%"} content={"SEE ALL FURNITURE"} href={"/services/getFurniture/all"}></Button>
     </div>
       );
 }

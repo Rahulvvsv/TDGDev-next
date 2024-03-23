@@ -13,17 +13,17 @@ const DonateFurniture = ({leftHeading,leftCont,leftImg,rightCont,rightHeading,ri
                 <div className={style.image}>
                     <Image src={leftImg} fill></Image>
 
-                    <div className={style.divdiv}>
+                    {/* <div className={style.divdiv}>
 
-                    </div>
+                    </div> */}
                 </div>
             </div>
             <div data-aos="fade-left" data-aos-duration="400" className={style.right}>
                 <div className={style.image}>
                     <Image src={rightImg} fill></Image>
-                    <div className={style.divdiv}>
+                    {/* <div className={style.divdiv}>
 
-                    </div>
+                    </div> */}
 
                 </div>
                 <h1 className={style.desc}>{rightCont}</h1>

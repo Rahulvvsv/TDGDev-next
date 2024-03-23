@@ -67,7 +67,7 @@ const MobileHeader = ({ toggler }) => {
           }}
           className={style.name}
         >
-          Contact
+         Contact 
         </h1>
       </div>
     </div>

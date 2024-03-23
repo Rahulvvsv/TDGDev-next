@@ -11,8 +11,10 @@
   flex-direction: column;
   gap: 30px;
 
+  margin-top: 15px;
   height: 600px;
   overflow-y: scroll;
+  scrollbar-width: thin !important; 
 }
 .right {
   padding-left: 20px !important;

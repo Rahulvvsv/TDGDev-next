@@ -12,10 +12,12 @@
     width: 600px !important;
     height: 500px;
     /* object-fit: contain; */
+    border-radius: 8px;
 }
 
 .image > img{
     object-fit: cover;
+    border-radius: 8px;
 }
 
 .main2{
@@ -84,15 +86,21 @@
         object-fit: cover;
     }
     .imageDiv{
+        display: block;
+        /* width: 100vw; */
         width: 100%;
-        position: relative;
         height: 100%;
-        background:linear-gradient(rgba(0,0,0,0),#92877B);
+        top: 0;
+        left: 0;
+        position: absolute;
+        /* height: 700px; */
+        background:linear-gradient(#92877b00,#92877B);
         z-index: 1;
     }
 
     .main2{
         width: 100%;
+        position: relative;
         display: block;
     }
 
@@ -103,7 +111,7 @@
         bottom: 30px;
         /* margin-left: 50%; */
 
-        left: 30%;
+        left: 30%;z-index: 2;
 
         /* transform: translateX(-50%) !important; */
     }

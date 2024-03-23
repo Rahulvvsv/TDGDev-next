@@ -6,15 +6,15 @@ import Image from "next/image";
 import { useState } from "react";
 import { AnimatePresence,motion } from "framer-motion";
 import { upLoadData } from "../../../lib/firebase";
-const UploadForm = () => {
+const   UploadForm = () => {
     const [data,setData] = useState({})
     const [submitted,setSubmitted] = useState(false)
+    const [imageUploaded,setImageUploaded] = useState(false)
     const dataSetter = (e) =>{
         e.preventDefault();
         let name = e.target.name;
         let value = e.target.value;
         setData(prev => ({...prev,[name]:value}))
-        console.log(data)
     }
      const handleImageChange = (e) => {
     const imageFile = e.target.files;
@@ -23,6 +23,7 @@ const UploadForm = () => {
       ...prevData,
       image: imageFile
     }));
+            setImageUploaded(true);
   };
      const handleSubmit = async (e) => {
         e.preventDefault();
@@ -37,10 +38,15 @@ const UploadForm = () => {
 { !submitted?<motion.div layout initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}} className={style.main}>
             <div className={style.left}>
                 <div className={style.imageUpload}>
-                    <label htmlFor="files" className="btn"><Image src={"/Icon/plus.png"} width={78} height={78}></Image></label>
-                    <input name="image" onChange={handleImageChange} id="files" style={{visibility:"hidden"}} type="file"/>
+                    <label htmlFor="files" className={style.inputs123} ><Image src={"/Icon/plus.png"} width={78} height={78}></Image></label>
+                    <input name="image" onChange={handleImageChange}  id="files" style={{visibility:"hidden"}} accept="image/*"type="file"/>
                     <h1 className={style.heading}>UPLOAD IMAGE</h1>
                 </div>
+                <br />
+                    {imageUploaded &&
+
+                    <h1 className={style.heading}>Image is uploaded</h1>
+                    }
             </div>
 
             <motion.div  className={style.right}>

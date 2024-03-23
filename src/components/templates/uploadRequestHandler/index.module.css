@@ -101,3 +101,15 @@ text-align: left;
     margin-top: 20px;
     /* justify-content: center; */
 }
+
+@media screen and (max-width:420px) {
+    .heading{
+        font-size: 16px;
+    }
+
+    .buttons{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+}

@@ -16,6 +16,9 @@ const AboutUs = () => {
             <section>
                 <MissionSecondHeader></MissionSecondHeader>
             </section>
+            <section className={style.divs}>
+                <h1 className={style.name}>We Connect People and Furniture</h1>
+            </section>
             <section style={{marginBottom:20,marginTop:20}}>
                 <InfiniteSwiper></InfiniteSwiper>
             </section>

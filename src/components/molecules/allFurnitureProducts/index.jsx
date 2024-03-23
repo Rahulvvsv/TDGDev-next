@@ -18,7 +18,8 @@ const AllFurnitureProducts = ({ data }) => {
                 ></FurnitureComp>
                 );
             }
-      })}
+          })}
+          {data.length ==0 && <h1 style={{height:"50vh"}}>No Data here</h1>}   
     </div>
   );
 };

@@ -4,7 +4,7 @@ import Header from "../../molecules/header";
 import Footer from "../../molecules/footer";
 
 export default{
-    title:"Templates/DonateService",
+    title:"Templates/DonateUs",
     component:DonatePage
     
 }

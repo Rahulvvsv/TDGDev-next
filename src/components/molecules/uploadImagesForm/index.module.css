@@ -18,7 +18,9 @@
     flex-direction: column;
     gap: 40px;
 }
-
+.inputs123:hover{
+    cursor: pointer;
+}
 .imageUpload{
     width:70%;
     height: 300px;

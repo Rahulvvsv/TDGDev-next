@@ -34,3 +34,14 @@ body{
     border: 0px solid black;
     width: 500px;
 } */
+select{
+    /* padding-right: 20px !important; */
+    /* background-color: red; */
+
+}
+::-webkit-scrollbar {
+    /* width: 2em; */
+    /* width: 15px; */
+    width: thin;
+    /* height: 2em */
+}

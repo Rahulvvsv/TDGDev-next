@@ -13,7 +13,13 @@
     align-items: center;
     flex-direction: column;
     width: 100%;
+    padding: 40px !important;
+    border-radius: 8px !important;
+    /* background-color: red; */
 
+}
+.main p{
+    text-align: center;
 }
 
 .main2{

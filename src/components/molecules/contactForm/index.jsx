@@ -15,13 +15,14 @@ const ContactForm = () => {
     }
     return ( 
         <div className={style.main}>
-            <div className={style.main2}>
+
+            <form className={style.main2}>
                 
                 <InputField onChange={dataSetter} placeholder={"NAME*"} name={"name"}></InputField>
                 <InputField onChange={dataSetter} placeholder={"EMAIL*"} name={"email"}></InputField>
                 <InputField onChange={dataSetter} placeholder={"MESSAGE*"} name={"message"} height={70} type="text-area"></InputField>
                 <Button href={""} content={"SEND MESSAGE"} width={"100%"}></Button>
-            </div>
+            </form>
             <div className={style.main3}>
                 <div className={style.main4}>
                     <Image src={"/Icon/globe.png"} width={16} height={16}></Image>

@@ -28,8 +28,12 @@
 .main3{
     display: flex;
     flex-direction: column;
+    
     gap: 10px;
     width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    /* background-color: red; */
 }
 
 .main4{
@@ -58,7 +62,7 @@
     }
 
     .main3{
-        width: 100%;
+        width: 90%;
     }
     
 }
