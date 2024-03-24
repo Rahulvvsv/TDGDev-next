@@ -47,7 +47,9 @@
     font-weight: 400;
     font-size: 18px;
 }
-
+.error{
+    color: red;
+}
 @media screen and (max-width:600px) {
 
     .main{

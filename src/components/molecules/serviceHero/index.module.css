@@ -1,69 +1,67 @@
-.main{
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    /* gap: 20px; */
-    justify-content: space-between;
+.main {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  /* gap: 20px; */
+  justify-content: space-between;
 }
 
-
-.image{
-    position: relative;
-    height: 350px;
-    width: 30%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 8px;
+.image {
+  position: relative;
+  height: 350px;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
 }
 
-.imageCont{
+.imageCont {
+  width: 100%;
+  border-radius: 8px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(rgba(146, 135, 123, 0), rgba(146, 135, 123, 1));
+}
+.image a {
+  position: relative;
+  z-index: 3;
+}
+
+.image img {
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.image > div:last-child >div::before  {
+    /* width: 100%; */
+  /* background-color: red !important; */
+  border-radius: 4px;
+}
+
+@media screen and (max-width: 860px) {
+  .main {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main {
+    flex-direction: column;
+    height: 90vh;
+    gap: 30px;
+  }
+
+  .image {
     width: 100%;
-    border-radius: 8px;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: linear-gradient(rgba(146, 135, 123, 0),rgba(146, 135, 123, 1));
-}
-.image a{
-    position: relative;
-    z-index: 3;
-}
+    align-items: flex-end;
+    padding-bottom: 20px !important;
+  }
 
-
-
-.image img{
-    object-fit: cover;
-    border-radius: 8px;
-}
-
-
-@media screen and ( max-width:860px) {
-
-    .main{
-        width: 95%;
-    }
-    
-}
-
-
-@media screen and (max-width:600px) {
-
-    .main{
-        flex-direction: column;
-        height: 90vh; 
-        gap: 30px;
-    }
-
-    .image{
-        width: 100%;
-        align-items: flex-end;
-        padding-bottom: 20px !important;
-    }
-   
-    .image a{
-        width: 90% !important;
-    }
+  .image a {
+    width: 90% !important;
+  }
 }

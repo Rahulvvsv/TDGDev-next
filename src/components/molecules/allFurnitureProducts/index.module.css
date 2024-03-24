@@ -1,13 +1,30 @@
 .mains{
     display: flex;
-    gap: 30px;
+    gap: 16px;
+    row-gap: 16px !important;
     flex-wrap: wrap;
+    /* background-color: red; */
 }
 
 @media screen and (max-width:420px) {
     .mains{
+        /* background-color: red; */
+        width: 100% !important;
         gap: 0px;
         margin-bottom: 20px !important;
+    }
+    .mains>div{
+        align-items: flex-start !important;
+        /* background-color: red; */
+        /* align-items: center !important; */
+        /* align-items: flex-start !important; */
+        /* background-color: red; */
+    }
+    .mains> div >div {
+        /* width: 50% !important; */
+        width: 95% !important;
+       /* background-color: red;  */
+
     }
     
 }

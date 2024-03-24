@@ -53,3 +53,14 @@
     flex-direction: column;
   }
 }
+
+
+@media screen and (max-width:420px) {
+
+  .right{
+    /* background-color: blue; */
+    padding: 0px !important;
+    width: 100% !important;
+  }
+  
+}

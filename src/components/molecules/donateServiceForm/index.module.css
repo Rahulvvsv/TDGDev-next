@@ -1,4 +1,8 @@
+.error{
+    color: red;
+}
 .main{
+
     display: flex;
     width: 80%;
     margin-left: auto !important;

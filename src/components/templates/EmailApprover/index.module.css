@@ -23,6 +23,8 @@ text-align: left;
 .buttons{
     display: flex;
     gap: 16px;
+    position: absolute;
+    bottom: 20px;
 }
 
 .right{
@@ -100,7 +102,7 @@ text-align: left;
     display: flex;
     gap: 16px;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 40px;
     /* justify-content: center; */
 }
 
@@ -108,12 +110,17 @@ text-align: left;
     display: flex;
     /* width: ; */
     /* padding-bottom: 20px; */
-    gap: 40px;
+    gap: 80px;
+    margin-bottom: 20px;
 }
 .heading2{
     font-weight: 600;
 }
-
+.rightop{
+    position: relative;
+    height: 380px;
+    /* height: 100% !important; */
+}
 
 @media screen and (max-width:420px) {
     .heading{
@@ -139,5 +146,8 @@ text-align: left;
     /* background-color: red; */
     /* margin-top: 5px; */
     width: 200px !important;
+}
+.rightop{
+    height: 360px;
 }
 }

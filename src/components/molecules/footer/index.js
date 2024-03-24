@@ -7,9 +7,11 @@ const Footer = () => {
 
        <div className={style.main}>
 
-            <div className={style.imageDiv}>
+            <Link href="/">
+            <div className={style.imageDiv} onClick={()=>{}}>
                 <Image src={"/Icon/4.png"} fill style={{objectFit:"cover"}}></Image>
             </div>
+            </Link>
 
             <div className={style.main2}>
                 <h1 className={style.mainHeading}>Company</h1>
@@ -29,10 +31,10 @@ const Footer = () => {
                 <Link href={"/services"}>
                 <h1 className={style.mainHeading}>Services</h1>
                 </Link>
-                <Link href={"/"}>
+                <Link href={"/services/getFurniture"}>
                 <h1 className={style.subHeading}>Location</h1>
                 </Link>
-                <Link href="/services/donateFurniture">
+                <Link href="/services/">
                 <h1 className={style.subHeading}>Donate</h1>
                 </Link>
             </div>

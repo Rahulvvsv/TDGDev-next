@@ -1,47 +1,58 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
- *{
-    margin: 0px;
-    padding: 0px !important ;
-    font-family: Montserrat;
-    /* overflow-x: hidden; */
-    box-sizing:border-box;
-    /* overflow-x: hidden; */
-
+* {
+  margin: 0px;
+  padding: 0px !important ;
+  font-family: Montserrat;
+  /* overflow-x: hidden; */
+  box-sizing: border-box;
+  /* overflow-x: hidden; */
 }
-::placeholder{
-    color:rgba(146, 135, 123, 1);
-    /* position: absolute; */
-    font-size: 12px !important;
-    /* top:kj20px; */
-
-
+::placeholder {
+  color: rgba(146, 135, 123, 1);
+  /* position: absolute; */
+  font-size: 12px !important;
+  /* top:kj20px; */
 }
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
-.mainss{
-    overflow-x: hidden;
+.mainss {
+  overflow-x: hidden;
 }
 
-body{
-    overflow-x: hidden;
+body {
+  overflow-x: hidden;
 }
-.swiper-wrapper { transition-timing-function: linear !important; }
+.swiper-wrapper {
+  transition-timing-function: linear !important;
+}
 /* .overlay{
     border: 0px solid black;
     width: 500px;
 } */
-select{
-    /* padding-right: 20px !important; */
-    /* background-color: red; */
-
+select {
+  padding-right: 20px !important;
+  /* display: none; */
+  /* background-color: red; */
+}
+select {
+  -moz-appearance: none; /* Firefox */
+  -webkit-appearance: none; /* Safari and Chrome */
+  appearance: none;
+  background: transparent;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='rgba(146, 135, 123, 1)' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+  background-repeat: no-repeat;
+  background-position-x: 98.5%;
+  background-position-y: 10px;
+  border: 1px solid rgba(146, 135, 123, 1);
+  border-radius: 2px;
+  margin-right: 2rem !important;
+  /* padding: 1rem; */
+  padding-right: 3rem !important;
 }
 ::-webkit-scrollbar {
-    /* width: 2em; */
-    /* width: 15px; */
-    width: thin;
-    /* height: 2em */
+  width: thin;
 }

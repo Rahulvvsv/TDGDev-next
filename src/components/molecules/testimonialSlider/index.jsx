@@ -27,7 +27,7 @@ export default function App() {
             setSlidesPerView(1.4);
         } 
         else {
-        setSlidesPerView(2.4);
+        setSlidesPerView(2.9);
       }
     };
 
@@ -47,7 +47,7 @@ export default function App() {
   return (
     <>
       <Swiper
-        spaceBetween={10}
+        spaceBetween={1}
         centeredSlides={true}
         slidesPerView={slidesPerView}
       
@@ -71,6 +71,15 @@ export default function App() {
             )
           })
         } */}
+            <SwiperSlide>
+        <SingleTestimonial index={0}  testimonial={"Furniture exchange was smooth and perfect and very nice wow fantastic delivery service loved the process furniture also was nice not damaged and fast delivery"}  name={"Aaryaa Joshi"} surname={"Baltimore"} ></SingleTestimonial>
+        </SwiperSlide>
+            <SwiperSlide>
+        <SingleTestimonial index={0}  testimonial={"Furniture exchange was smooth and perfect and very nice wow fantastic delivery service loved the process furniture also was nice not damaged and fast delivery"}  name={"Aaryaa Joshi"} surname={"Baltimore"} ></SingleTestimonial>
+        </SwiperSlide>
+            <SwiperSlide>
+        <SingleTestimonial index={0}  testimonial={"Furniture exchange was smooth and perfect and very nice wow fantastic delivery service loved the process furniture also was nice not damaged and fast delivery"}  name={"Aaryaa Joshi"} surname={"Baltimore"} ></SingleTestimonial>
+        </SwiperSlide>
             <SwiperSlide>
         <SingleTestimonial index={0}  testimonial={"Furniture exchange was smooth and perfect and very nice wow fantastic delivery service loved the process furniture also was nice not damaged and fast delivery"}  name={"Aaryaa Joshi"} surname={"Baltimore"} ></SingleTestimonial>
         </SwiperSlide>

@@ -30,7 +30,7 @@ const InputField = ({ placeholder, height, onChange, name, type = "text" }) => {
 
       {type == "dropdown" && (
         <select  name="location" className={style.inputs} onChange={onChange}>
-          <option className={style.inputs} >Location</option>
+          <option className={style.inputs} >LOCATION</option>
           {locationsData.map((option, index) => (
             <option className={style.inputs} key={index} value={option}>
               {option}
