@@ -47,7 +47,7 @@ export default function App() {
   return (
     <>
       <Swiper
-        spaceBetween={1}
+        spaceBetween={10}
         centeredSlides={true}
         slidesPerView={slidesPerView}
       

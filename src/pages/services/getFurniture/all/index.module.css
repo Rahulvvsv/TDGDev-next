@@ -29,6 +29,9 @@
 
   color: #292929;
 }
+.back{
+  display: none;
+}
 
 @media screen and (max-width: 1300px) {
   .left {
@@ -51,6 +54,12 @@
   }
   .main {
     flex-direction: column;
+  }
+  .back{
+    display: flex;
+    background-color: #797572 ;
+    color: white;
+
   }
 }
 

@@ -8,6 +8,7 @@ const index = ({data}) => {
     return (
         <section className={style.main}>
           <section className={style.left}>
+            <Link href={"/"} className={style.lists+" " +style.back}>All</Link>
               {locationsData.map((e,key)=>{
                 
               return  <Link href={"/services/getFurniture/"+e} key={key} className={style.lists}>{e}</Link>
