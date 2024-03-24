@@ -7,7 +7,7 @@ const Footer = () => {
 
        <div className={style.main}>
 
-            <Link href="/">
+            <Link href="/" className={style.imageDivtop}>
             <div className={style.imageDiv} onClick={()=>{}}>
                 <Image src={"/Icon/4.png"} fill style={{objectFit:"cover"}}></Image>
             </div>

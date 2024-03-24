@@ -163,6 +163,9 @@
 }
 
 @media screen and (max-width: 420px) {
+  .imageDivtop{
+    display: none;
+  }
   .main {
     justify-content: space-between;
     margin-top: 0px;
