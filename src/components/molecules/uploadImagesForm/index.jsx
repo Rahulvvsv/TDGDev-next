@@ -197,7 +197,7 @@ const UploadForm = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-            const captchaValue = captcha.current.getValue()
+            // const captchaValue = captcha.current.getValue()
         if (validateForm()) {
 
             upLoadData(data);
