@@ -11,6 +11,10 @@
     text-align: center  ;
     background-color: #948F8C;
 }
+
+.main > div {
+    width: 80%;
+}
 .swiper {
   width: 100%;
 }
@@ -57,6 +61,9 @@ line-height: 14.63px;
 letter-spacing: -0.09527089446783066px;
 text-align: center;
 
+    }
+    .main > div{
+        width: 90%;
     }
     
 }
