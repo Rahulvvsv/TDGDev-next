@@ -7,18 +7,42 @@ import style from "./index.module.css"
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-
+import { useEffect, useState } from "react";
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
 export default function App() {
+  const [slidesPerView,setSlidesPerView] = useState(4)
+  useEffect(() => {
+    const handleResize = () => {
+        if (window.innerWidth<420){
+            setSlidesPerView(2.3);
+          }
+        else {
+        setSlidesPerView(4);
+      }
+    };
+
+    // const delay = 1 * 90;
+    // const timeoutId = setTimeout(() => {
+    //   setIsVisible(true);
+    // }, delay);
+    
+    handleResize();
+    
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+      // clearTimeout(timeoutId);
+    };
+  }, []);
   return (
     <>
       <Swiper
         spaceBetween={10}
         // centeredSlides={true}
         // loopedSlides={8}
-        slidesPerView={4}
+        slidesPerView={slidesPerView}
         a11y={false}
         autoplay={{
             delay:0.5,

@@ -2,9 +2,13 @@ import style from "./index.module.css"
 
 import DonateFurniture from "../../molecules/donateFurniture";
 import DonateMoneyForm from "@/components/molecules/donateMoneyForm";
+import BackButton from "@/components/molecules/backButton";
 const DonateService = ({content="Service",href=""}) => {
     return (  
         <section>
+            <section>
+                <BackButton></BackButton>
+            </section>
             <section>
             <DonateMoneyForm href={href} ></DonateMoneyForm>
             </section>

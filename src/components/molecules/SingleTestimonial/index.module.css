@@ -78,36 +78,41 @@
   .main {
     /* width: 80%; */
     width: 328px;
-    height: 302px;
+    height: 302px !important;
   }
   .heading {
     font-family: Montserrat;
-    font-size: 14px;
+    font-size: 14px !important;
     font-weight: 400;
     line-height: 19.6px;
     text-align: left;
+/* width: 84% !important; */
+width: 265px !important;
   }
   .name{
     font-family: Montserrat;
-font-size: 14px;
+font-size: 14px !important;
 font-weight: 500;
 line-height: 16.2px;
 letter-spacing: -0.12600000202655792px;
 text-align: left;
+/* width: 75% !important; */
+margin-top: 10px !important;
 
   }
   .surname{
     font-family: Montserrat;
 font-size: 12px;
-font-weight: 500;
+font-weight: 600;
 line-height: 14.4px;
 letter-spacing: -0.10799999535083771px;
 text-align: left;
 
   }
   .image{
-    width:25px !important;
-    height: 24px !important;
+    width:36px !important;
+    height: 27px !important;
+    margin-top: 25px;
   }
   .image img{
 

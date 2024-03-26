@@ -26,7 +26,12 @@ const MobileHeader = ({ toggler }) => {
         >
           Home
         </h1>
-        <h1 className={style.name}>Services</h1>
+        <h1
+            onClick={() => {
+              toggler(false);
+            setTimeout(()=>{router.push("/services")},1000)
+            }}
+         className={style.name}>Services</h1>
         <div className={style.subnames}>
           <h1
             href={"/services"}

@@ -1,7 +1,7 @@
 .mains{
     display: flex;
     gap: 16px;
-    row-gap: 16px !important;
+    row-gap: 24px !important;
     flex-wrap: wrap;
     /* background-color: red; */
 }
