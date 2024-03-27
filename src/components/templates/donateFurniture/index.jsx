@@ -13,7 +13,7 @@ const DonateFurnitureForm = () => {
                 <UploadForm></UploadForm>
             </section>
             <section className={style.main2}>
-             <DonateFurniture leftHeading={"Donate Furniture"} leftCont={"Our furniture exchange service provides a platform to donate your furniture you no longer need."} leftImg={"/donate/8.png"} rightImg={"/donate/5.png"} rightCont={"Donating your unwanted furniture can bring joy to someone who truly needs it. Say goodbye to your unused furniture and give it a new life!"}></DonateFurniture>
+             <DonateFurniture leftHeading={"Donate Furniture"} leftCont={"Our furniture exchange service provides a platform to donate your furniture you no longer need."} leftImg={"/services/Images2/donate furniture.png"} rightImg={"/donate/5.png"} rightCont={"Donating your unwanted furniture can bring joy to someone who truly needs it. Say goodbye to your unused furniture and give it a new life!"}></DonateFurniture>
             </section>
         </section>
     );

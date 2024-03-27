@@ -38,6 +38,22 @@ const Footer = () => {
                 <h1 className={style.subHeading}>Donate</h1>
                 </Link>
             </div>
+            
+            <div className={style.mainsomething}>
+                <Link href={"/"}>
+                    <h1 className={style.subHeading}>Home</h1>
+                </Link>
+                <Link href={"/aboutUs"}>
+                    <h1 className={style.subHeading}>About Us</h1>
+                </Link>
+
+                <Link href={"/contactUs"}>
+                    <h1 className={style.subHeading}>Contact Us</h1>
+                </Link>
+                <Link href={"/services"}>
+                    <h1 className={style.subHeading}>Services</h1>
+                </Link>
+            </div>
             <div className={style.main7}>
             </div>
 

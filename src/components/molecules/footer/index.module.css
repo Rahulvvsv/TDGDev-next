@@ -20,7 +20,6 @@
   /* padding-top: 10px !important; */
 }
 
-
 .main2 {
   display: flex;
   flex-direction: column;
@@ -32,11 +31,11 @@
   display: flex;
   flex-direction: row;
   width: 250px;
-  min-height: 22px !important;  
+  min-height: 22px !important;
   align-items: center;
   gap: 5px;
 }
-.main9{
+.main9 {
   /* margin-top: 20px ; */
   /* padding-top: 10px !important; */
   /* align-self: self-end; */
@@ -44,9 +43,8 @@
   align-items: flex-start;
   /* background-color: red; */
 }
-.main9  img{
+.main9 img {
   margin-top: 4px;
-
 }
 .main3 img {
   /* margin-top: 6px; */
@@ -67,7 +65,7 @@
   gap: 15px;
 }
 
-.main4 img{
+.main4 img {
   object-fit: contain;
 }
 
@@ -97,6 +95,10 @@
 
 .main5 h1 {
   font-size: 14px;
+
+}
+.mainsomething{
+  display: none;
 }
 
 @media screen and (max-width: 700px) {
@@ -107,6 +109,7 @@
     margin: 0px;
     border-top: 0px;
     flex-wrap: wrap;
+    /* margin-top: 20px !important; */
     /* width: 90%;
     margin-left: auto;
     margin-right: auto; */
@@ -122,6 +125,7 @@
     /* background-color: red !important; */
     /* border-bottom: 1px solid #92877B; */
     width: 45%;
+    display: none;
     margin-left: 3px;
     /* background-color: red; */
   }
@@ -130,6 +134,7 @@
     text-align: right;
     /* background-color: red !important; */
     width: 45%;
+    display: none;
     margin-right: 3px;
   }
   .main7 {
@@ -139,7 +144,7 @@
     width: 100%;
     border-bottom: 1px solid #92877b;
   }
-  .main2:nth-child(5) {
+  .main2:nth-child(6) {
     /* align-items: right;
         text-align: right; */
     /* background-color: red !important; */
@@ -150,13 +155,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    /* background-color: red; */
     margin-bottom: 30px;
   }
-  .main2:nth-child(6) {
+  .main2:nth-child(7) {
     width: 100%;
     display: flex;
     align-items: center;
     /* transform: translateX(-40px); */
+    /* background-color: red; */
   }
   .main6 {
     display: none;
@@ -169,62 +177,79 @@
     margin-right: auto;
     justify-content: center;
   }
+  .mainHeading {
+    display: none;
+  }
+  .mainsomething{
+    display: flex !important;
+    width: 90%;
+    /* height: 100px; */
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    
+    /* background-color: #292929; */
+  }
+  .main3 {
+    /* transform: translateX(30px);
+    background-color: red;
+    width: 250px; */
+  }
+  .main9 {
+    align-self: initial;
+    align-items: initial;
+  }
+  .main3 {
+    transform: translateX(30px);
+    width: 250px;
+    /* background-color: red; */
+  }
+  
 }
 
 @media screen and (max-width: 420px) {
-  .imageDivtop{
+  .imageDivtop {
     display: none;
   }
   .main {
     justify-content: space-between;
     margin-top: 0px;
     padding-top: 10px !important;
+    /* padding-bottom: 20px !important; */
   }
 
   .main2:nth-child(2) {
-    /* background-color: red !important; */
-    /* border-bottom: 1px solid #92877B; */
-    /* width: 50%; */
-    /* background-color: red; */
     padding-left: 15px !important;
   }
   .main2:nth-child(3) {
     align-items: right !important;
     align-self: right !important;
     text-align: right !important;
-    /* background-color: red; */
-    /* align-self: flex-end; */
     padding-right: 15px !important;
-    /* background-color: red !important; */
-    /* width: 50%; */
-  }
-  .main2:nth-child(5) h1 {
-    /* background-color: red; */
   }
   .main2:nth-child(5) {
     align-items: center;
     justify-content: center;
-    /* background-color: red; */
-    /* padding-left: 80px !important; */
   }
 
   .main3 {
-    /* background-color:blue; */
-    /* width: auto; */
     transform: translateX(30px);
     width: 250px;
+    /* background-color: red; */
   }
   .main2:nth-child(3) h1 {
     text-align: right !important;
-    /* background-color: red; */
   }
 
-  .main2:nth-child(5){
+  .main2:nth-child(5) {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center !important;
+  }
+  .main2:nth-child(7) {
+    padding-top: 0px !important;
   }
   .mainHeading {
     font-family: Montserrat;
@@ -240,12 +265,8 @@
     line-height: 19.5px;
     text-align: left;
   }
-.main9{
-  /* margin-top: 20px ; */
-  /* padding-top: 10px !important; */
-  /* align-self: self-end; */
-  align-self:initial;
-  align-items: initial;
-  /* background-color: red; */
-}
+  .main9 {
+    align-self: initial;
+    align-items: initial;
+  }
 }

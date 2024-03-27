@@ -6,6 +6,8 @@
     justify-content: space-between;
     /* flex-wrap: wrap; */
     position: relative;
+    /* margin-top: 30px ; */
+    /* background-color: red; */
 }
 .myswiper{
     width: 90% ;

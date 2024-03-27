@@ -24,32 +24,32 @@ const LocationsGrid = () => {
         <>
             <div className={style.main2}>
                 <LocationGridSingle  href="Baltimore"></LocationGridSingle>
-                <LocationGridSingle href="Cleveland" location="cleveland.jpg" name="Cleveland" ></LocationGridSingle>
-                <LocationGridSingle href="Jerusalem"  location="jerusalem.jpg" name="Jerusalem" ></LocationGridSingle>
+                <LocationGridSingle href="Cleveland" location="cleveland.png" name="Cleveland" ></LocationGridSingle>
+                <LocationGridSingle href="Jerusalem"  location="jerusalem.png" name="Jerusalem" ></LocationGridSingle>
 
             </div>
             <div className={style.main2}>
-                <LocationGridSingle href="Los Angeles" location="la.jpg" name="Los Angeles" ></LocationGridSingle>
-                <LocationGridSingle  href="Lakewood" location="lakewood.jpg" name="LakeWood"></LocationGridSingle>
-                <LocationGridSingle href="Miami" location="miami.jpg" name="Miami"></LocationGridSingle>
+                <LocationGridSingle href="Los Angeles" location="LA.png" name="Los Angeles" ></LocationGridSingle>
+                <LocationGridSingle  href="Lakewood" location="8.png" name="LakeWood"></LocationGridSingle>
+                <LocationGridSingle href="Miami" location="miami.png" name="Miami"></LocationGridSingle>
             </div>
             <div className={style.main2}>
-                <LocationGridSingle href="New Jersey" location="newjersey.jpg" name="New Jersey" ></LocationGridSingle>
-                <LocationGridSingle href="New York" location="newyork.jpg" name="New York"></LocationGridSingle>
-                <LocationGridSingle href="Toronto" location="toronto.jpg" name="Toronto"></LocationGridSingle>
+                <LocationGridSingle href="New Jersey" location="NJ.png" name="New Jersey" ></LocationGridSingle>
+                <LocationGridSingle href="New York" location="new york.png" name="New York"></LocationGridSingle>
+                <LocationGridSingle href="Toronto" location="toronto.png" name="Toronto"></LocationGridSingle>
             </div>
         </>
             ):
                 <div className={style.main2}>
                 <LocationGridSingle  href="Baltimore"></LocationGridSingle>
-                <LocationGridSingle href="Cleveland" location="cleveland.jpg" name="Cleveland" ></LocationGridSingle>
-                <LocationGridSingle href="Jerusalem"  location="jerusalem.jpg" name="Jerusalem" ></LocationGridSingle>
-                <LocationGridSingle href="Los Angeles" location="la.jpg" name="Los Angeles" ></LocationGridSingle>
-                <LocationGridSingle  href="Lakewood" location="lakewood.jpg" name="LakeWood"></LocationGridSingle>
-                <LocationGridSingle href="Miami" location="miami.jpg" name="Miami"></LocationGridSingle>
-                <LocationGridSingle href="New Jersey" location="newjersey.jpg" name="New Jersey" ></LocationGridSingle>
-                <LocationGridSingle href="New York" location="newyork.jpg" name="New York"></LocationGridSingle>
-                <LocationGridSingle href="Toronto" location="toronto.jpg" name="Toronto"></LocationGridSingle>
+                <LocationGridSingle href="Cleveland" location="cleveland.png" name="Cleveland" ></LocationGridSingle>
+                <LocationGridSingle href="Jerusalem"  location="jerusalem.png" name="Jerusalem" ></LocationGridSingle>
+                <LocationGridSingle href="Los Angeles" location="LA.png" name="Los Angeles" ></LocationGridSingle>
+                <LocationGridSingle  href="Lakewood" location="8.png" name="LakeWood"></LocationGridSingle>
+                <LocationGridSingle href="Miami" location="miami.png" name="Miami"></LocationGridSingle>
+                <LocationGridSingle href="New Jersey" location="NJ.png" name="New Jersey" ></LocationGridSingle>
+                <LocationGridSingle href="New York" location="new york.png" name="New York"></LocationGridSingle>
+                <LocationGridSingle href="Toronto" location="toronto.png" name="Toronto"></LocationGridSingle>
                 </div>
         }
         <br></br>

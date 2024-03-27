@@ -10,10 +10,10 @@ const AboutUs = () => {
             <section>
                 <MissionHeader></MissionHeader>
             </section>
-            <section>
+            <section className={style.sizes}>
                 <SecondHeading heading={"Our Story"} contactHeading={"Contact Us"}></SecondHeading>
             </section>
-            <section>
+            <section className={style.sizes2}>
                 <MissionSecondHeader></MissionSecondHeader>
             </section>
             <section className={style.divs}>
@@ -22,9 +22,11 @@ const AboutUs = () => {
             <section style={{marginBottom:20,marginTop:20}}>
                 <InfiniteSwiper></InfiniteSwiper>
             </section>
+            <br />
             <section>
                 <TestimonialSlider></TestimonialSlider>
             </section>
+            <br />
             
         </section>
       );

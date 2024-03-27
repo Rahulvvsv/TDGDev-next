@@ -53,6 +53,7 @@
     flex-direction: column;
     height: 90vh;
     gap: 30px;
+    margin-bottom: 50px !important;
   }
 
   .image {
