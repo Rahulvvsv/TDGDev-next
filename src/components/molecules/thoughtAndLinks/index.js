@@ -16,39 +16,39 @@ const ThoughtAndLink = ({ Description, name, ButtonContent, href = "" }) => {
         className={style.swiper}
       >
         <SwiperSlide>
-          <h1 className={style.heading}>{Description}</h1>
-          <h1 className={style.name}>{name}</h1>
+          <h1 className={style.heading}>Helping people furnish their homes through the TDG Furniture Exchange is incredibly rewarding.It reminds us of the transformative power of design and the positive impact we can create in our communities</h1>
+          <h1 className={style.name}>- Blima Ehrentreu, The Designers Group</h1>
           <br></br>
           <Button
-            content={ButtonContent}
+            content={"About Us"}
             backgroundColor={"white"}
             fontColor={"black"}
             btnClass={2}
-            href={href}
+            href={"/aboutUs"}
           ></Button>
         </SwiperSlide>
         <SwiperSlide>
-          <h1 className={style.heading}>{Description}</h1>
-          <h1 className={style.name}>{name}</h1>
+          <h1 className={style.heading}>Transforming spaces, transforming lives. Join TDG Furniture Exchange: where surplus meets purpose, and generosity finds a home</h1>
+          <h1 className={style.name}>- Blima Ehrentreu, The Designers Group</h1>
           <br></br>
           <Button
-            content={ButtonContent}
+            content={"Contact Us"}
             backgroundColor={"white"}
             fontColor={"black"}
             btnClass={2}
-            href={href}
+            href={"/contactUs"}
           ></Button>
         </SwiperSlide>
         <SwiperSlide>
-          <h1 className={style.heading}>{Description}</h1>
-          <h1 className={style.name}>{name}</h1>
+          <h1 className={style.heading}>Unlocking the power of giving through furniture - where every piece tells a story of compassion and connection</h1>
+          <h1 className={style.name}>- Blima Ehrentreu, The Designers Group</h1>
           <br></br>
           <Button
-            content={ButtonContent}
+            content={"See All Locations"}
             backgroundColor={"white"}
             fontColor={"black"}
             btnClass={2}
-            href={href}
+            href={"/services/getFurniture"}
           ></Button>
         </SwiperSlide>
       </Swiper>
