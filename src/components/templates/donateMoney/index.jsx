@@ -7,8 +7,10 @@ const DonateService = ({content="Service",href=""}) => {
     return (  
         <section>
             <section>
-                <BackButton></BackButton>
+                <BackButton left={"10%"}></BackButton>
             </section>
+            <br />
+            
             <section>
             <DonateMoneyForm href={href} ></DonateMoneyForm>
             </section>
