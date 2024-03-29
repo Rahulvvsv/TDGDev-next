@@ -21,7 +21,7 @@ const SingleTestimonial = ({testimonial,name,surname,opacity,index}) => {
 
     <div className={style.main } style={{opacity:opacity}}>
             <div className={style.image}>
-                    <Image src={"/Icon/quote2.png"} fill></Image>
+                    <Image src={"/Icon/quote3.svg"} fill></Image>
             </div>
                 <h1 className={style.heading}>{testimonial}</h1>
                 <div>

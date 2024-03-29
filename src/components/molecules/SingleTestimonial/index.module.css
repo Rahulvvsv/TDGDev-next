@@ -17,6 +17,9 @@
   width: 71px;
   height: 53px;
 }
+.image > img{
+  object-fit: contain !important;
+}
 .heading {
   font-family: Montserrat;
   font-size: 22px;

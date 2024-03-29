@@ -9,7 +9,7 @@ const Footer = () => {
 
             <Link href="/" className={style.imageDivtop}>
             <div className={style.imageDiv} onClick={()=>{}}>
-                <Image src={"/Icon/4.png"} fill style={{objectFit:"cover"}}></Image>
+                <Image src={"/Icon/4.svg"} fill style={{objectFit:"cover"}}></Image>
             </div>
             </Link>
 
@@ -59,15 +59,15 @@ const Footer = () => {
 
             <div className={style.main2}>
                 <div className={style.main3}>
-                    <Image src={"/Icon/globe.png"} width={16} height={16} objectFit="cover"></Image>
+                    <Image src={"/Icon/globe.svg"} width={16} height={16} objectFit="cover"></Image>
                     <h1 className={style.subHeading}>info@mysite.com</h1>
                 </div>
                 <div className={style.main3}>
-                    <Image src={"/Icon/phone.png"} width={16} height={16}objectFit="cover"></Image>
+                    <Image src={"/Icon/phone.svg"} width={16} height={16}objectFit="cover"></Image>
                     <h1 className={style.subHeading}>Tel: 123-456-7890</h1>
                 </div>
                 <div className={style.main3+ " "+style.main9}>
-                    <Image src={"/Icon/map.png"} width={16} height={16}objectFit="cover"></Image>
+                    <Image src={"/Icon/map.svg"} width={16} height={16}objectFit="cover"></Image>
                     <h1 className={style.subHeading } >500 Terry Francine St.San Francisco CA 94158</h1>
                 </div>
             </div>
@@ -77,19 +77,19 @@ const Footer = () => {
                 <h1 className={style.mainHeading}>Follow us</h1>
                 <div className={style.main4}>
                     <Link href={""}>
-                    <Image src={"/Icon/facebook.png"} width={32} height={32} ></Image>
+                    <Image src={"/Icon/facebook.svg"} width={32} height={32} ></Image>
                     </Link>
                     
                     <Link href={""}>
-                    <Image src={"/Icon/twitter.png"} width={32} height={32}></Image>
+                    <Image src={"/Icon/twitter.svg"} width={32} height={32}></Image>
                     </Link>
 
                     <Link href={""}>
-                    <Image src={"/Icon/Linkedin.png"} width={32} height={32}></Image>
+                    <Image src={"/Icon/Linkedin.svg"} width={32} height={32}></Image>
                     </Link>
 
                     <Link href={""}>
-                    <Image src={"/Icon/instagram.png"} width={32} height={32}></Image>
+                    <Image src={"/Icon/instagram.svg"} width={32} height={32}></Image>
                     </Link>
                 </div>
             </div>
