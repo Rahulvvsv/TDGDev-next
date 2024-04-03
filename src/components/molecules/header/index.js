@@ -34,7 +34,7 @@ const Header = () => {
     <AnimatePresence>
       <div className={style.main}>
         <div className={style.main2} onClick={()=>{router.push("/")}}>
-          <Image src={"/Icon/logo.png"} fill></Image>
+          <Image src={"/Icon/logo2.png"} fill></Image>
         </div>
         <div className={style.main3}>
           <Link href={"/"} style={{ position: "relative" }}>

@@ -5,7 +5,7 @@ const AllFurnitureProducts = ({ data }) => {
   return (
     <div className={style.mains}>
       {data.map((e, key) => {
-          console.log(e);
+          // console.log(e);
         if (e.status === "showOnPage"){
 
             return (
@@ -19,7 +19,7 @@ const AllFurnitureProducts = ({ data }) => {
                 );
             }
           })}
-          {data.length ==0 && <h1 style={{height:"50vh"}}>No Data here</h1>}   
+          {data.length ==0 && <h1 style={{height:"50vh"}} className={style.heading}>Furniture at this location will be available soon</h1>}   
     </div>
   );
 };
