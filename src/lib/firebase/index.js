@@ -121,6 +121,7 @@ export const upLoadData = async (formData) => {
       productName: formData.tof || "",
       description: formData.desc || "",
       email: formData.email || "",
+      phone:formData.phone || "",
       location: formData.location || "",
       imageUrl: imageUrls,
       date:new Date(),

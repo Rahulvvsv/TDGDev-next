@@ -181,6 +181,7 @@ const UploadForm = () => {
   }, [file]);
 
   const dataSetter = (e) => {
+    console.log(data);
     const { name, value } = e.target;
     setData((prev) => ({ ...prev, [name]: value }));
   };
