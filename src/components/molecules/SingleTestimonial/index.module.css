@@ -9,6 +9,8 @@
   background: rgba(245, 242, 237, 1);
   border-radius: 15px;
   margin-left: auto;
+  /* height: 400px;
+  overflow-y: scroll; */
   margin-right: auto;
 }
 .image {

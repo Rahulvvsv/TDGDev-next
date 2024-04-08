@@ -64,11 +64,12 @@ const Footer = () => {
                 </div>
                 <div className={style.main3}>
                     <Image src={"/Icon/phone.svg"} width={16} height={16}objectFit="cover"></Image>
-                    <h1 className={style.subHeading}>Tel: 123-456-7890</h1>
+                    <h1 className={style.subHeading}>Tel: 646-543-7515</h1>
                 </div>
                 <div className={style.main3+ " "+style.main9}>
                     <Image src={"/Icon/map.svg"} width={16} height={16}objectFit="cover"></Image>
-                    <h1 className={style.subHeading } >500 Terry Francine St.San Francisco CA 94158</h1>
+                    <h1 className={style.subHeading } >170 53rd Street Suite 327
+                   Brooklyn NY, 11232</h1>
                 </div>
             </div>
 
@@ -80,9 +81,9 @@ const Footer = () => {
                     <Image src={"/Icon/facebook.svg"} width={32} height={32} ></Image>
                     </Link>
                     
-                    <Link href={""}>
+                    {/* <Link href={""}>
                     <Image src={"/Icon/twitter.svg"} width={32} height={32}></Image>
-                    </Link>
+                    </Link> */}
 
                     <Link href={""}>
                     <Image src={"/Icon/Linkedin.svg"} width={32} height={32}></Image>
