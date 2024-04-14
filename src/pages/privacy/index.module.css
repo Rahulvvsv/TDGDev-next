@@ -1,0 +1,55 @@
+/* index.module.css */
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+.heading h1 {
+  color: #333;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.section {
+  margin-top: 40px;
+}
+
+.subHeading {
+  color: #444;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.content h3 {
+  color: #666;
+  font-size: 1.2em;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.content p {
+  color: #888;
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+.content ul, .content ol {
+  color: #888;
+  font-size: 1em;
+  line-height: 1.5;
+  margin-left: 20px;
+}
+
+.notice {
+  margin-top: 20px;
+  font-size: 0.9em;
+  color: #666;
+}
+@media (max-width: 430px) {
+  .container {
+    width: 90% !important;
+  }
+}

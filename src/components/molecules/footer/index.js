@@ -103,8 +103,12 @@ const Footer = () => {
                     <h1 className={style.subHeading}>Copyright 2024 TDG</h1>
             </div>
             <div className={style.main6}>
+                    <Link href={"/privacy"}>
                     <h1 className={style.subHeading}>Privacy Policy</h1>
+                    </Link>
+                    <Link href={"/termsandconditions"}>
                     <h1 className={style.subHeading}>Terms of service</h1>
+                    </Link>
             </div>
        </div>
         </div>
