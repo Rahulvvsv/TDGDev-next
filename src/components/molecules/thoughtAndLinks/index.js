@@ -10,7 +10,7 @@ const ThoughtAndLink = ({ Description, name, ButtonContent, href = "" }) => {
       <Swiper
         slidesPerView={1}
         freeMode={true}
-        autoplay={{ delay: 2500 }}
+        autoplay={{ delay: 6000 }}
         modules={[Autoplay]}
         loop={true}
         className={style.swiper}

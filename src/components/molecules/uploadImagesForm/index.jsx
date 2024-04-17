@@ -370,7 +370,7 @@ const UploadForm = () => {
           <h1 className={style.heading1}>
             Thank you for your furniture donation. We'll let you know when
             someone shows interest in your furniture. Your generosity is truly
-            appreciated
+            appreciated.
           </h1>
         </motion.div>
       )}

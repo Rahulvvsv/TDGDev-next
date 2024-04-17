@@ -58,10 +58,12 @@ const Footer = () => {
             </div>
 
             <div className={style.main2}>
-                <div className={style.main3}>
+                    <Link href={"mailto:info@tdgfurnitureexchange.com"}>
+                <div className={style.main3} >
                     <Image src={"/Icon/globe.svg"} width={16} height={16} objectFit="cover"></Image>
-                    <h1 className={style.subHeading}>info@mysite.com</h1>
+                    <h1 className={style.subHeading}>info@tdgfurnitureexchange.com</h1>
                 </div>
+                    </Link>
                 <div className={style.main3}>
                     <Image src={"/Icon/phone.svg"} width={16} height={16}objectFit="cover"></Image>
                     <h1 className={style.subHeading}>Tel: 646-543-7515</h1>
@@ -85,11 +87,11 @@ const Footer = () => {
                     <Image src={"/Icon/twitter.svg"} width={32} height={32}></Image>
                     </Link> */}
 
-                    <Link href={""}>
+                    <Link href={"https://www.linkedin.com/company/thedesignersgroup/"} target="_blank">
                     <Image src={"/Icon/Linkedin.svg"} width={32} height={32}></Image>
                     </Link>
 
-                    <Link href={""}>
+                    <Link href={"https://www.instagram.com/tdgfurnitureexchange/"} target="_blank">
                     <Image src={"/Icon/instagram.svg"} width={32} height={32}></Image>
                     </Link>
                 </div>
