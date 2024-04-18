@@ -59,7 +59,7 @@ const Footer = () => {
 
             <div className={style.main2}>
                     <Link href={"mailto:info@tdgfurnitureexchange.com"}>
-                <div className={style.main3} >
+                <div className={style.main3 +" " + style.emailstyle} >
                     <Image src={"/Icon/globe.svg"} width={16} height={16} objectFit="cover"></Image>
                     <h1 className={style.subHeading}>info@tdgfurnitureexchange.com</h1>
                 </div>
