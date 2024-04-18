@@ -30,7 +30,7 @@ const LocationsGrid = () => {
             </div>
             <div className={style.main2}>
                 <LocationGridSingle href="Los Angeles" location="LA.png" name="Los Angeles" ></LocationGridSingle>
-                <LocationGridSingle  href="Lakewood" location="8.png" name="LakeWood"></LocationGridSingle>
+                <LocationGridSingle  href="Lakewood" location="8.png" name="Lakewood"></LocationGridSingle>
                 <LocationGridSingle href="Miami" location="miami.png" name="Miami"></LocationGridSingle>
             </div>
             <div className={style.main2}>

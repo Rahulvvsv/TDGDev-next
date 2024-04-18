@@ -2,7 +2,7 @@
 import style from "./index.module.css"
 import AllFurnitureProducts from "@/components/molecules/allFurnitureProducts";
 import { fetchDataLocation } from "@/lib/firebase";
-export const locationsData = ["Baltimore","Cleaveland","Jerusalem","Lakewood","Los Angeles","Miami","New Jersey","New York","Toronto"]
+export const locationsData = ["Baltimore","Cleveland","Jerusalem","Lakewood","Los Angeles","Miami","New Jersey","New York","Toronto"]
 import { Suspense } from "react";
 const index = ({data,id}) => {
     return (

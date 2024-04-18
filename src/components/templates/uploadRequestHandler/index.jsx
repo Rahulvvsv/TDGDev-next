@@ -133,7 +133,7 @@ const UploadRequestHandler = () => {
 return (
     <section className={style.main3}>
       <div className={style.main2}>
-        <h1 className={style.heading1}>APPROVE IMAGES/ VERIFY DONOR DETAILS</h1>
+        <h1 className={style.heading1}>APPROVE IMAGES </h1>
         <p className={style.subheading1}>
           Approve the images posted by the users to be seen on website
         </p>

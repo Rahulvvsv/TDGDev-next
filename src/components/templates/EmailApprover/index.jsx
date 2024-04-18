@@ -164,7 +164,7 @@ const EmailApprover = () => {
   return (
     <section className={style.main3}>
       <div className={style.main2}>
-        <h1 className={style.heading1}>Welcome, TDG Fam</h1>
+        <h1 className={style.heading1}>VERIFY DONOR DETAILS</h1>
         <p className={style.subheading1}>
           Verify the Client information before sending him the donor details
         </p>
