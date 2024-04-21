@@ -39,7 +39,7 @@ const ContactDonarPopUP = ({ data, setData, modalCloser }) => {
       <div className={style.image}>
         <Image src={"/Icon/4.png"} fill></Image>
       </div>
-      <p>You'll receive an email with the furniture details</p>
+      <p>Fill out the form if you're interested in this furniture piece or if you have any questions.</p>
       <br />
       <div className={style.main2}>
         {submitted ? (

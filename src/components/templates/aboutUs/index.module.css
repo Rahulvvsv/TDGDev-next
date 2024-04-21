@@ -24,7 +24,7 @@ padding-bottom: 30px !important;
 .sizes2{
     margin-bottom: 100px !important;
 }
-@media screen and (max-width:420px) {
+@media screen and (max-width:460px) {
     .name{
         font-family: Montserrat;
 font-size: 16px;

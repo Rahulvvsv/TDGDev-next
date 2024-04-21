@@ -122,7 +122,7 @@ text-align: left;
     /* height: 100% !important; */
 }
 
-@media screen and (max-width:420px) {
+@media screen and (max-width:460px) {
     .heading{
         font-size: 16px;
     }

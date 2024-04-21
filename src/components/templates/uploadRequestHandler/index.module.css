@@ -104,7 +104,7 @@ text-align: left;
     /* justify-content: center; */
 }
 
-@media screen and (max-width:420px) {
+@media screen and (max-width:460px) {
     .heading{
         font-size: 16px;
     }

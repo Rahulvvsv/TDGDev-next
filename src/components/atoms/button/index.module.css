@@ -98,7 +98,7 @@
 }
 
 
-@media screen and (max-width:420px) {
+@media screen and (max-width:460px) {
   .button1,.button2{
     width: 124px !important;
     height: 50px !important;

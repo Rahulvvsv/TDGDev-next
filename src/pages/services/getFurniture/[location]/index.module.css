@@ -13,7 +13,7 @@ color:  #92877B;;
     margin-right: auto;
 }
 
-@media screen and (max-width:420px) {
+@media screen and (max-width:460px) {
 
     .heading{
         font-size: 28px ;

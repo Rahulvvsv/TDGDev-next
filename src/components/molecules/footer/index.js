@@ -79,9 +79,9 @@ const Footer = () => {
             <div className={style.main2}>
                 <h1 className={style.mainHeading}>Follow us</h1>
                 <div className={style.main4}>
-                    <Link href={""}>
+                    {/* <Link href={""}>
                     <Image src={"/Icon/facebook.svg"} width={32} height={32} ></Image>
-                    </Link>
+                    </Link> */}
                     
                     {/* <Link href={""}>
                     <Image src={"/Icon/twitter.svg"} width={32} height={32}></Image>
@@ -109,7 +109,7 @@ const Footer = () => {
                     <h1 className={style.subHeading}>Privacy Policy</h1>
                     </Link>
                     <Link href={"/termsandconditions"}>
-                    <h1 className={style.subHeading}>Terms of service</h1>
+                    <h1 className={style.subHeading}>Terms of Service</h1>
                     </Link>
             </div>
        </div>

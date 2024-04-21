@@ -16,7 +16,7 @@ const LocationsGrid = () => {
         <div className={style.main3}>
 
         <h1 className={style.name1}>Explore our Collection of Donated Furniture</h1>
-        <h1 className={style.name2} >Find the perfect item for your home or commercial space, generously contributed by others. Quality meets style, and start your furniture journey with us</h1>
+        <h1 className={style.name2} >Find the perfect item for your home, generously contributed by others. </h1>
         </div>
         <br>
         </br>

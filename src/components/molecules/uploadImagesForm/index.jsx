@@ -330,7 +330,7 @@ const UploadForm = () => {
             )}
             <InputField
               onChange={dataSetter}
-              placeholder={"EXACT LOCATION*"}
+              placeholder={"ADDRESS*"}
               name={"exactLocation"}
             />
             {errors.exactLocation && (

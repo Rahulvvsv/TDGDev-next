@@ -35,6 +35,7 @@
 .heading{
     margin-top:100px; 
     font-size: clamp(1rem, 0.6429rem + 1.1429vw, 2rem);
+    height: 20px;
     
 }
 
@@ -94,7 +95,7 @@
     }
     
 }
-@media screen and (max-width:420px) {
+@media screen and (max-width:460px) {
     .content{
         font-family: Montserrat;
 font-size: 14px !important;

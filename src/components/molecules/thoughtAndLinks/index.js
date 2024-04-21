@@ -27,7 +27,7 @@ const ThoughtAndLink = ({ Description, name, ButtonContent, href = "" }) => {
             href={"/aboutUs"}
           ></Button>
         </SwiperSlide>
-        <SwiperSlide>
+        {/* <SwiperSlide>
           <h1 className={style.heading}>Transforming spaces, transforming lives. Join TDG Furniture Exchange: where surplus meets purpose, and generosity finds a home</h1>
           <h1 className={style.name}>- Blima Ehrentreu, The Designers Group</h1>
           <br></br>
@@ -50,7 +50,7 @@ const ThoughtAndLink = ({ Description, name, ButtonContent, href = "" }) => {
             btnClass={2}
             href={"/services/getFurniture"}
           ></Button>
-        </SwiperSlide>
+        </SwiperSlide> */}
       </Swiper>
     </div>
   );

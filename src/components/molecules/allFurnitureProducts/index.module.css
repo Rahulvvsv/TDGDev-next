@@ -9,7 +9,7 @@
 /* .heading{
     font-size: 26px;
 } */
-@media screen and (max-width:420px) {
+@media screen and (max-width:460px) {
     .mains{
         /* background-color: red; */
         width: 100% !important;

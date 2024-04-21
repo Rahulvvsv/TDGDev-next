@@ -86,7 +86,7 @@ text-align: left;
   }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 460px) {
   .main {
     margin-bottom: 20px;
   }

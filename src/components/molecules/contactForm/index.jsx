@@ -143,7 +143,7 @@ const ContactForm = () => {
                  </div>
                  <div className={style.main4}>
                      <Image src={"/Icon/phone.png"} width={16} height={16}></Image>
-                     <h1 className={style.subHeading}>9084170619</h1>
+                     <h1 className={style.subHeading}>646-543-7515</h1>
                  </div>
                  <div className={style.main4}>
                      <Image src={"/Icon/map.png"} width={16} height={16}></Image>

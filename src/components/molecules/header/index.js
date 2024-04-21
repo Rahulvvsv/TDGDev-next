@@ -100,7 +100,7 @@ const Header = () => {
               }}
               >
               {" "}
-              About us
+              About Us
             </h1>
             {selected === 2 ? (
               <motion.div

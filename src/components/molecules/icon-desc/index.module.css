@@ -46,7 +46,7 @@
   
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 460px) {
   .images {
     width: 48px !important;
     height: 48px !important;
