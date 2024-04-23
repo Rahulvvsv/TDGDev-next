@@ -18,3 +18,15 @@
 .main5{
     margin-bottom: 50px;
 }
+.buttonComponent{
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+
+@media screen  and (max-width:460px){
+    .buttonComponent{
+        margin-top: 0px;
+        margin-bottom: 40px;
+    }
+    
+}
