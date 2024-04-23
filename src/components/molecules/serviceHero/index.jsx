@@ -17,7 +17,7 @@ const ServiceHero = () => {
                 <div className={style.image}>
                         <Image  src={"/services/Images2/donate money.png"} fill></Image>
                         {/* <div className={style.imageCont}></div> */}
-                        <Button backgroundColor={"rgba(88, 85, 82, 1)"} effect={true} fontColor={"white"} borderthick={'3px solid white'} href={"/services/donateMoney"} content={"Donate Money"}></Button>
+                        <Button backgroundColor={"rgba(88, 85, 82, 1)"} effect={true} fontColor={"white"} borderthick={'3px solid white'} href={"https://buy.stripe.com/test_4gw5lrbOq0gT4Sc4gh"} content={"Donate Money"}></Button>
                 </div>
         </div>
      );

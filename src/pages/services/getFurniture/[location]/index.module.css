@@ -1,6 +1,6 @@
 .heading{
     font-family: Montserrat;
-font-size: 70px;
+font-size: 26px;
 font-weight: 500;
 line-height: 98px;
 text-align: left;
@@ -16,7 +16,7 @@ color:  #92877B;;
 @media screen and (max-width:460px) {
 
     .heading{
-        font-size: 28px ;
+        font-size: 18px ;
 line-height: 28px;
 margin-bottom: 20px;
     }

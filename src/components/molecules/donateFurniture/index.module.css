@@ -73,6 +73,9 @@
     /* gap: 10px ; */
   }
 
+  .heading{
+    display: none;
+  }
   .left {
     width: 100%;
     background-color: rgba(245, 242, 237, 1);

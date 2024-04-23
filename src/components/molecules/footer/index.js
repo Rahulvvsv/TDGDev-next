@@ -14,7 +14,7 @@ const Footer = () => {
             </Link>
 
             <div className={style.main2}>
-                <h1 className={style.mainHeading}>Company</h1>
+                {/* <h1 className={style.mainHeading}>Company</h1> */}
                 <Link href={"/"}>
                 <h1 className={style.subHeading}>Home</h1>
                 </Link>
@@ -29,7 +29,7 @@ const Footer = () => {
             <div className={style.main2}>
 
                 <Link href={"/services"}>
-                <h1 className={style.mainHeading}>Services</h1>
+                <h1 className={style.subHeading}>Services</h1>
                 </Link>
                 <Link href={"/services/getFurniture"}>
                 <h1 className={style.subHeading}>Location</h1>
