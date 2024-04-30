@@ -108,7 +108,7 @@
     object-fit: cover;
   }
   .main div {
-    width: 135px !important;
+    /* width: 135px !important; */
   }
 
   .main8 {
@@ -119,7 +119,4 @@
     height: 36px;
     overflow: hidden;
   }
-  /* .main{
-    gap: 7px;
-  } */
 }
