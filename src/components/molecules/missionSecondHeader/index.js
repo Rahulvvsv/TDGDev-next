@@ -83,11 +83,11 @@ const MissionSecondHeader = () => {
 :1
 
       </motion.div>
-            <ImageAndDesc img={"/about/1.png"} content={"TDG Furniture Exchange fills a crucial need: providing a platform for furniture donations and distributions.Our mission is to foster sharing and connections, making a difference in people's lives."}></ImageAndDesc>
+            <ImageAndDesc img={"/about/1.png"} content={"Providing a platform for donations and exhange"}></ImageAndDesc>
 
-            <ImageAndDesc img={"/about/2.png"}  content={"Rooted in the belief that everyone deserves a comfortable living space, we facilitate furniture donations and delivery at no cost to the donor or recipient. With the support of dedicated volunteers, partners, and ambassadors, we currently operate in nine locations, and aim to expand globally."}></ImageAndDesc>
+            <ImageAndDesc img={"/about/2.png"}  content={"Fostering sharing and connections, making a difference."}></ImageAndDesc>
 
-            <ImageAndDesc img={"/about/3.png"} content={"Join us in the TDG Furniture Exchange initiative, in memory of Yonah Ben Akiva. Together, we enhance interiors and uplift communities through acts of kindness."}></ImageAndDesc>
+            <ImageAndDesc img={"/about/3.png"} content={"Join TDG Furniture Exchange, enhancing lives through kindness."}></ImageAndDesc>
     </div>
      );
 }

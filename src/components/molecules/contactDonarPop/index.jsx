@@ -39,20 +39,21 @@ const ContactDonarPopUP = ({ data, setData, modalCloser }) => {
       <div className={style.image}>
         <Image src={"/Icon/4.png"} fill></Image>
       </div>
-      <p>Fill out the form if you're interested in this furniture piece or if you have any questions.</p>
       <br />
       <div className={style.main2}>
         {submitted ? (
           <div>
-            {/* <h1 className={style.heading}>
-              Thank you for your generous offer to donate your service. We will
+            <h1 className={style.heading}>
+              {/* Thank you for your generous offer to donate your service. We will
               notify you as soon as an opportunity comes up, and you can confirm
-              your intent to donate. We appreciate your support!
-            </h1> */}
+              your intent to donate. We appreciate your support! */}
+              Your request is received. Our team will review it and send the Furniture details.
+            </h1>
             <Button content={"Back"} onClick={modalCloser}></Button>
           </div>
         ) : (
           <>
+            <p>Fill out the form if you're interested in this furniture piece or if you have any questions.</p>
             <InputField
               onChange={dataSetter}
               placeholder={"NAME"}

@@ -102,6 +102,7 @@
   }
   .desc{
     line-height: 14px;
+    height: 28px;
   }
   .image img {
     object-fit: cover;
@@ -113,5 +114,12 @@
   .main8 {
     width: 90vw !important;
     height: 90vh !important;
+  }
+  .heading{
+    height: 36px;
+    overflow: hidden;
+  }
+  .main{
+    gap: 7px;
   }
 }

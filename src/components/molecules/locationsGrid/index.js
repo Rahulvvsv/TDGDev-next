@@ -6,7 +6,7 @@ import Link from "next/link";
 const LocationsGrid = () => {
     const [isMobile,setIsMobile] = useState(false)
     useEffect(()=>{
-        if(window.innerWidth<420){
+        if(window.innerWidth<460){
 
             setIsMobile(true)
         }
@@ -15,7 +15,7 @@ const LocationsGrid = () => {
     <div className={style.main}>
         <div className={style.main3}>
 
-        <h1 className={style.name1}>Explore our Collection of Donated Furniture</h1>
+        <h1 className={style.name1}>Explore our Collection of Furniture</h1>
         <h1 className={style.name2} >Find the perfect item for your home, generously contributed by others. </h1>
         </div>
         <br>
