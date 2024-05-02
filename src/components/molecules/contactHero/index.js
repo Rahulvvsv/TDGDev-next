@@ -10,7 +10,7 @@ const ContactHero = () => {
           <div className={style.image}>
             <Image src={"/contact/hero.png"} fill></Image>
           </div>
-          <div data-aos="fade-up" className={style.content}>
+          <div  className={style.content}>
             <h1 className={style.heading}>GET IN TOUCH</h1>
             <h1 className={style.content2}>
               Reach out, share a question, or provide feedback on our TDG
