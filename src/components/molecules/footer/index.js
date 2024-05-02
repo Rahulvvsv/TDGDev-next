@@ -34,8 +34,8 @@ const Footer = () => {
                 <Link href={"/donate/getFurniture"}>
                 <h1 className={style.subHeading}>Location</h1>
                 </Link>
-                <Link href="/donate/">
-                <h1 className={style.subHeading}>Donate</h1>
+                <Link href="/donate/getFurniture/all">
+                <h1 className={style.subHeading}>Furniture</h1>
                 </Link>
             </div>
             
@@ -87,11 +87,11 @@ const Footer = () => {
                     <Image src={"/Icon/twitter.svg"} width={32} height={32}></Image>
                     </Link> */}
 
-                    <Link href={"https://www.linkedin.com/company/thedesignersgroup/"} target="_blank">
+                    {/* <Link href={"https://www.linkedin.com/company/thedesignersgroup/"} target="_blank">
                     <Image src={"/Icon/Linkedin.svg"} width={32} height={32}></Image>
-                    </Link>
+                    </Link> */}
 
-                    <Link href={"https://www.instagram.com/tdgfurnitureexchange/"} target="_blank">
+                    <Link href={"https://www.thedesignersgroup.com/tdgfurnitureexchange"} target="_blank">
                     <Image src={"/Icon/instagram.svg"} width={32} height={32}></Image>
                     </Link>
                 </div>

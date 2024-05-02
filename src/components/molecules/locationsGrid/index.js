@@ -25,7 +25,7 @@ const LocationsGrid = () => {
             <div className={style.main2}>
                 <LocationGridSingle  href="Baltimore"></LocationGridSingle>
                 <LocationGridSingle href="Cleveland" location="cleveland.png" name="Cleveland" ></LocationGridSingle>
-                <LocationGridSingle href="Jerusalem"  location="jerusalem.png" name="Jerusalem" ></LocationGridSingle>
+                <LocationGridSingle href="Jerusalem"  location="jerusalem1.png" name="Jerusalem" ></LocationGridSingle>
 
             </div>
             <div className={style.main2}>
