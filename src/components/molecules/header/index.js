@@ -19,7 +19,7 @@ const Header = () => {
   const router = useRouter();
   const search = router.asPath;
   useEffect(() => {
-    if (search.includes("services")) {
+    if (search.includes("donate")) {
       setSelected(1);
     } else if (search.includes("aboutUs")) {
       setSelected(2);
@@ -64,7 +64,7 @@ const Header = () => {
                 )}
           </Link>
 
-          <Link href={"/services"} style={{ position: "relative" }}>
+          <Link href={"/donate"} style={{ position: "relative" }}>
             <h1
               className={style.heading}
               onClick={() => {
@@ -72,7 +72,7 @@ const Header = () => {
               }}
               >
               {" "}
-              Services
+              Donate
             </h1>
 
             {selected === 1 ? (

@@ -13,7 +13,7 @@ const LandingHero = () =>{
                 <div style={{position:'absolute',width:"100%",height:"100%",background:"#79757280",zIndex:"1",borderRadius:"8px"}}></div>
                 
                 <div   className={style.insideDiv}>
-                <Button content={"Donate Furniture"} width={250} height={100} btnClass={1} fontSize={20} fontWeight={500} borderthick={"2px solid white"} backgroundColor={"#585552"}href={"/services/donateFurniture"} ></Button>
+                <Button content={"Donate Furniture"} width={250} height={100} btnClass={1} fontSize={20} fontWeight={500} borderthick={"2px solid white"} backgroundColor={"#585552"}href={"/donate/donateFurniture"} ></Button>
                 </div>
 
 
@@ -22,7 +22,7 @@ const LandingHero = () =>{
             <div data-aos="fade-left"  className={style.image2} >
                 <div style={{position:'absolute',width:"100%",height:"100%",background:"#79757280",zIndex:"1",borderRadius:"8px"}}></div>
                 <div   className={style.insideDiv}>
-                <Button content={"Get Furniture"} width={250} height={100} btnClass={1} fontSize={20}fontWeight={500} borderthick={"2px solid white"} backgroundColor={"#585552"}href={"/services/getFurniture"} ></Button>
+                <Button content={"Get Furniture"} width={250} height={100} btnClass={1} fontSize={20}fontWeight={500} borderthick={"2px solid white"} backgroundColor={"#585552"}href={"/donate/getFurniture"} ></Button>
                 </div>
                 <Image src={"/landing/second.png"}  style={{objectFit:'cover',borderRadius:"8px"}} fill></Image>
             </div>

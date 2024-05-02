@@ -25,7 +25,8 @@
   color: rgba(80, 80, 80, 1);
   font-size: clamp(0.875rem, 0.787rem + 0.2817vw, 1.125rem);
   margin-left: 15px;
-  /* height: 28px; */
+  height: 25px;
+  overflow-y:hidden ;
 }
 
 .desc {
@@ -33,7 +34,9 @@
   color: rgba(80, 80, 80, 1);
   font-size: clamp(0.625rem, 0.581rem + 0.1408vw, 0.75rem);
   margin-left: 15px;
-  /* height: 40px; */
+  height: 40px;
+  overflow-y:hidden ;
+  /* width: 270px !important; */
 }
 
 .main > a {
@@ -103,6 +106,7 @@
   .desc{
     line-height: 14px;
     height: 28px;
+    margin-bottom: 14px;
   }
   .image img {
     object-fit: cover;

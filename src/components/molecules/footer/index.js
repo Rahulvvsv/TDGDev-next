@@ -28,13 +28,13 @@ const Footer = () => {
 
             <div className={style.main2}>
 
-                <Link href={"/services"}>
-                <h1 className={style.subHeading}>Services</h1>
+                <Link href={"/donate"}>
+                <h1 className={style.subHeading}>Donate</h1>
                 </Link>
-                <Link href={"/services/getFurniture"}>
+                <Link href={"/donate/getFurniture"}>
                 <h1 className={style.subHeading}>Location</h1>
                 </Link>
-                <Link href="/services/">
+                <Link href="/donate/">
                 <h1 className={style.subHeading}>Donate</h1>
                 </Link>
             </div>
@@ -50,8 +50,8 @@ const Footer = () => {
                 <Link href={"/contactUs"}>
                     <h1 className={style.subHeading}>Contact Us</h1>
                 </Link>
-                <Link href={"/services"}>
-                    <h1 className={style.subHeading}>Services</h1>
+                <Link href={"/donate"}>
+                    <h1 className={style.subHeading}>Donate</h1>
                 </Link>
             </div>
             <div className={style.main7}>

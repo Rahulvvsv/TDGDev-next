@@ -12,6 +12,9 @@ color:  #92877B;;
     margin-left: auto;
     margin-right: auto;
 }
+.internal > div{
+    margin-left: 0 !important;
+}
 
 @media screen and (max-width:460px) {
 

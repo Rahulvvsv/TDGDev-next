@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 const LocationGridSingle = ({location="baltimore.png",name="Baltimore",href="/"}) => {
     const router = useRouter();
     return ( 
-        <div onClick={()=>{router.push("/services/getFurniture/"+href)}} className={style.main}>
+        <div onClick={()=>{router.push("/donate/getFurniture/"+href)}} className={style.main}>
 
             <div className={style.image}>
                 <h1 className={style.name}>{name}</h1>

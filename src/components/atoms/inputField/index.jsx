@@ -1,6 +1,6 @@
 "use client";
 import style from "./index.module.css";
-import { locationsData } from "../../../pages/services/getFurniture/[location]";
+import { locationsData } from "../../../pages/donate/getFurniture/[location]";
 const InputField = ({ placeholder, height, onChange, name, type = "text" }) => {
   return (
     <>

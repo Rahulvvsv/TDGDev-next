@@ -368,9 +368,7 @@ const UploadForm = () => {
         >
           <Image src={"/Icon/4.png"} width={190} height={190} />
           <h1 className={style.heading1}>
-            Thank you for your furniture donation. We'll let you know when
-            someone shows interest in your furniture. Your generosity is truly
-            appreciated.
+          Thank you for your offer to donate. Someone will be in touch with next steps. Your generosity is appreciated!
           </h1>
         </motion.div>
       )}

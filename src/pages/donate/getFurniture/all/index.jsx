@@ -11,7 +11,7 @@ const index = ({data}) => {
             <Link href={"/"} className={style.lists+" " +style.back}>All</Link>
               {locationsData.map((e,key)=>{
                 
-              return  <Link href={"/services/getFurniture/"+e} key={key} className={style.lists}>{e}</Link>
+              return  <Link href={"/donate/getFurniture/"+e} key={key} className={style.lists}>{e}</Link>
               })}
           </section>
           <section className={style.right}>

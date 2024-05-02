@@ -110,7 +110,7 @@ const ContactForm = () => {
           <p>
             Thank you for submitting the Contact Form.
             <span style={{whiteSpace:"pre-line"}}>
-                Our team will reach out
+                &nbsp; Our team will reach out
             to you soon!
                 </span> 
           </p>

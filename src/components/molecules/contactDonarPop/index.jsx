@@ -47,7 +47,7 @@ const ContactDonarPopUP = ({ data, setData, modalCloser }) => {
               {/* Thank you for your generous offer to donate your service. We will
               notify you as soon as an opportunity comes up, and you can confirm
               your intent to donate. We appreciate your support! */}
-              Your request is received. Our team will review it and send the Furniture details.
+              Your request is received. Our team will review and get back to you.
             </h1>
             <Button content={"Back"} onClick={modalCloser}></Button>
           </div>

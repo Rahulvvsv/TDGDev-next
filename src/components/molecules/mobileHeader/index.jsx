@@ -29,25 +29,25 @@ const MobileHeader = ({ toggler }) => {
         <h1
             onClick={() => {
               toggler(false);
-            setTimeout(()=>{router.push("/services")},1000)
+            setTimeout(()=>{router.push("/donate")},1000)
             }}
-         className={style.name}>Services</h1>
+         className={style.name}>Donate</h1>
         <div className={style.subnames}>
           <h1
-            href={"/services"}
+            href={"/donate"}
             onClick={() => {
               toggler(false);
-            setTimeout(()=>{router.push("/services")},1000)
+            setTimeout(()=>{router.push("/donate")},1000)
             }}
             className={style.name2}
           >
             Donate
           </h1>
           <h1
-            href={"/services/getFurniture"}
+            href={"/donate/getFurniture"}
             onClick={() => {
               toggler(false);
-            setTimeout(()=>{router.push("/services/getFurniture")},1000)
+            setTimeout(()=>{router.push("/donate/getFurniture")},1000)
             }}
             className={style.name2}
           >
