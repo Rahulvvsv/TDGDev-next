@@ -21,6 +21,9 @@ const Header = () => {
   useEffect(() => {
     if (search.includes("donate")) {
       setSelected(1);
+      if(search.includes("getFurniture")){
+        setSelected(6)
+      }
     } else if (search.includes("aboutUs")) {
       setSelected(2);
     } else if (search.includes("contactUs")) {
@@ -48,6 +51,32 @@ const Header = () => {
               Home
             </h1>
             {selected === 0 ? (
+              <motion.div
+              transition={{ type: "spring" }}
+              layoutId="underline"
+              style={{
+                width: "100%",
+                position: "absolute",
+                marginTop: 10,
+                height: 3,
+                backgroundColor: "#797572",
+              }}
+              ></motion.div>
+              ) : (
+                ""
+                )}
+          </Link>
+          <Link href={"/donate/getFurniture"} style={{ position: "relative" }}>
+            <h1
+              className={style.heading}
+              onClick={() => {
+                setSelected(6);
+              }}
+              >
+              {" "}
+              Furniture
+            </h1>
+            {selected === 6 ? (
               <motion.div
               transition={{ type: "spring" }}
               layoutId="underline"
