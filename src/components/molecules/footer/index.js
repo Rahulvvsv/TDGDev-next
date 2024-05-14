@@ -91,8 +91,11 @@ const Footer = () => {
                     <Image src={"/Icon/Linkedin.svg"} width={32} height={32}></Image>
                     </Link> */}
 
-                    <Link href={"https://www.thedesignersgroup.com/tdgfurnitureexchange"} target="_blank">
+                    <Link href={"https://www.instagram.com/tdgfurnitureexchange/"} target="_blank">
                     <Image src={"/Icon/instagram.svg"} width={32} height={32}></Image>
+                    </Link>
+                    <Link href={"https://www.thedesignersgroup.com/tdgfurnitureexchange"} target="_blank">
+                    <Image src={"/Icon/tdglogo.jpg"} width={32} height={32} style={{borderRadius:"50%"}}></Image>
                     </Link>
                 </div>
             </div>

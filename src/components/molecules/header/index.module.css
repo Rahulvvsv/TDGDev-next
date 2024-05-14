@@ -63,11 +63,12 @@
         /* width: 200px !important; */
         /* height: 48px !important;
         width: 111px !important; */
-        /* object-fit: contain; */
+        object-fit: contain;
     }
     .main2{
-        height: 48px !important;
-        width: 111px !important;
+        height: 100px !important;
+        width: 200px !important;
+
     }
 
     .main3{
