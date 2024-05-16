@@ -7,6 +7,9 @@ import ContactDonarPopUP from "../contactDonarPop";
 const FurnitureComp = ({ Img, name="None", desc="None", key = "", showButton = true,unqId }) => {
   const [modalIsOpen, setIsOpen] = useState(false);
   const [data,setData] = useState({})
+  const [ImageLink,setImage] = useState();
+
+  const [imageModalIsOpen, setImageIsOpen] = useState(false);
   function openModal() {
     setIsOpen(true);
     setData({"donarId":unqId})
@@ -20,10 +23,13 @@ const FurnitureComp = ({ Img, name="None", desc="None", key = "", showButton = t
   function closeModal() {
     setIsOpen(false);
   }
+  function closeImageModal() {
+    setImageIsOpen(false);
+  }
 
   return (
     <div className={style.main} id={style.something} key={key}>
-      <div className={style.image}>
+      <div className={style.image} onClick={()=>{setImageIsOpen(true);setImage(Img)}}>
         <Image src={Img} fill></Image>
       </div>
       <h1 className={style.heading}>{name}</h1>
@@ -49,6 +55,39 @@ const FurnitureComp = ({ Img, name="None", desc="None", key = "", showButton = t
       >
         <section className={style.main9}>
           <ContactDonarPopUP data={data} setData={setData} modalCloser={closeModal}></ContactDonarPopUP>
+        </section>
+      </Modal>
+      
+      <Modal
+        isOpen={imageModalIsOpen}
+        onAfterOpen={afterOpenModal}
+        onRequestClose={closeModal}
+        className={style.main18}
+        overlayClassName={style.main10}
+        subtitle="popup"
+      >
+        <section className={style.main9}>
+          {/* <ContactDonarPopUP data={data} setData={setData} modalCloser={closeModal}></ContactDonarPopUP> */}
+          <div className={style.main20}>
+
+          <Image
+            src={"/Icon/cross.png"}
+            width={20}
+            height={20}
+            style={{
+              position: "absolute",
+              right: 20,
+              top: 15,
+              zIndex:10,
+              filter: "invert(1)",
+            }}
+            onClick={closeImageModal}
+          ></Image>
+          <div className={style.modalImage}>
+
+          <Image src={ImageLink} fill></Image>
+          </div>
+          </div>
         </section>
       </Modal>
     </div>

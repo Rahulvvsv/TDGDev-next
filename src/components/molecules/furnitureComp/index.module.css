@@ -28,6 +28,18 @@
   height: 25px;
   overflow-y:hidden ;
 }
+.main20{
+  width: 100%;
+  height: 70vh;
+}
+.modalImage{
+  width:100% ;
+  position: relative;
+  height: 100%;
+}
+.modalImage> img{
+  object-fit: contain  !important;
+}
 
 .desc {
   line-height: 20px;
@@ -51,6 +63,13 @@
   width: 50%;
 }
 
+.main18 {
+  background-color: white;
+  outline: none;
+  position: absolute;
+  border-radius: 8px;
+  width: 50%;
+}
 .main10 {
   width: 110vw;
   height: 100vh;
@@ -74,6 +93,11 @@
 
 @media screen and (max-width: 700px) {
   .main8 {
+    width: 70%;
+
+    /* background-color: red; */
+  }
+  .main18 {
     width: 70%;
 
     /* background-color: red; */
@@ -108,6 +132,12 @@
     height: 28px;
     margin-bottom: 14px;
   }
+  .modalImage{
+    margin-top: 30px;
+  }
+  .main20{
+    height:60vh;
+  }
   .image img {
     object-fit: cover;
   }
@@ -118,6 +148,11 @@
   .main8 {
     width: 90vw !important;
     height: 90vh !important;
+  }
+
+  .main18 {
+    width: 90vw !important;
+    height: 70vh !important;
   }
   .heading{
     height: 36px;
