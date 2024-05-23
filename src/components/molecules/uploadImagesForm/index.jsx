@@ -234,7 +234,10 @@ const UploadForm = () => {
     if (!data.phone || data.phone.trim() === "") {
       newErrors.phone = "Phone number is required";
       isValid = false;
-    }
+    }else if (!/^\d{10}$/.test(data.phone.trim())) { // assuming a 10-digit phone number
+  newErrors.phone = "Invalid phone number";
+  isValid = false;
+}
 
     // Validate location
     if (!data.location || data.location.trim() === "") {
