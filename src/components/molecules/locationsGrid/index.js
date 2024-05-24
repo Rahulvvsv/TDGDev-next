@@ -45,7 +45,7 @@ const LocationsGrid = () => {
                 <LocationGridSingle href="Cleveland" location="cleveland.png" name="Cleveland" ></LocationGridSingle>
                 <LocationGridSingle href="Jerusalem"  location="jerusalem.png" name="Jerusalem" ></LocationGridSingle>
                 <LocationGridSingle href="Los Angeles" location="LA.png" name="Los Angeles" ></LocationGridSingle>
-                <LocationGridSingle  href="Lakewood" location="8.png" name="LakeWood"></LocationGridSingle>
+                <LocationGridSingle  href="Lakewood" location="8.png" name="Lakewood"></LocationGridSingle>
                 <LocationGridSingle href="Miami" location="miami.png" name="Miami"></LocationGridSingle>
                 <LocationGridSingle href="New Jersey" location="NJ.png" name="New Jersey" ></LocationGridSingle>
                 <LocationGridSingle href="New York" location="new york.png" name="New York"></LocationGridSingle>
