@@ -8,12 +8,25 @@ color:  #92877B;;
 }
 
 .main{
-    width: 90%;
+    /* width: 90%; */
+    width: 1280px;
     margin-left: auto;
     margin-right: auto;
 }
 .internal > div{
     margin-left: 0 !important;
+}
+@media screen and (min-width:2000px){
+    
+    .main{
+        width: 1600px;
+    }
+}
+@media screen  and (max-width:1350px){
+    .main{
+        width: 90%;
+    }
+    
 }
 
 @media screen and (max-width:460px) {

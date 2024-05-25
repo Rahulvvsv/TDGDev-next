@@ -5,7 +5,7 @@ const AllFurnitureProducts = ({ data }) => {
   return (
     <div className={style.mains}>
       {data.map((e, key) => {
-          // console.log(e);
+          console.log(e);
         if (e.status === "showOnPage"){
 
             return (
@@ -15,6 +15,8 @@ const AllFurnitureProducts = ({ data }) => {
                 Img={e?.imageUrl[0]}
                 name={e.productName}
                 desc={e.description}
+                location={e.location}
+                date={e.date}
                 ></FurnitureComp>
                 );
             }

@@ -4,7 +4,7 @@ import Button from "../../atoms/button";
 import Modal from "react-modal";
 import { useState } from "react";
 import ContactDonarPopUP from "../contactDonarPop";
-const FurnitureComp = ({ Img, name="None", desc="None", key = "", showButton = true,unqId }) => {
+const FurnitureComp = ({ Img, name="None", desc="None", key = "", showButton = true,unqId,date,location }) => {
   const [modalIsOpen, setIsOpen] = useState(false);
   const [data,setData] = useState({})
   const [ImageLink,setImage] = useState();
@@ -27,19 +27,32 @@ const FurnitureComp = ({ Img, name="None", desc="None", key = "", showButton = t
     setImageIsOpen(false);
   }
 
+  function dateTimeFormateer(timestamp){
+        const { seconds, nanoseconds } = timestamp;
+        const milliseconds = (seconds * 1000) + (nanoseconds / 1e6);
+        const date = new Date(milliseconds);
+        const options = { month: 'short', day: 'numeric', year: '2-digit' };
+        const formattedDate = date.toLocaleDateString('en-US', options);
+        return formattedDate;
+
+  }
   return (
     <div className={style.main} id={style.something} key={key}>
       <div className={style.image} onClick={()=>{setImageIsOpen(true);setImage(Img)}}>
         <Image src={Img} fill></Image>
       </div>
       <h1 className={style.heading}>{name}</h1>
+      <div className={style.headingAndDate}>
+        <h1 className={style.hh2}>{dateTimeFormateer(date)}</h1>
+        <h1 className={style.hh2}>{location}</h1>
+      </div>
       <h1 className={style.desc}>{desc}</h1>
       {showButton && (
         <Button
           width={270}
           href={""}
           backgroundColor={"white"}
-          content={"Contact Donor"}
+          content={"REQUEST ITEM"}
           fontColor={"rgba(121, 117, 114, 1)"}
           onClick={openModal}
           btnClass={2}
