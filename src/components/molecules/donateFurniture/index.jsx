@@ -6,10 +6,10 @@ const DonateFurniture = ({leftHeading,leftCont,leftImg,rightCont,rightHeading,ri
         <AOSComponent>
 
         <div className={style.main}>
-            <div data-aos="fade-right" data-aos-duration="400" className={style.left}>
-                <h1 className={style.heading}>{leftHeading}</h1>
+            <div  className={style.left}>
+                {/* <h1 className={style.heading}>{leftHeading}</h1> */}
                 <h1 className={style.desc}>{leftCont}</h1>
-                <div className={style.line}></div>
+                {/* <div className={style.line}></div> */}
                 <div className={style.image}>
                     <Image src={leftImg} fill></Image>
 
@@ -18,7 +18,7 @@ const DonateFurniture = ({leftHeading,leftCont,leftImg,rightCont,rightHeading,ri
                     </div> */}
                 </div>
             </div>
-            <div data-aos="fade-left" data-aos-duration="400" className={style.right}>
+            <div  className={style.right}>
                 <div className={style.image}>
                     <Image src={rightImg} fill></Image>
                     {/* <div className={style.divdiv}>

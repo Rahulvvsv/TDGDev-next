@@ -4,16 +4,42 @@ import Button from "../../atoms/button";
 import Modal from "react-modal";
 import { useState } from "react";
 import ContactDonarPopUP from "../contactDonarPop";
-const FurnitureComp = ({ Img, name="None", desc="None", key = "", showButton = true,unqId,date,location }) => {
+import {
+  TransformWrapper,
+  TransformComponent,
+  useControls,
+} from "react-zoom-pan-pinch";
+
+const FurnitureComp = ({
+  Img,
+  name = "None",
+  desc = "None",
+  key = "",
+  showButton = true,
+  unqId,
+  date = new Date(),
+  location,
+}) => {
   const [modalIsOpen, setIsOpen] = useState(false);
-  const [data,setData] = useState({})
-  const [ImageLink,setImage] = useState();
+  const [data, setData] = useState({});
+  const [ImageLink, setImage] = useState();
 
   const [imageModalIsOpen, setImageIsOpen] = useState(false);
   function openModal() {
     setIsOpen(true);
-    setData({"donarId":unqId})
+    setData({ donarId: unqId });
   }
+  const Controls = () => {
+    const { zoomIn, zoomOut, resetTransform } = useControls();
+
+    return (
+      <div className={style.tools}>
+        <button onClick={() => zoomIn()}>Zoom In </button>
+        <button onClick={() => zoomOut()}>Zoom out</button>
+        <button onClick={() => resetTransform()}>Reset</button>
+      </div>
+    );
+  };
 
   function afterOpenModal() {
     // references are now sync'd and can be accessed.
@@ -27,19 +53,24 @@ const FurnitureComp = ({ Img, name="None", desc="None", key = "", showButton = t
     setImageIsOpen(false);
   }
 
-  function dateTimeFormateer(timestamp){
-        const { seconds, nanoseconds } = timestamp;
-        const milliseconds = (seconds * 1000) + (nanoseconds / 1e6);
-        const date = new Date(milliseconds);
-        const options = { month: 'short', day: 'numeric', year: '2-digit' };
-        const formattedDate = date.toLocaleDateString('en-US', options);
-        return formattedDate;
-
+  function dateTimeFormateer(timestamp) {
+    const { seconds, nanoseconds } = timestamp;
+    const milliseconds = seconds * 1000 + nanoseconds / 1e6;
+    const date = new Date(milliseconds);
+    const options = { month: "short", day: "numeric", year: "2-digit" };
+    const formattedDate = date.toLocaleDateString("en-US", options);
+    return formattedDate;
   }
   return (
     <div className={style.main} id={style.something} key={key}>
-      <div className={style.image} onClick={()=>{setImageIsOpen(true);setImage(Img)}}>
-        <Image src={Img} fill></Image>
+      <div
+        className={style.image}
+        onClick={() => {
+          setImageIsOpen(true);
+          setImage(Img[0]);
+        }}
+      >
+        <Image src={Img[0]} fill></Image>
       </div>
       <h1 className={style.heading}>{name}</h1>
       <div className={style.headingAndDate}>
@@ -47,6 +78,7 @@ const FurnitureComp = ({ Img, name="None", desc="None", key = "", showButton = t
         <h1 className={style.hh2}>{location}</h1>
       </div>
       <h1 className={style.desc}>{desc}</h1>
+
       {showButton && (
         <Button
           width={270}
@@ -67,10 +99,14 @@ const FurnitureComp = ({ Img, name="None", desc="None", key = "", showButton = t
         subtitle="popup"
       >
         <section className={style.main9}>
-          <ContactDonarPopUP data={data} setData={setData} modalCloser={closeModal}></ContactDonarPopUP>
+          <ContactDonarPopUP
+            data={data}
+            setData={setData}
+            modalCloser={closeModal}
+          ></ContactDonarPopUP>
         </section>
       </Modal>
-      
+
       <Modal
         isOpen={imageModalIsOpen}
         onAfterOpen={afterOpenModal}
@@ -82,24 +118,40 @@ const FurnitureComp = ({ Img, name="None", desc="None", key = "", showButton = t
         <section className={style.main9}>
           {/* <ContactDonarPopUP data={data} setData={setData} modalCloser={closeModal}></ContactDonarPopUP> */}
           <div className={style.main20}>
+            <Image
+              src={"/Icon/cross.png"}
+              width={20}
+              height={20}
+              style={{
+                position: "absolute",
+                right: 20,
+                top: 15,
+                zIndex: 10,
+                filter: "invert(1)",
+                cursor:"pointer"
+              }}
+              onClick={closeImageModal}
+            ></Image>
+            <TransformWrapper
+              initialScale={1}
+              initialPositionX={0}
+              initialPositionY={0}
+              className={style.wrapper}
+            >
+              {({ zoomIn, zoomOut, resetTransform, ...rest }) => (
+                <>
+                  <Controls />
+                  <TransformComponent
 
-          <Image
-            src={"/Icon/cross.png"}
-            width={20}
-            height={20}
-            style={{
-              position: "absolute",
-              right: 20,
-              top: 15,
-              zIndex:10,
-              filter: "invert(1)",
-            }}
-            onClick={closeImageModal}
-          ></Image>
-          <div className={style.modalImage}>
-
-          <Image src={ImageLink} fill></Image>
-          </div>
+              style={{width:"100%",height:"100%"}}
+                   >
+              <div className={style.modalImage}>
+                      <Image src={ImageLink} fill ></Image>
+              </div>
+                  </TransformComponent>
+                </>
+              )}
+            </TransformWrapper>
           </div>
         </section>
       </Modal>

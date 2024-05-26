@@ -24,6 +24,7 @@
     "react-google-recaptcha": "^3.1.0",
     "react-hot-toast": "^2.4.1",
     "react-modal": "^3.16.1",
+    "react-zoom-pan-pinch": "^3.4.4",
     "resend": "^3.2.0",
     "swiper": "^11.0.7"
   },

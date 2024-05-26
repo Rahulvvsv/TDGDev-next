@@ -11,7 +11,9 @@
   margin-left: auto;
   /* height: 400px;
   overflow-y: scroll; */
+  position: relative;
   margin-right: auto;
+  height: 326px;
 }
 .image {
   position: relative;
@@ -29,6 +31,11 @@
   line-height: 32px;
   letter-spacing: -0.6299999952316284px;
   text-align: left;
+}
+.testt{
+  position: absolute;
+  left: 20px;
+  bottom: 15px;
 }
 .name {
   margin-top: 30px;

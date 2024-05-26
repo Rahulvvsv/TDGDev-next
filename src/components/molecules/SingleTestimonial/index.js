@@ -24,7 +24,7 @@ const SingleTestimonial = ({testimonial,name,surname,opacity,index}) => {
                     <Image src={"/Icon/quote3.svg"} fill></Image>
             </div>
                 <h1 className={style.heading}>{testimonial}</h1>
-                <div>
+                <div className={style.testt}>
                     <h1 className={style.name}>{name}</h1>
                     <h1 className={style.surname}>{surname}</h1>
                 </div>

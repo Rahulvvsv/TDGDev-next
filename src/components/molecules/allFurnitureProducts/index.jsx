@@ -12,7 +12,7 @@ const AllFurnitureProducts = ({ data }) => {
                 <FurnitureComp
                 unqId = {e.id}
                 key={key}
-                Img={e?.imageUrl[0]}
+                Img={e?.imageUrl}
                 name={e.productName}
                 desc={e.description}
                 location={e.location}

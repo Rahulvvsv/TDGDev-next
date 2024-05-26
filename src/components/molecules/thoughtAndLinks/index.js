@@ -19,13 +19,13 @@ const ThoughtAndLink = ({ Description, name, ButtonContent, href = "" }) => {
           <h1 className={style.heading}>"Helping people furnish their homes through the TDG Furniture Exchange is incredibly rewarding. It reminds us of the transformative power of design and the positive impact we can create in our communities"</h1>
           <h1 className={style.name}>- Blima Ehrentreu, The Designers Group</h1>
           <br></br>
-          <Button
+          {/* <Button
             content={"About Us"}
             backgroundColor={"white"}
             fontColor={"black"}
             btnClass={2}
             href={"/aboutUs"}
-          ></Button>
+          ></Button> */}
         </SwiperSlide>
         {/* <SwiperSlide>
           <h1 className={style.heading}>Transforming spaces, transforming lives. Join TDG Furniture Exchange: where surplus meets purpose, and generosity finds a home</h1>

@@ -74,21 +74,21 @@ const ContactForm = () => {
         <form className={style.main2} onSubmit={handleSubmit}>
           <InputField
             onChange={dataSetter}
-            placeholder={"NAME*"}
+            placeholder={"Name*"}
             name={"name"}
             value={data.name}
           />
           {errors.name && <div className={style.error}>{errors.name}</div>}
           <InputField
             onChange={dataSetter}
-            placeholder={"EMAIL*"}
+            placeholder={"Email*"}
             name={"email"}
             value={data.email}
           />
           {errors.email && <div className={style.error}>{errors.email}</div>}
           <InputField
             onChange={dataSetter}
-            placeholder={"MESSAGE*"}
+            placeholder={"Message*"}
             name={"message"}
             height={70}
             type="text-area"

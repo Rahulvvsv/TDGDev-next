@@ -23,11 +23,11 @@ export default function Landing() {
       </section>
       <section className={style.buttonComponent}>
 
-      <Button
+      {/* <Button
         href={"/contactUs"}
         content={"Contact Us"}
         effect={true}
-        ></Button>
+        ></Button> */}
         </section>
       <AOSComponent>
         <section className={style.main5} data-aos="fade-up">
