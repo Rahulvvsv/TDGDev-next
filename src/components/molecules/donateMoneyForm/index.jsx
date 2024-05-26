@@ -219,7 +219,7 @@ const DonateMoneyForm = ({ href }) => {
           >
             <Image src={"/Icon/4.png"} width={190} height={190} />
             <h1 className={style.heading}>
-              Thank you for your generous offer to donate your Money. We appreciate your support!
+              Thank you for your generous donation to our furniture exchange initiative your support helps transform houses into homes for those in need.
             </h1>
           </motion.div>
         </>

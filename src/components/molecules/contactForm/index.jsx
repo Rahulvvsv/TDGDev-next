@@ -109,10 +109,11 @@ const ContactForm = () => {
           <Image src={"/Icon/4.png"} width={190} height={190} />
           <p>
             Thank you for submitting the Contact Form.
-            <span style={{whiteSpace:"pre-line"}}>
-                &nbsp; Our team will reach out
+          </p>
+          <p>
+
+              Our team will reach out
             to you soon!
-                </span> 
           </p>
         </div>
       )}
