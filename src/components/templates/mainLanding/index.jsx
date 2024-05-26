@@ -39,6 +39,9 @@ export default function Landing() {
           ></ThoughtAndLink>
         </section>
       </AOSComponent>
+      <section>
+        <h1 className={style.lastheading}>IN MEMORY OF YONAH BEN AKIVA</h1>
+      </section>
     </section>
   );
 }

@@ -16,17 +16,28 @@
 }
 
 .main5{
-    margin-bottom: 50px;
+    margin-bottom: 80px;
 }
 .buttonComponent{
     margin-top: 10px;
     margin-bottom: 60px;
 }
-
+.lastheading{
+    /* width: 90; */
+    font-size: 18px;
+    text-align: center;
+    font-weight: 500;
+    /* background-color: red; */
+}
 @media screen  and (max-width:460px){
     .buttonComponent{
         margin-top: 0px;
         margin-bottom: 40px;
     }
-    
+    .main5{
+        margin-bottom: 50px;
+    }
+   .lastheading{
+    margin-bottom: 30px;
+   } 
 }
