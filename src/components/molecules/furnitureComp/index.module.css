@@ -39,7 +39,7 @@
   justify-content: space-between;
 
   margin-left: 15px;
-  width: 250px;
+  width: 270px;
   margin-bottom: 5px;
 
   margin-top: 5px;
@@ -105,6 +105,10 @@
   /* width: 270px !important; */
 }
 
+.main>div:last-child {
+  /* background-color: red; */
+  margin-left: 15px;
+}
 .main > a {
   margin-left: 15px;
 }
@@ -221,6 +225,10 @@
     /* width: 135px !important; */
   }
 
+.main>div:last-child {
+  /* background-color: red; */
+  margin-left: 0px;
+}
   .main8 {
     width: 90vw !important;
     height: 90vh !important;
