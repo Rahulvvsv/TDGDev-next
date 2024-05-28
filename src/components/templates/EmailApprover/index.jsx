@@ -28,9 +28,10 @@ const UploadRequestHandlerComp = ({ client, owner, status }) => {
       <section className={style.main}>
         <div className={style.left}>
           <FurnitureComp
-            Img={owner.imageUrl[0]}
+            Img={owner.imageUrl}
             name={owner.name}
             desc={owner.description}
+            date={owner.date}
             showButton={false}
           ></FurnitureComp>
         </div>

@@ -18,6 +18,7 @@ const UploadRequestHandlerComp = ({
   email,
   unqid,
   status,
+  udate
 }) => {
   // console.log(unqid, "from here");
   const router = useRouter();
@@ -42,11 +43,12 @@ const UploadRequestHandlerComp = ({
             Img={img}
             name={name}
             desc={desc}
+            date={udate}
             showButton={false}
           ></FurnitureComp>
         </div>
         <div className={style.right}>
-          <h1 className={style.heading}>Date-{date || `None`}</h1>
+          <h1 className={style.heading}>Date-{udate.toDate().toString().slice(0,16) || `None`}</h1>
           <h1 className={style.heading}>Location-{location || `None`} </h1>
           <h1 className={style.heading}>Email-{email || `None`}</h1>
 
@@ -170,13 +172,14 @@ return (
             <UploadRequestHandlerComp
             unqid={e.id}
             key={e.id}
-            img={e.imageUrl[0] || "/"}
+            img={e.imageUrl || "/"}
             name={e.name}
             desc={e.description}
             date={e.timestamp}
             location={e.location}
             email={e.email}
             status={e.status}
+            udate={e.date}
             ></UploadRequestHandlerComp>
             );
           }
