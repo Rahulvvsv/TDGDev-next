@@ -97,13 +97,39 @@ export const fetchDataBasedOnId  = async () =>{
 
   return  Promise.all( OwnerAndClientDetails);
 }
+
+function sortElementsByTimestamp(elements) {
+    return elements.sort((a, b) => {
+      try{
+
+        // Compare seconds
+        if (a.timestamp.seconds > b.timestamp.seconds) return -1;
+        if (a.timestamp.seconds < b.timestamp.seconds) return 1;
+        
+        // If seconds are equal, compare nanoseconds
+        if (a.timestamp.nanoseconds > b.timestamp.nanoseconds) return -1;
+        if (a.timestamp.nanoseconds < b.timestamp.nanoseconds) return 1;
+        
+        // Timestamps are equal
+        return 0;
+      }
+      catch{
+        print("error")
+        return 0;
+
+      }
+
+    });
+}
 export const fetchData = async () => {
   const querySnapshot = await getDocs(collection(db, "newData"));
   const fetchedData = [];
   querySnapshot.forEach((doc) => {
     fetchedData.push({ id: doc.id, ...doc.data() });
   });
-  return fetchedData;
+  let sortedElements = sortElementsByTimestamp(fetchedData);
+  // console.log(sortedElements)
+  return sortedElements;
 };
 
 export const upLoadData = async (formData) => {
