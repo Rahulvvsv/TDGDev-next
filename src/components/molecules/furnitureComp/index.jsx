@@ -70,7 +70,7 @@ const FurnitureComp = ({
           setImage(Img[0]);
         }}
       >
-        <Image src={Img[0]} fill></Image>
+        <Image alt=" " src={Img[0]} fill></Image>
       </div>
       <h1 className={style.heading}>{name}</h1>
       <div className={style.headingAndDate}>
@@ -146,7 +146,7 @@ const FurnitureComp = ({
               style={{width:"100%",height:"100%"}}
                    >
               <div className={style.modalImage}>
-                      <Image src={ImageLink} fill ></Image>
+                      <Image alt=" " src={ImageLink} fill ></Image>
               </div>
                   </TransformComponent>
                 </>

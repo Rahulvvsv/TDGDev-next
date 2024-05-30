@@ -13,7 +13,7 @@ export default Imageapprove;
 
 // export async function getServerSideProps(context) {
 //     let data = await fetchData();
-//     // console.log(data)
+//     // //console.log(data)
 
 //   return {
 //     props: {

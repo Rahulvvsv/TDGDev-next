@@ -36,7 +36,7 @@
 //   const handleImageChange = (e) => {
 //     const imageFile = e.target.files;
 //     setFile(imageFile[0]);
-//     console.log(imageFile);
+//     //console.log(imageFile);
 //     setData((prevData) => ({
 //       ...prevData,
 //       image: imageFile,
@@ -45,7 +45,7 @@
 //   };
 //   const handleSubmit = async (e) => {
 //     e.preventDefault();
-//     console.log("clicked");
+//     //console.log("clicked");
 //     upLoadData(data);
 //     setSubmitted(true);
 //   };
@@ -62,9 +62,9 @@
 //         >
 //           <div className={style.left}>
 //             <div className={style.imageUpload}>
-//               {file && <Image src={previewUrl} className={style.imageInside} fill></Image>}
+//               {file && <Image alt=" " src={previewUrl} className={style.imageInside} fill></Image>}
 //               <label htmlFor="files" className={style.inputs123}>
-//                 <Image src={"/Icon/plus.png"} width={78} height={78}></Image>
+//                 <Image alt=" " src={"/Icon/plus.png"} width={78} height={78}></Image>
 //               </label>
 //               <input
 //                 name="image"
@@ -136,7 +136,7 @@
 //           exit={{ opacity: 0 }}
 //           className={style.main2}
 //         >
-//           <Image src={"/Icon/4.png"} width={190} height={190}></Image>
+//           <Image alt=" " src={"/Icon/4.png"} width={190} height={190}></Image>
 //           <h1 className={style.heading1}>Thank you for your generous offer to donate your Furniture. We will notify you as soon as an opportunity comes up, and you can confirm your intent to donate. We appreciate your support!</h1>
 //         </motion.div>
 //       )}
@@ -181,7 +181,7 @@ const UploadForm = () => {
   }, [file]);
 
   const dataSetter = (e) => {
-    // console.log(data);
+    // //console.log(data);
     const { name, value } = e.target;
     setData((prev) => ({ ...prev, [name]: value }));
   };
@@ -279,10 +279,10 @@ const UploadForm = () => {
           <div className={style.left}>
             <div className={style.imageUpload}>
               {file && (
-                <Image src={previewUrl} className={style.imageInside} fill />
+                <Image alt=" " src={previewUrl} className={style.imageInside} fill />
               )}
               <label htmlFor="files" className={style.inputs123}>
-                <Image src={"/Icon/plus.png"} width={78} height={78} />
+                <Image alt=" " src={"/Icon/plus.png"} width={78} height={78} />
               </label>
               <input
                 name="image"
@@ -369,7 +369,7 @@ const UploadForm = () => {
           exit={{ opacity: 0 }}
           className={style.main2}
         >
-          <Image src={"/Icon/4.png"} width={190} height={190} />
+          <Image alt=" " src={"/Icon/4.png"} width={190} height={190} />
           <h1 className={style.heading1}>
           Thank you for your offer to donate. Someone will be in touch with next steps. Your generosity is appreciated!
           </h1>

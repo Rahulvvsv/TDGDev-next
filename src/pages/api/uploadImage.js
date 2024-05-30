@@ -2,7 +2,7 @@
 import { NextResponse } from 'next/server'
 const handler = (req, res) => {
   if (req.method === "POST") {
-    // console.log(req)
+    // //console.log(req)
     try {
       fetch("https://www.google.com/recaptcha/api/siteverify", {
         method: "POST",
@@ -13,7 +13,7 @@ const handler = (req, res) => {
       })
         .then((reCaptchaRes) => reCaptchaRes.json())
         .then((reCaptchaRes) => {
-          console.log(
+          //console.log(
             reCaptchaRes,
             reCaptchaRes.score,
             "Response from Google reCatpcha verification API"

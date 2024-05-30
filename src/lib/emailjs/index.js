@@ -16,7 +16,7 @@ function objectToFormData(obj) {
 
 
 export const Emailer = async (data) =>{
-  console.log(data);
+  //console.log(data);
 const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
 const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
 const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
@@ -25,17 +25,17 @@ const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
       })
       .then(
         () => {
-          console.log('SUCCESS!');
+          //console.log('SUCCESS!');
         },
         (error) => {
-          console.log('FAILED...', error.text);
+          //console.log('FAILED...', error.text);
         },
       );
   };
 
 
 export const ContactEmailer = async (data) =>{
-  console.log(data);
+  //console.log(data);
 const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
 const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
 const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_CONTACT_ID;
@@ -44,16 +44,16 @@ const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_CONTACT_ID;
       })
       .then(
         () => {
-          console.log('SUCCESS!');
+          //console.log('SUCCESS!');
         },
         (error) => {
-          console.log('FAILED...', error.text);
+          //console.log('FAILED...', error.text);
         },
       );
   };
 
   export const ServiceEmailer = async (data) =>{
-  console.log(data);
+  //console.log(data);
 const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
 const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
 const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_SERVICE_ID;
@@ -62,10 +62,10 @@ const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_SERVICE_ID;
       })
       .then(
         () => {
-          console.log('SUCCESS!');
+          //console.log('SUCCESS!');
         },
         (error) => {
-          console.log('FAILED...', error.text);
+          //console.log('FAILED...', error.text);
         },
       );
   };

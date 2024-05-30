@@ -20,11 +20,11 @@ const UploadRequestHandlerComp = ({
   status,
   udate
 }) => {
-  // console.log(unqid, "from here");
+  // //console.log(unqid, "from here");
   const router = useRouter();
 
   const acceptHandler = (id) => {
-    // console.log("clickedd", id);
+    // //console.log("clickedd", id);
     updateDocument(id, { status: "showOnPage" });
     // router.push("")
     toast.success("Item added to page")
@@ -107,13 +107,14 @@ const UploadRequestHandler = () => {
   const [data,setData] = useState([])
   const [selectedButton, setSelectedButton] = useState(1);
 
+
   useEffect(() => {
 
     const fetcher = async () =>{
       let data = await fetchData();
       setData(data)
     }
-    fetcher();
+     fetcher();
     if (selectedButton == 1) {
       let newArr = data.map((e) => {
         if (e.status == "hidden") {
@@ -130,6 +131,7 @@ const UploadRequestHandler = () => {
         }
       });
       setDataToShow(newArr);
+      console.log("hi")
     }
   }, [selectedButton]);
 return (

@@ -29,13 +29,13 @@ const firebaseConfig = {
   appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
   storageBucket: "gs://tdgdev.appspot.com",
 };
-function sortByTimestamp(array) {
-    return array.sort((a, b) => {
-        const timestampA = new Date(a.timestamp);
-        const timestampB = new Date(b.timestamp);
-        return timestampB - timestampA; // Sort in descending order (newer data first)
-    });
-}
+// function sortByTimestamp(array) {
+//     return array.sort((a, b) => {
+//         const timestampA = new Date(a.timestamp);
+//         const timestampB = new Date(b.timestamp);
+//         return timestampB - timestampA; // Sort in descending order (newer data first)
+//     });
+// }
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
@@ -43,7 +43,7 @@ const db = getFirestore(app);
 const storage = getStorage(app);
 
 export const Firebase = async () => {
-  console.log(app);
+  //console.log(app);
 };
 export const  updateDocument = async (documentId, newData) => {
     // Reference to the document you want to update
@@ -66,7 +66,7 @@ export const  updateClientDetails = async (documentId, newData) => {
 }
 
 export const fetchDataLocation = async (location) => {
-  console.log("heree")
+  //console.log("heree")
   const q = query(collection(db, "newData"), where("location", "==", location));
 
   const querySnapshot = await getDocs(q);
@@ -97,12 +97,39 @@ export const fetchDataBasedOnId  = async () =>{
 
   return  Promise.all( OwnerAndClientDetails);
 }
+
+function sortElementsByTimestamp(elements) {
+    return elements.sort((a, b) => {
+      try{
+
+        // Compare seconds
+        if (a.timestamp.seconds > b.timestamp.seconds) return -1;
+        if (a.timestamp.seconds < b.timestamp.seconds) return 1;
+        
+        // If seconds are equal, compare nanoseconds
+        if (a.timestamp.nanoseconds > b.timestamp.nanoseconds) return -1;
+        if (a.timestamp.nanoseconds < b.timestamp.nanoseconds) return 1;
+        
+        // Timestamps are equal
+        return 0;
+      }
+      catch(e){
+        // console.log("error",e)
+        return 0;
+
+      }
+
+    });
+}
 export const fetchData = async () => {
   const querySnapshot = await getDocs(collection(db, "newData"));
   const fetchedData = [];
+  console.log("calling")
   querySnapshot.forEach((doc) => {
     fetchedData.push({ id: doc.id, ...doc.data() });
   });
+  // let sortedElements = sortElementsByTimestamp(fetchedData);
+  // //console.log(sortedElements)
   return fetchedData;
 };
 
@@ -127,7 +154,7 @@ export const upLoadData = async (formData) => {
       date:new Date(),
       status:"hidden"
     });
-    console.log("Document written with ID: ", docRef.id);
+    //console.log("Document written with ID: ", docRef.id);
   } catch (error) {
     console.error("Error adding document: ", error);
   }
@@ -147,7 +174,7 @@ export const uploadContactForm = async (formData) =>{
       status:"newReq"
 
     });
-    console.log("Document written with ID: ", docRef.id);
+    //console.log("Document written with ID: ", docRef.id);
   } catch (error) {
     console.error("Error adding document: ", error);
   }

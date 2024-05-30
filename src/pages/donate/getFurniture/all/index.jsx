@@ -4,7 +4,7 @@ import { fetchData } from "@/lib/firebase";
 import { locationsData } from "../[location]";
 import Link from "next/link";
 const index = ({data}) => {
-  console.log(locationsData)
+  //console.log(locationsData)
     return (
         <section className={style.main}>
           <section className={style.left}>

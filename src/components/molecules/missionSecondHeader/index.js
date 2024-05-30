@@ -62,7 +62,7 @@ function Scroll() {
 const MissionSecondHeader = () => {
   const [mobileView, setMobileView] = useState(false);
   useEffect(() => {
-    console.log(mobileView);
+    //console.log(mobileView);
     const handleResize = () => {
       if (window.innerWidth < 700) {
         setMobileView(true);

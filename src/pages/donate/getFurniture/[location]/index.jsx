@@ -37,7 +37,7 @@ const index = ({data,id}) => {
 export async function getServerSideProps(context) {
     const {params} = context;
     let id  = params.location;
-    console.log(id)
+    //console.log(id)
     let data = await fetchDataLocation(id);
     data =JSON.stringify(data)
 

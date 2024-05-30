@@ -20,6 +20,22 @@
   /* padding-top: 10px !important; */
 }
 
+.mainForLanding {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-left: auto !important;
+  margin-right: auto !important   ;
+  flex-wrap: wrap;
+  padding-top: 50px !important;
+  padding-bottom: 50px !important;
+  border-top: 1px solid #92877b;
+  border-bottom: 1px solid #92877b;
+  margin-top: 32px;
+  /* padding-top: 10px !important; */
+}
+
 .main2 {
   display: flex;
   flex-direction: column;

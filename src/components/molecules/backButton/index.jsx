@@ -8,7 +8,7 @@ const BackButton = ({left="15%"}) => {
             <div className={style.image} onClick={()=>{
                 router.back();
             }}>
-                <Image src={"/Icon/back2.svg"} fill></Image>
+                <Image alt=" " src={"/Icon/back2.svg"} fill></Image>
 
             </div>
     </div>

@@ -11,7 +11,7 @@ import { toast } from "react-hot-toast";
 import { Emailer } from "@/lib/emailjs";
 
 const UploadRequestHandlerComp = ({ client, owner, status }) => {
-  // console.log(unqid, "from here");
+  // //console.log(unqid, "from here");
   const router = useRouter();
 
   const acceptHandler = (id) => {
@@ -131,10 +131,10 @@ const EmailApprover = () => {
     const DataCheckers = async (data3) => {
       if (selectedButton == 1) {
         let newArr = data3.map((e) => {
-          // console.log(e)
+          // //console.log(e)
           if (e != undefined) {
             if (e.client.status == "newReq") {
-              console.log(e.client);
+              //console.log(e.client);
               return e;
             }
           }
@@ -152,16 +152,16 @@ const EmailApprover = () => {
         });
         setDataToShow(newArr);
       }
-      console.log(dataToShow);
+      //console.log(dataToShow);
     };
 
     let FinalRunner = async () => {
       let fetchedData = await fetcher();
-      console.log(fetchedData);
+      //console.log(fetchedData);
       let runner = await DataCheckers(fetchedData);
     };
     FinalRunner();
-  }, [selectedButton, received]);
+  }, [selectedButton]);
   return (
     <section className={style.main3}>
       <div className={style.main2}>

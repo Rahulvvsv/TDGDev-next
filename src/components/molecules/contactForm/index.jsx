@@ -48,14 +48,14 @@ const ContactForm = () => {
   const dataSetter = (e) => {
     const { name, value } = e.target;
     setData((prev) => ({ ...prev, [name]: value }));
-    console.log(data);
+    //console.log(data);
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (validateForm()) {
       // Submit the form data
-      console.log("Form submitted:", data);
+      //console.log("Form submitted:", data);
       // Reset form after submission if needed
       //   setData({
       //     name: "",
@@ -106,7 +106,7 @@ const ContactForm = () => {
         </form>
       ) : (
         <div className={style.main2}>
-          <Image src={"/Icon/4.png"} width={190} height={190} />
+          <Image alt=" " src={"/Icon/4.png"} width={190} height={190} />
           <p>
             Thank you for submitting the Contact Form.
           </p>
@@ -120,15 +120,15 @@ const ContactForm = () => {
       <div className={style.main3}>
         {/* Contact information */}
         <div className={style.main4}>
-          <Image src={"/Icon/globe.png"} width={16} height={16}></Image>
+          <Image alt=" " src={"/Icon/globe.png"} width={16} height={16}></Image>
           <h1 className={style.subHeading}>info@tdgfurnitureexchange.com</h1>
         </div>
         <div className={style.main4}>
-          <Image src={"/Icon/phone.png"} width={16} height={16}></Image>
+          <Image alt=" " src={"/Icon/phone.png"} width={16} height={16}></Image>
           <h1 className={style.subHeading}>646-543-7515</h1>
         </div>
         <div className={style.main4}>
-          <Image src={"/Icon/map.png"} width={16} height={16}></Image>
+          <Image alt=" " src={"/Icon/map.png"} width={16} height={16}></Image>
           <h1 className={style.subHeading}>
             170 53rd Street 327, Brooklyn NY 11232
           </h1>

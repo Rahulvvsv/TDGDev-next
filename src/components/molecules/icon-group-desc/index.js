@@ -8,11 +8,11 @@ const IconGroupDesc = () => {
 
     <div className={style.main} data-aos="fade-down" >
         <div className={style.dottedLine}>
-            <Image src={"/Icon/line.png"} fill></Image>
+            <Image alt=" " src={"/Icon/line.png"} fill></Image>
         </div>
         <div className={style.dottedLine2}>
 
-            <Image src={"/Icon/line1.png"}  fill></Image>
+            <Image alt=" " src={"/Icon/line1.png"}  fill></Image>
         </div>
         <Icondesc src={"1.png"} first={"Choose Location"} second={"Pick a location from our options."}></Icondesc>
         <Icondesc  src={"2.png"} first={"Select Furniture"} second={"Browse the furniture and select what you need."}></Icondesc>

@@ -3,7 +3,7 @@ import Image from "next/image";
 const Icondesc = ({src,first,second,aos,time}) => {
     return (
     <div className={style.main} data-aos={aos} data-aos-duration={time}>
-        <Image src={"/Icon/"+src} width={108} height={108} className={style.images}></Image>
+        <Image alt=" " src={"/Icon/"+src} width={108} height={108} className={style.images}></Image>
         <div className={style.main2}>
 
         
