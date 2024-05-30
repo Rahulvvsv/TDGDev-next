@@ -14,10 +14,10 @@ const handler = (req, res) => {
         .then((reCaptchaRes) => reCaptchaRes.json())
         .then((reCaptchaRes) => {
           //console.log(
-            reCaptchaRes,
-            reCaptchaRes.score,
-            "Response from Google reCatpcha verification API"
-          );
+          //   reCaptchaRes,
+          //   reCaptchaRes.score,
+          //   "Response from Google reCatpcha verification API"
+          // );
           if (reCaptchaRes.success) {
             // Save data to the database from here
             res.status(200).json({
