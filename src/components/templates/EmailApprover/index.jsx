@@ -10,7 +10,7 @@ import { useRouter } from "next/router";
 import { toast } from "react-hot-toast";
 import { Emailer } from "@/lib/emailjs";
 
-const UploadRequestHandlerComp = ({ client, owner, status }) => {
+const UploadRequestHandlerComp = ({ client, owner, status,key }) => {
   // //console.log(unqid, "from here");
   const router = useRouter();
 
@@ -122,8 +122,18 @@ const EmailApprover = () => {
 
   const [received, setReceived] = useState(false);
   useEffect(() => {
+
+    function sortByTimestamp(data) {
+      return data.sort((a, b) => {
+        if (a.client.date.seconds === b.client.date.seconds) {
+          return b.client.date.nanoseconds - a.client.date.nanoseconds;
+        }
+        return b.client.date.seconds - a.client.date.seconds;
+      });
+    }
     const fetcher = async () => {
       let data2 = await fetchDataBasedOnId();
+      data2 = sortByTimestamp(data2);
       setData(data2);
       setReceived(true);
       return data2;

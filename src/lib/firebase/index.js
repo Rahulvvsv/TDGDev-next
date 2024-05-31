@@ -55,6 +55,14 @@ export const  updateDocument = async (documentId, newData) => {
 
 }
 
+export function sortByTimestamp(data) {
+  return data.sort((a, b) => {
+    if (a.date.seconds === b.date.seconds) {
+      return b.date.nanoseconds - a.date.nanoseconds;
+    }
+    return b.date.seconds - a.date.seconds;
+  });
+}
 export const  updateClientDetails = async (documentId, newData) => {
     // Reference to the document you want to update
     let docRef = doc(db,"contactDonarList",documentId)
@@ -75,7 +83,8 @@ export const fetchDataLocation = async (location) => {
   querySnapshot.forEach((doc) => {
     fetchedData.push({ id: doc.id, ...doc.data() });
   });
-  return fetchedData;
+  let sortedElements = sortByTimestamp(fetchedData)
+  return sortedElements;
 };
 export const fetchDataBasedOnId  = async () =>{
 
@@ -98,29 +107,8 @@ export const fetchDataBasedOnId  = async () =>{
   return  Promise.all( OwnerAndClientDetails);
 }
 
-function sortElementsByTimestamp(elements) {
-    return elements.sort((a, b) => {
-      try{
 
-        // Compare seconds
-        if (a.timestamp.seconds > b.timestamp.seconds) return -1;
-        if (a.timestamp.seconds < b.timestamp.seconds) return 1;
-        
-        // If seconds are equal, compare nanoseconds
-        if (a.timestamp.nanoseconds > b.timestamp.nanoseconds) return -1;
-        if (a.timestamp.nanoseconds < b.timestamp.nanoseconds) return 1;
-        
-        // Timestamps are equal
-        return 0;
-      }
-      catch(e){
-        // console.log("error",e)
-        return 0;
 
-      }
-
-    });
-}
 export const fetchData = async () => {
   const querySnapshot = await getDocs(collection(db, "newData"));
   const fetchedData = [];
@@ -128,9 +116,11 @@ export const fetchData = async () => {
   querySnapshot.forEach((doc) => {
     fetchedData.push({ id: doc.id, ...doc.data() });
   });
-  // let sortedElements = sortElementsByTimestamp(fetchedData);
+  let sortedElements = sortByTimestamp(fetchedData);
   // //console.log(sortedElements)
-  return fetchedData;
+  // console.log(fetchedData)
+  console.log("running")
+  return sortedElements;
 };
 
 export const upLoadData = async (formData) => {
