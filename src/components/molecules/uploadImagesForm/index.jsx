@@ -38,7 +38,6 @@
 //   const dataSetter = (e) => {
 //     // //console.log(data);
 
-
 //     const { name, value } = e.target;
 //     setData((prev) => ({ ...prev, [name]: value }));
 //   };
@@ -418,6 +417,25 @@ const UploadForm = () => {
             <br />
             {previewUrls.length>0 && <p className={style.heading}>Current Image : {currentImageIndex+1}/{previewUrls.length}</p>}
             {errors.images && <div className={style.error}>{errors.images}</div>}
+
+            {
+              (previewUrls.length>0 && previewUrls.length) &&
+              <div className={style.uploadMoreImages} >
+
+                          <label htmlFor="files" className={style.inputs999}>
+                            <h1>Upload More Images</h1>
+                          </label>
+                          <input
+                            name="images"
+                            onChange={handleImageChange}
+                            id="files"
+                            style={{ visibility: "hidden" }}
+                            accept="image/*"
+                            type="file"
+                            multiple
+                          />
+                </div>
+            }
           </div>
 
           <motion.div className={style.right}>

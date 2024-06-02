@@ -33,6 +33,20 @@
   background-color: white;
   border: 1px solid rgba(0, 0, 0, 0.509);
 }
+.inputs999{
+  width: 70%;
+display: flex;
+  /* background-color: red; */
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 15px !important;
+  border-radius: 5px;
+  border: 1px solid rgba(121, 117, 114, 0.501) ;
+  margin-top: 5px;
+  font-weight: 300 !important;
+  color: rgba(121, 117, 114, 1);
+}
 .navbuttondiv{
   width: 100%;
   display: flex;
@@ -131,5 +145,8 @@ text-align: center;
   .right:last-child > div > div {
     /* background-color: red; */
     width: 100% !important;
+  }
+  .inputs999{
+    width: 100%;
   }
 }
