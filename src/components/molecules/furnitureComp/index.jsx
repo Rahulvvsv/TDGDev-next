@@ -87,7 +87,7 @@ const FurnitureComp = ({
                   {Img.map((e,index)=>{
                     return(
 
-                      <div className={index ==0 ?style.smallBtn:style.smallBtn2} >
+                      <div key={index} className={index ==0 ?style.smallBtn:style.smallBtn2} >
 
                     </div>
                     )
