@@ -57,10 +57,10 @@ export const  updateDocument = async (documentId, newData) => {
 
 export function sortByTimestamp(data) {
   return data.sort((a, b) => {
-    if (a.date.seconds === b.date.seconds) {
-      return b.date.nanoseconds - a.date.nanoseconds;
+    if (a?.date?.seconds === b?.date?.seconds) {
+      return b?.date?.nanoseconds - a?.date?.nanoseconds;
     }
-    return b.date.seconds - a.date.seconds;
+    return b?.date?.seconds - a?.date?.seconds;
   });
 }
 export const  updateClientDetails = async (documentId, newData) => {

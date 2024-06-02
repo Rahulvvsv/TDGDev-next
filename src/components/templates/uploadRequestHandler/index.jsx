@@ -48,7 +48,7 @@ const UploadRequestHandlerComp = ({
           ></FurnitureComp>
         </div>
         <div className={style.right}>
-          <h1 className={style.heading}>Date-{udate.toDate().toString().slice(0,16) || `None`}</h1>
+          <h1 className={style.heading}>Date-{udate?.toDate().toString().slice(0,16) || `None`}</h1>
           <h1 className={style.heading}>Location-{location || `None`} </h1>
           <h1 className={style.heading}>Email-{email || `None`}</h1>
 
