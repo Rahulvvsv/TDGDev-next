@@ -1,0 +1,32 @@
+.something{
+    height: 150px !important;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    margin-left: 20px !important;
+    gap: 20px;
+    /* overflow-y: scroll; */
+}
+
+.heading{
+    font-size: 12px;
+    margin-block-end: 0px !important;
+    margin-block-start: 0px !important;
+
+    line-height: 1px !important;
+}
+
+.hh2 .desc{
+    font-size: 6px !important;
+    margin-block-end: 0px !important;
+    
+    margin-block-start: 0px !important;
+    line-height: 1px !important;
+
+
+
+}
+.css-n3fyjk-MuiDataGrid-root .MuiDataGrid-cell{
+    line-height: 0px !important;
+ }

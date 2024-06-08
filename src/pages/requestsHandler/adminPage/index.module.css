@@ -1,0 +1,13 @@
+.dataGrid{
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.header{
+    padding-left: 20px !important;
+    margin-left: 20px;
+}

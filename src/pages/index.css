@@ -23,6 +23,9 @@ a {
   overflow-x: hidden;
 }
 
+.css-n3fyjk-MuiDataGrid-root .MuiDataGrid-cell{
+    line-height: 0px !important;
+ }
 .transform-component-module_wrapper__SPB86{
   width: 100% !important;
   height: 100% !important;
