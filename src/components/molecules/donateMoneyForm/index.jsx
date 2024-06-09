@@ -14,9 +14,9 @@
 
 //       if(searchParams.has("donation")){
 //           let value = searchParams.get("donation")
-//           console.log("it has")
+//           //console.log("it has")
 //           if(value=="1"){
-//               console.log('hello there')
+//               //console.log('hello there')
 //               setSubmitted(true);
               
 //             }
@@ -27,7 +27,7 @@
 //     let name = e.target.name;
 //     let value = e.target.value;
 //     setData((prev) => ({ ...prev, [name]: value }));
-//     console.log(data);
+//     //console.log(data);
 //   };
 //   return (
 //     <div className={style.main}>
@@ -76,7 +76,7 @@
 //             exit={{ opacity: 0 }}
 //             className={style.main5}
 //           >
-//             <Image src={"/Icon/4.png"} width={190} height={190}></Image>
+//             <Image alt=" " src={"/Icon/4.png"} width={190} height={190}></Image>
 //             <h1 className={style.heading}>
 //               Thank you for your generous offer to donate your Money. We appreciate your support!
 //             </h1>
@@ -217,7 +217,7 @@ const DonateMoneyForm = ({ href }) => {
             exit={{ opacity: 0 }}
             className={style.main5}
           >
-            <Image src={"/Icon/4.png"} width={190} height={190} />
+            <Image alt=" " src={"/Icon/4.png"} width={190} height={190} />
             <h1 className={style.heading}>
               Thank you for your generous donation to our furniture exchange initiative your support helps transform houses into homes for those in need.
             </h1>

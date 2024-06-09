@@ -60,25 +60,25 @@ export default function App() {
       >
 
         <SwiperSlide>
-          <div className={style.something}><Image src={"/about/slider/1.png"} responsive fill></Image></div>
+          <div className={style.something}><Image alt=" " src={"/about/slider/1.png"} responsive fill></Image></div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className={style.something}><Image src={"/about/slider/2.png"} responsive fill></Image></div>
+          <div className={style.something}><Image alt=" " src={"/about/slider/2.png"} responsive fill></Image></div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className={style.something}><Image src={"/about/slider/3.png"} responsive fill></Image></div>
+          <div className={style.something}><Image alt=" " src={"/about/slider/3.png"} responsive fill></Image></div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className={style.something}><Image src={"/about/slider/4.png"}  responsive fill></Image></div>
+          <div className={style.something}><Image alt=" " src={"/about/slider/4.png"}  responsive fill></Image></div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className={style.something}><Image src={"/about/slider/5.png"}  responsive fill></Image></div>
+          <div className={style.something}><Image alt=" " src={"/about/slider/5.png"}  responsive fill></Image></div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className={style.something}><Image src={"/about/slider/6.png"}  responsive fill></Image></div>
+          <div className={style.something}><Image alt=" " src={"/about/slider/6.png"}  responsive fill></Image></div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className={style.something}><Image src={"/about/slider/7.png"}  responsive fill></Image></div>
+          <div className={style.something}><Image alt=" " src={"/about/slider/7.png"}  responsive fill></Image></div>
         </SwiperSlide>
       </Swiper>
     </>

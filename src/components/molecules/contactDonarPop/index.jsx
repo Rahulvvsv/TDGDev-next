@@ -13,11 +13,11 @@ const ContactDonarPopUP = ({ data, setData, modalCloser }) => {
     let name = e.target.name;
     let value = e.target.value;
     setData((prev) => ({ ...prev, [name]: value }));
-    console.log(data);
+    //console.log(data);
   };
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("clicked", data);
+    //console.log("clicked", data);
     uploadContactForm(data);
     setSubmitted(true);
     toast.success("Your request is received");
@@ -37,7 +37,7 @@ const ContactDonarPopUP = ({ data, setData, modalCloser }) => {
         onClick={modalCloser}
       ></Image>
       <div className={style.image}>
-        <Image src={"/Icon/4.png"} fill></Image>
+        <Image alt=" " src={"/Icon/4.png"} fill></Image>
       </div>
       <br />
       <div className={style.main2}>

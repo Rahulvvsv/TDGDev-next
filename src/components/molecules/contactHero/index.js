@@ -8,7 +8,7 @@ const ContactHero = () => {
         <div className={style.main2}>
           <div className={style.imageDiv}></div>
           <div className={style.image}>
-            <Image src={"/contact/hero.png"} fill></Image>
+            <Image alt=" " src={"/contact/hero.png"} fill></Image>
           </div>
           <div  className={style.content}>
             <h1 className={style.heading}>GET IN TOUCH</h1>

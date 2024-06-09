@@ -1,15 +1,20 @@
+"use client"
 import Image from "next/image";
 import style from "./index.module.css"
 import Link from "next/link";
+import { useRouter } from "next/router";
+import { useEffect,useState } from "react";
 const Footer = () => {
+    let router = useRouter()
+
     return (
         <div>
 
-       <div className={style.main}>
+       <div className={ router.pathname == "/" ?style.mainForLanding: style.main}>
 
             <Link href="/" className={style.imageDivtop}>
             <div className={style.imageDiv} onClick={()=>{}}>
-                <Image src={"/Icon/4.svg"} fill style={{objectFit:"cover"}}></Image>
+                <Image alt=" " src={"/Icon/4.svg"} fill style={{objectFit:"cover"}}></Image>
             </div>
             </Link>
 
@@ -60,16 +65,16 @@ const Footer = () => {
             <div className={style.main2}>
                     <Link href={"mailto:info@tdgfurnitureexchange.com"}>
                 <div className={style.main3 +" " + style.emailstyle} >
-                    <Image src={"/Icon/globe.svg"} width={16} height={16} objectFit="cover"></Image>
+                    <Image alt=" " src={"/Icon/globe.svg"} width={16} height={16} objectFit="cover"></Image>
                     <h1 className={style.subHeading}>info@tdgfurnitureexchange.com</h1>
                 </div>
                     </Link>
                 <div className={style.main3}>
-                    <Image src={"/Icon/phone.svg"} width={16} height={16}objectFit="cover"></Image>
+                    <Image alt=" " src={"/Icon/phone.svg"} width={16} height={16}objectFit="cover"></Image>
                     <h1 className={style.subHeading}>Tel: 646-543-7515</h1>
                 </div>
                 <div className={style.main3+ " "+style.main9}>
-                    <Image src={"/Icon/map.svg"} width={16} height={16}objectFit="cover"></Image>
+                    <Image alt=" " src={"/Icon/map.svg"} width={16} height={16}objectFit="cover"></Image>
                     <h1 className={style.subHeading } >170 53rd Street Suite 327
                    Brooklyn NY, 11232</h1>
                 </div>
@@ -80,22 +85,22 @@ const Footer = () => {
                 <h1 className={style.mainHeading}>Follow us</h1>
                 <div className={style.main4}>
                     {/* <Link href={""}>
-                    <Image src={"/Icon/facebook.svg"} width={32} height={32} ></Image>
+                    <Image alt=" " src={"/Icon/facebook.svg"} width={32} height={32} ></Image>
                     </Link> */}
                     
                     {/* <Link href={""}>
-                    <Image src={"/Icon/twitter.svg"} width={32} height={32}></Image>
+                    <Image alt=" " src={"/Icon/twitter.svg"} width={32} height={32}></Image>
                     </Link> */}
 
                     {/* <Link href={"https://www.linkedin.com/company/thedesignersgroup/"} target="_blank">
-                    <Image src={"/Icon/Linkedin.svg"} width={32} height={32}></Image>
+                    <Image alt=" " src={"/Icon/Linkedin.svg"} width={32} height={32}></Image>
                     </Link> */}
 
                     <Link href={"https://www.instagram.com/tdgfurnitureexchange/"} target="_blank">
-                    <Image src={"/Icon/instagram.svg"} width={32} height={32}></Image>
+                    <Image alt=" " src={"/Icon/instagram.svg"} width={32} height={32}></Image>
                     </Link>
                     <Link href={"https://www.thedesignersgroup.com/tdgfurnitureexchange"} target="_blank">
-                    <Image src={"/Icon/tdglogo.jpg"} width={32} height={32} style={{borderRadius:"50%"}}></Image>
+                    <Image alt=" " src={"/Icon/tdglogo.jpg"} width={32} height={32} style={{borderRadius:"50%"}}></Image>
                     </Link>
                 </div>
             </div>

@@ -17,7 +17,7 @@ const Button = ({
 }) => {
   const router = useRouter();
   let rerouter = ()=>{
-    console.log(href)
+    // //console.log(href)
     router.push(href)
   }
   let EffectButton = () => {

@@ -10,8 +10,8 @@ import { useRouter } from "next/router";
 import { toast } from "react-hot-toast";
 import { Emailer } from "@/lib/emailjs";
 
-const UploadRequestHandlerComp = ({ client, owner, status }) => {
-  // console.log(unqid, "from here");
+const UploadRequestHandlerComp = ({ client, owner, status,key }) => {
+  // //console.log(unqid, "from here");
   const router = useRouter();
 
   const acceptHandler = (id) => {
@@ -122,8 +122,18 @@ const EmailApprover = () => {
 
   const [received, setReceived] = useState(false);
   useEffect(() => {
+
+    function sortByTimestamp(data) {
+      return data.sort((a, b) => {
+        if (a.client.date.seconds === b.client.date.seconds) {
+          return b.client.date.nanoseconds - a.client.date.nanoseconds;
+        }
+        return b.client.date.seconds - a.client.date.seconds;
+      });
+    }
     const fetcher = async () => {
       let data2 = await fetchDataBasedOnId();
+      data2 = sortByTimestamp(data2);
       setData(data2);
       setReceived(true);
       return data2;
@@ -131,10 +141,10 @@ const EmailApprover = () => {
     const DataCheckers = async (data3) => {
       if (selectedButton == 1) {
         let newArr = data3.map((e) => {
-          // console.log(e)
+          // //console.log(e)
           if (e != undefined) {
             if (e.client.status == "newReq") {
-              console.log(e.client);
+              //console.log(e.client);
               return e;
             }
           }
@@ -152,16 +162,16 @@ const EmailApprover = () => {
         });
         setDataToShow(newArr);
       }
-      console.log(dataToShow);
+      //console.log(dataToShow);
     };
 
     let FinalRunner = async () => {
       let fetchedData = await fetcher();
-      console.log(fetchedData);
+      //console.log(fetchedData);
       let runner = await DataCheckers(fetchedData);
     };
     FinalRunner();
-  }, [selectedButton, received]);
+  }, [selectedButton]);
   return (
     <section className={style.main3}>
       <div className={style.main2}>

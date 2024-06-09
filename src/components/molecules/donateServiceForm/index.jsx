@@ -13,7 +13,7 @@
 //         let name = e.target.name;
 //         let value = e.target.value;
 //         setData(prev => ({...prev,[name]:value}))
-//         console.log(data)
+//         //console.log(data)
 //     }
 //     return (
 //         <div className={style.main}>
@@ -39,7 +39,7 @@
 // </>:<>
 
 //             <motion.div  initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}}className={style.main5}>
-//                 <Image src={"/Icon/4.png"} width={190} height={190}></Image>
+//                 <Image alt=" " src={"/Icon/4.png"} width={190} height={190}></Image>
 //                 <h1 className={style.heading}>Thank you for your generous offer to donate your service. We will notify you as soon as an opportunity comes up, and you can confirm your intent to donate. We appreciate your support!</h1>
 //             </motion.div>
 // </>
@@ -173,7 +173,7 @@ const DonateServiceForm = ({ href }) => {
             exit={{ opacity: 0 }}
             className={style.main5}
           >
-            <Image src={"/Icon/4.png"} width={190} height={190} />
+            <Image alt=" " src={"/Icon/4.png"} width={190} height={190} />
             <h1 className={style.heading}>
               Thank you for your generous offer to donate your service. We will
               notify you as soon as an opportunity comes up, and you can confirm

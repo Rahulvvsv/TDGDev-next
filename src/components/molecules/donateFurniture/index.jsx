@@ -11,7 +11,7 @@ const DonateFurniture = ({leftHeading,leftCont,leftImg,rightCont,rightHeading,ri
                 <h1 className={style.desc}>{leftCont}</h1>
                 {/* <div className={style.line}></div> */}
                 <div className={style.image}>
-                    <Image src={leftImg} fill></Image>
+                    <Image alt=" " src={leftImg} fill></Image>
 
                     {/* <div className={style.divdiv}>
 
@@ -20,7 +20,7 @@ const DonateFurniture = ({leftHeading,leftCont,leftImg,rightCont,rightHeading,ri
             </div>
             <div  className={style.right}>
                 <div className={style.image}>
-                    <Image src={rightImg} fill></Image>
+                    <Image alt=" " src={rightImg} fill></Image>
                     {/* <div className={style.divdiv}>
 
                     </div> */}

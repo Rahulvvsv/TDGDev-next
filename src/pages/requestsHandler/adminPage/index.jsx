@@ -23,7 +23,7 @@ const columns = [
 
   { field: "ProductName",
     headerName: "Donated Item", 
-    width: 150 ,
+    width: 200 ,
     renderCell:(params)=>(
       <Desc data={params.value}></Desc>
     )

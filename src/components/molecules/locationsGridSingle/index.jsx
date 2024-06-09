@@ -10,7 +10,7 @@ const LocationGridSingle = ({location="baltimore.png",name="Baltimore",href="/"}
                 <h1 className={style.name}>{name}</h1>
                 {/* <div className={style.imageCover}> </div> */}
                 
-                    <Image src={"/services/Images2/"+location} fill objectFit="cover" style={{borderRadius:"8px"}}></Image>
+                    <Image alt=" " src={"/services/Images2/"+location} fill objectFit="cover" style={{borderRadius:"8px"}}></Image>
                 </div>
 
         </div>

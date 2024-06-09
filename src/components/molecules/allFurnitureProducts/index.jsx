@@ -5,7 +5,7 @@ const AllFurnitureProducts = ({ data }) => {
   return (
     <div className={style.mains}>
       {data.map((e, key) => {
-          console.log(e);
+          //console.log(e);
         if (e.status === "showOnPage"){
 
             return (

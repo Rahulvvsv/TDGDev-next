@@ -18,7 +18,7 @@ const MissionHeader = () => {
         <motion.div className={style.content4}></motion.div>
       </motion.div>
       <div className={style.image}>
-        <Image src={"/about/main.png"} fill></Image>
+        <Image alt=" " src={"/about/main.png"} fill></Image>
       </div>
     </div>
   );
