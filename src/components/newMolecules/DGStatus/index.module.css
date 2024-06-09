@@ -1,0 +1,59 @@
+.status{
+    margin-top: 50px;
+}/* index.module.css */
+
+.status {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+}
+
+.dropdownContainer {
+    position: relative;
+    display: inline-block;
+
+   border-radius: 10px !important;
+}
+
+.dropdown {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    font-size: 13px;
+    border: 0px solid #cccccc00;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+    
+    padding-right: 30px; /* Ensure space for the icon */
+    height: 20px;
+   padding-left: 10px; 
+}
+
+.option{
+    font-size: 12px !important;
+    margin-left: 10px !important;
+
+    height: 20px;
+}
+.showOnPage{
+    background-color: rgba(0, 128, 0, 0.448);
+}
+.hidden{
+    background-color: rgba(255, 255, 0, 0.477);
+}
+.declined{
+    background-color: rgba(255, 0, 0, 0.433);
+}
+.donorFound{
+    background-color: rgb(255, 153, 0);
+}
+.icon {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none; /* Prevents the icon from blocking clicks on the select */
+    font-size: 14px;
+    color: #333;
+}

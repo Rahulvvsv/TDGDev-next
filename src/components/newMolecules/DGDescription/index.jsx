@@ -25,8 +25,8 @@ const Desc = (data)=>{
     let desc = data.desc
     let date = data.date
     let name = data.name
-    console.log(data)
-    console.log(desc,date,name,"from desc")
+    // console.log(data)
+    // console.log(desc,date,name,"from desc")
  return (
     <div className={style.something}>
       <p className={style.heading}>{name}</p>

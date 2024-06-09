@@ -2,6 +2,7 @@ import Header from "@/components/molecules/header";
 import Footer from "@/components/molecules/footer";
 import NextNProgress from "nextjs-progressbar";
 import Head from "next/head";
+
 import { Toaster } from "react-hot-toast";
 
 import "./index.css";
