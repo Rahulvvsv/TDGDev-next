@@ -36,6 +36,11 @@ a {
  .css-128fb87-MuiDataGrid-toolbarContainer button{
   color:black;
  }
+ .MuiDataGrid-root .MuiDataGrid-cell {
+  /* color: tomato; work */
+  white-space: 'normal' !important; /* don't work */
+  word-wrap: 'break-word' !important; /* don't work */
+}
 .transform-component-module_wrapper__SPB86{
   width: 100% !important;
   height: 100% !important;

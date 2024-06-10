@@ -8,9 +8,10 @@ import { DataGrid, GridColDef, GridToolbar } from "@mui/x-data-grid";
 import DGImage from "@/components/newMolecules/DGImage";
 import style from "./index.module.css";
 import Desc from "@/components/newMolecules/DGDescription";
-import Status from "@/components/newMolecules/DGStatus";
+import Status from "@/components/newMolecules/DGEmailStatus";
 import Reviewer from "@/components/newMolecules/DGReviewer";
 import { width } from "@mui/system";
+import RenderExpandableCell from "../ExpandableCell";
 function dateTimeFormateer(timestamp) {
   try {
     const { seconds, nanoseconds } = timestamp;
@@ -31,7 +32,7 @@ const columns = [
   {
     field: "Image",
     headerName: "Image",
-    width: 150,
+    width: 100,
     height: 300,
 
     headerClassName: style.header,
@@ -41,14 +42,14 @@ const columns = [
   {
     field: "ProductName",
     headerName: "Donated Item",
-    width: 200,
+    width: 150,
     renderCell: (params) => <Desc data={params.value}></Desc>,
   },
 
   {
     field: "Location",
     headerName: "Location",
-    width: 200,
+    width: 150,
 
     renderCell: (params) => (
       <p style={{ marginLeft: 20, marginTop: 50 }}>{params.value}</p>
@@ -106,9 +107,9 @@ const columns = [
   {
     field: "Date",
     headerName: "Date",
-    width: 150,
+    width: 100,
     renderCell: (params) => (
-      <p style={{ marginTop: 50, marginLeft: 50 }}>
+      <p style={{ marginTop: 50, marginLeft: 10 }}>
         {dateTimeFormateer(params.value)}
       </p>
     ),
@@ -119,7 +120,7 @@ const columns = [
     headerName: "Question",
     width: 150,
     renderCell: (params) => (
-      <p style={{ marginTop: 50, marginLeft: 50 }}>{params.value}</p>
+      <RenderExpandableCell {...params}></RenderExpandableCell>
     ),
   },
 
@@ -187,10 +188,12 @@ export default function DataGridEmailApprover() {
       let fetchedData = await fetcher();
 
       console.log(fetchedData);
-      let finalRow = fetchedData.filter(e => e!== undefined).map((e) => {
-        console.log(e)
+      let finalRow = fetchedData
+        .filter((e) => e !== undefined)
+        .map((e) => {
+          // console.log(e)
           let value = {
-            id:e.client.id,
+            id: e.client.id,
             Image: e.owner.imageUrl,
             ProductName: {
               name: e.owner.productName,
@@ -204,22 +207,29 @@ export default function DataGridEmailApprover() {
               mail: e.owner.email,
             },
             Phone: e.owner.phone,
-            Status: { status: e.status, id: e.id },
+            Status: {
+              status: e.client.status,
+              clientEmail: e.client.email,
+              donarId: e.client.donarId,
+              clientId: e.client.id,
+              donarEmail:e.owner.email,
+              donarPhone:e.owner.phone,
+              productImage:e.owner.imageUrl[0],
+              donarName:e.owner.name
+            },
             Reviewer: e.owner.location,
-            Date:e.client.date,
-            Question:e.client.anyQuestions,
+            Date: e.client.date,
+            Question: e.client.anyQuestions,
 
             RequestorInfo: {
               name: e.client.name,
               mail: e.client.email,
             },
-
-
-            }
+          };
           return value;
-      });
-      console.log(finalRow)
-      setRows(finalRow)
+        });
+      console.log(finalRow);
+      setRows(finalRow);
     };
     FinalRunner();
   }, []);
@@ -240,7 +250,6 @@ export default function DataGridEmailApprover() {
           pageSizeOptions={[5]}
           disableRowSelectionOnClick
           rowHeight={100}
-          
           slots={{
             toolbar: GridToolbar,
           }}
