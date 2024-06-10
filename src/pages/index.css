@@ -23,7 +23,7 @@ a {
   overflow-x: hidden;
 }
 
-.css-n3fyjk-MuiDataGrid-root .MuiDataGrid-cell{
+ .MuiDataGrid-cell{
     line-height: 0px !important;
  }
  .css-128fb87-MuiDataGrid-toolbarContainer{
