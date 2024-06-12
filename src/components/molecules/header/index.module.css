@@ -37,6 +37,7 @@
     position: absolute;
     gap: 10px;
     top: 50px;
+    cursor: pointer;
     display: flex;
     width: 150px;
     align-items: center;
