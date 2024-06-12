@@ -36,6 +36,9 @@ a {
  .css-128fb87-MuiDataGrid-toolbarContainer button{
   color:black;
  }
+ .MuiButtonBase-root{
+  color: black !important;
+ }
  .MuiDataGrid-root .MuiDataGrid-cell {
   /* color: tomato; work */
   white-space: 'normal' !important; /* don't work */

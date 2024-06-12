@@ -11,3 +11,55 @@
     padding-left: 20px !important;
     margin-left: 20px;
 }
+.btn1{
+    width: 240px;
+    color: white;
+    background: rgba(121, 117, 114, 1);
+    height: 53px;
+    outline: none;
+    border: 0px solid white;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.btn2{
+    width: 240px;
+    background-color: white;
+    color: rgba(121, 117, 114, 1);
+    height: 53px;
+    outline: none;
+    border: 1px solid rgba(121, 117, 114, 1);
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.input{
+    width: 250px;
+    height: 40px;
+    border: 1px solid rgba(121, 117, 114, 1);
+    border-radius: 4px;
+}
+
+.formDiv{
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 10px;
+}
+.btn55{
+    margin-top: 10px;
+    margin-left: 150px;
+    width: 250px !important;
+}
+.formDivinside{
+    width: 400px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+}

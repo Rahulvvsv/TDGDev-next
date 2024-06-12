@@ -21,181 +21,214 @@ const Header = () => {
   useEffect(() => {
     if (search.includes("donate")) {
       setSelected(1);
-      if(search.includes("getFurniture")){
-        setSelected(6)
+      if (search.includes("getFurniture")) {
+        setSelected(6);
       }
     } else if (search.includes("aboutUs")) {
       setSelected(2);
     } else if (search.includes("contactUs")) {
       setSelected(3);
+    } else if (search.includes("adminPage")) {
+      setSelected(10);
     } else {
       setSelected(0);
     }
   }, [search]);
   return (
-    <div style={{position:"relative"}}>
-    <AnimatePresence>
-      <div className={style.main}>
-        <div className={style.main2} onClick={()=>{router.push("/")}}>
-          <Image alt=" " src={"/Icon/logo2.png"} fill></Image>
-        </div>
-        <div className={style.main3}>
-          <Link href={"/"} style={{ position: "relative" }}>
-            <h1
-              className={style.heading}
-              onClick={() => {
-                setSelected(0);
-              }}
-              >
-              {" "}
-              Home
-            </h1>
-            {selected === 0 ? (
-              <motion.div
-              transition={{ type: "spring" }}
-              layoutId="underline"
-              style={{
-                width: "100%",
-                position: "absolute",
-                marginTop: 10,
-                height: 3,
-                backgroundColor: "#797572",
-              }}
-              ></motion.div>
-              ) : (
-                ""
-                )}
-          </Link>
-          <Link href={"/donate/getFurniture"} style={{ position: "relative" }}>
-            <h1
-              className={style.heading}
-              onClick={() => {
-                setSelected(6);
-              }}
-              >
-              {" "}
-              Furniture
-            </h1>
-            {selected === 6 ? (
-              <motion.div
-              transition={{ type: "spring" }}
-              layoutId="underline"
-              style={{
-                width: "100%",
-                position: "absolute",
-                marginTop: 10,
-                height: 3,
-                backgroundColor: "#797572",
-              }}
-              ></motion.div>
-              ) : (
-                ""
-                )}
-          </Link>
-
-          <Link href={"/donate"} style={{ position: "relative" }}>
-            <h1
-              className={style.heading}
-              onClick={() => {
-                setSelected(1);
-              }}
-              >
-              {" "}
-              Donate
-            </h1>
-
-            {selected === 1 ? (
-              <motion.div
-              transition={{ type: "spring" }}
-              layoutId="underline"
-              style={{
-                width: "100%",
-                position: "absolute",
-                marginTop: 10,
-                height: 3,
-                backgroundColor: "#797572",
-              }}
-              ></motion.div>
-              ) : (
-                ""
-                )}
-          </Link>
-
-          <Link href="/aboutUs" style={{ position: "relative" }}>
-            <h1
-              className={style.heading}
-              onClick={() => {
-                setSelected(2);
-              }}
-              >
-              {" "}
-              About Us
-            </h1>
-            {selected === 2 ? (
-              <motion.div
-              transition={{ type: "spring" }}
-              layoutId="underline"
-              style={{
-                width: "100%",
-                position: "absolute",
-                marginTop: 10,
-                height: 3,
-                backgroundColor: "#797572",
-              }}
-              ></motion.div>
-              ) : (
-                ""
-                )}
-          </Link>
-          <Link href="/contactUs" style={{ position: "relative" }}>
-            <h1
-              className={style.heading}
-              onClick={() => {
-                setSelected(3);
-              }}
-              >
-              {" "}
-              Contact
-            </h1>
-            {selected === 3 ? (
-              <motion.div
-              transition={{ type: "spring" }}
-              layoutId="underline"
-              style={{
-                width: "100%",
-                position: "absolute",
-                marginTop: 10,
-                height: 3,
-                backgroundColor: "#797572",
-              }}
-              ></motion.div>
-              ) : (
-                ""
-                )}
-          </Link>
-        </div>
-        <div className={style.main4}>
-          <Image
-            src={"/Icon/hamb.png"}
+    <div style={{ position: "relative" }}>
+      <AnimatePresence>
+        <div className={style.main}>
+          <div
+            className={style.main2}
             onClick={() => {
-              setToggleNavbar(true);
+              router.push("/");
             }}
-            width={29}
-            height={22}
-            ></Image>
-        </div>
-        
-      </div>
-    </AnimatePresence>
-    <AnimatePresence>
+          >
+            <Image alt=" " src={"/Icon/logo2.png"} fill></Image>
+          </div>
 
+          {selected == 0 && (
+            <div
+              className={style.main999}
+              onClick={() => {
+                router.push("/requestsHandler/adminPage");
+              }}
+            >
+              <Image src={"/Icon/person.png"} width={16} height={16}></Image>
+              <p>Admin Login</p>
+            </div>
+          )}
+          <div className={style.main3}>
+            <Link href={"/"} style={{ position: "relative" }}>
+              <h1
+                className={style.heading}
+                onClick={() => {
+                  setSelected(0);
+                }}
+              >
+                {" "}
+                Home
+              </h1>
+              {selected === 0 ? (
+                <motion.div
+                  transition={{ type: "spring" }}
+                  layoutId="underline"
+                  style={{
+                    width: "100%",
+                    position: "absolute",
+                    marginTop: 10,
+                    height: 3,
+                    backgroundColor: "#797572",
+                  }}
+                ></motion.div>
+              ) : (
+                ""
+              )}
+            </Link>
+            <Link
+              href={"/donate/getFurniture"}
+              style={{ position: "relative" }}
+            >
+              <h1
+                className={style.heading}
+                onClick={() => {
+                  setSelected(6);
+                }}
+              >
+                {" "}
+                Furniture
+              </h1>
+              {selected === 6 ? (
+                <motion.div
+                  transition={{ type: "spring" }}
+                  layoutId="underline"
+                  style={{
+                    width: "100%",
+                    position: "absolute",
+                    marginTop: 10,
+                    height: 3,
+                    backgroundColor: "#797572",
+                  }}
+                ></motion.div>
+              ) : (
+                ""
+              )}
+            </Link>
+
+            <Link href={"/donate"} style={{ position: "relative" }}>
+              <h1
+                className={style.heading}
+                onClick={() => {
+                  setSelected(1);
+                }}
+              >
+                {" "}
+                Donate
+              </h1>
+
+              {selected === 1 ? (
+                <motion.div
+                  transition={{ type: "spring" }}
+                  layoutId="underline"
+                  style={{
+                    width: "100%",
+                    position: "absolute",
+                    marginTop: 10,
+                    height: 3,
+                    backgroundColor: "#797572",
+                  }}
+                ></motion.div>
+              ) : (
+                ""
+              )}
+            </Link>
+
+            <Link href="/aboutUs" style={{ position: "relative" }}>
+              <h1
+                className={style.heading}
+                onClick={() => {
+                  setSelected(2);
+                }}
+              >
+                {" "}
+                About Us
+              </h1>
+              {selected === 2 ? (
+                <motion.div
+                  transition={{ type: "spring" }}
+                  layoutId="underline"
+                  style={{
+                    width: "100%",
+                    position: "absolute",
+                    marginTop: 10,
+                    height: 3,
+                    backgroundColor: "#797572",
+                  }}
+                ></motion.div>
+              ) : (
+                ""
+              )}
+            </Link>
+            <Link href="/contactUs" style={{ position: "relative" }}>
+              <h1
+                className={style.heading}
+                onClick={() => {
+                  setSelected(3);
+                }}
+              >
+                {" "}
+                Contact
+              </h1>
+              {selected === 3 ? (
+                <motion.div
+                  transition={{ type: "spring" }}
+                  layoutId="underline"
+                  style={{
+                    width: "100%",
+                    position: "absolute",
+                    marginTop: 10,
+                    height: 3,
+                    backgroundColor: "#797572",
+                  }}
+                ></motion.div>
+              ) : (
+                ""
+              )}
+            </Link>
+          </div>
+          <div className={style.main4}>
+            <Image
+              src={"/Icon/hamb.png"}
+              onClick={() => {
+                setToggleNavbar(true);
+              }}
+              width={29}
+              height={22}
+            ></Image>
+          </div>
+        </div>
+      </AnimatePresence>
+      <AnimatePresence>
         {toggleNavbar && (
-          <motion.section layout initial={{x:250,opacity:0,y:-30}} animate={{x:0,opacity:1,y:-30}} exit={{x:550,opacity:0}}  style={{ position: "absolute",zIndex:5, top: 0, left: 0,width:"100vw",height:"100vh" }}>
+          <motion.section
+            layout
+            initial={{ x: 250, opacity: 0, y: -30 }}
+            animate={{ x: 0, opacity: 1, y: -30 }}
+            exit={{ x: 550, opacity: 0 }}
+            style={{
+              position: "absolute",
+              zIndex: 5,
+              top: 0,
+              left: 0,
+              width: "100vw",
+              height: "100vh",
+            }}
+          >
             <MobileHeader toggler={setToggleNavbar}></MobileHeader>
           </motion.section>
         )}
-        </AnimatePresence>
-        </div>
+      </AnimatePresence>
+    </div>
   );
 };
 
