@@ -60,6 +60,7 @@ const Button = ({
           color: fontColor,
           border: borderthick,
         }}
+        onClick={onClick}
       >
         {content}
       </Link>
