@@ -19,6 +19,10 @@ a {
   text-decoration: none;
 }
 
+.ReactModalPortal{
+  z-index: 9 !important;
+  position: fixed;
+}
 .mainss {
   overflow-x: hidden;
 }

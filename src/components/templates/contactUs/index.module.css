@@ -26,6 +26,38 @@
   margin-right: auto;
 }
 
+.main8{
+  width: 100vw;
+  position: relative;
+  height: 100vh;
+  outline: none;
+  background-color: #00000070;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+.main9{
+  position: relative;
+  z-index: 9 !important;
+  background-color: rgb(255, 255, 255);
+  width: 50vw;
+  height: 50vh;
+  border: 1px solid rgba(0, 0, 0, 0.133);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px ;
+}
+.image{
+  filter:invert(1);
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+
+
 @media screen and (max-width:1200px) {
   .heading {
     width: 90%;
@@ -47,4 +79,17 @@
     margin-top: 50px;
     padding-top: 50px !important;
   }
+}
+
+
+@media screen and (max-width:800px) {
+  .main9{
+    width: 90%;
+    
+  }
+  .main9  a{
+    width: 90% !important;
+    background-color: red;
+  }
+  
 }
