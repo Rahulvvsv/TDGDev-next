@@ -57,7 +57,7 @@ let Img = params["data"]
   }
 
   const handleImageNavigation = (direction) => {
-    console.log("clickedd")
+    // console.log("clickedd")
     if (direction === "left") {
       setCurrentImageIndex((prevIndex) => (prevIndex === 0 ? ImageLink.length - 1 : prevIndex - 1));
     } else if (direction === "right") {

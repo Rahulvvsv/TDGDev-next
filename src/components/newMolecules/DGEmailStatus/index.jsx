@@ -5,7 +5,7 @@ import { updateClientDetails } from "@/lib/firebase";
 import { Emailer } from "@/lib/emailjs";
 const Status = (props) => {
   let {clientEmail,clientId,donarId, donarEmail,donarPhone,productImage,donarName} = props.data.value;
-  console.log("props", clientEmail,clientId,donarId);
+  // console.log("props", clientEmail,clientId,donarId);
   const initialStatus = props.data.value.status;
   const [status, setStatus] = useState(initialStatus);
 

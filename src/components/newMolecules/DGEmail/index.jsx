@@ -187,7 +187,7 @@ export default function DataGridEmailApprover() {
     let FinalRunner = async () => {
       let fetchedData = await fetcher();
 
-      console.log(fetchedData);
+      // console.log(fetchedData);
       let finalRow = fetchedData
         .filter((e) => e !== undefined)
         .map((e) => {
@@ -228,7 +228,7 @@ export default function DataGridEmailApprover() {
           };
           return value;
         });
-      console.log(finalRow);
+      // console.log(finalRow);
       setRows(finalRow);
     };
     FinalRunner();

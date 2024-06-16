@@ -119,7 +119,7 @@ export default function DataGridApprover() {
   useEffect(() => {
     const fetcher = async () => {
       let data = await fetchData();
-      console.log(data);
+      // console.log(data);
       let rowValues = data.map((e) => {
         let value = {
           id: e.id,
@@ -149,7 +149,7 @@ export default function DataGridApprover() {
     const handleSearchChange = (event) => {
     const value = event.target.value.toLowerCase();
     const filtered = rows.filter((row) => {
-      console.log(row.productName)
+      // console.log(row.productName)
       return (
         row.ProductName.toString().toLowerCase().includes(value) ||
         row.Description.toLowerCase().includes(value) ||
