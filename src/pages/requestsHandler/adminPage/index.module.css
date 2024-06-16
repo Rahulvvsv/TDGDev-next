@@ -39,6 +39,7 @@
     height: 40px;
     border: 1px solid rgba(121, 117, 114, 1);
     border-radius: 4px;
+    padding-left: 10px !important;
 }
 
 .formDiv{
@@ -62,4 +63,13 @@
     gap: 10px;
     align-items: center;
     justify-content: space-between;
+}
+
+.formDivinside1{
+    /* width: 400px; */
+    display: flex;
+    gap: 10px;
+    margin-left: 50px;
+    margin-top: 15px;
+    align-items: center;
 }

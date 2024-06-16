@@ -23,33 +23,37 @@ a {
   overflow-x: hidden;
 }
 
- .MuiDataGrid-cell{
-    line-height: 0px !important;
- }
- .css-128fb87-MuiDataGrid-toolbarContainer{
+.MuiDataGrid-cell {
+  line-height: 0px !important;
+}
+.css-128fb87-MuiDataGrid-toolbarContainer {
   gap: 20px;
-  
+
   margin-left: 40px;
   margin-top: 20px;
-
- }
- .css-128fb87-MuiDataGrid-toolbarContainer button{
-  color:black;
- }
- .MuiButtonBase-root{
-  color: black !important;
- }
- .MuiDataGrid-root .MuiDataGrid-cell {
-  /* color: tomato; work */
-  white-space: 'normal' !important; /* don't work */
-  word-wrap: 'break-word' !important; /* don't work */
 }
-.transform-component-module_wrapper__SPB86{
+.MuiDataGrid-columnHeaderTitleContainerContent{
+  font-weight: 700 !important;
+}
+.css-t89xny-MuiDataGrid-columnHeaderTitle{
+  font-weight: 700 !important;
+}
+.css-128fb87-MuiDataGrid-toolbarContainer button {
+  color: black;
+}
+.MuiButtonBase-root {
+  color: black !important;
+}
+.MuiDataGrid-root .MuiDataGrid-cell {
+  /* color: tomato; work */
+  white-space: "normal" !important; /* don't work */
+  word-wrap: "break-word" !important; /* don't work */
+}
+.transform-component-module_wrapper__SPB86 {
   width: 100% !important;
   height: 100% !important;
 }
-.transform-component-module_content__FBWxo{
-
+.transform-component-module_content__FBWxo {
   width: 100% !important;
   height: 100% !important;
   /* height: fit-content; */

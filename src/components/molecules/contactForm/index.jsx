@@ -54,7 +54,7 @@ const ContactForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (validateForm()) {
-      // Submit the form data
+      // SUBMIT the form data
       //console.log("Form submitted:", data);
       // Reset form after submission if needed
       //   setData({

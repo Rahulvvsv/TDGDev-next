@@ -15,7 +15,7 @@ const LocationsGrid = () => {
     <div className={style.main}>
         <div className={style.main3}>
 
-        <h1 className={style.name1}>Explore our Collection of Furniture</h1>
+        <h1 className={style.name1}>Our Collection</h1>
         <h1 className={style.name2} >Find the perfect item for your home, generously contributed by others. </h1>
         </div>
         <br>

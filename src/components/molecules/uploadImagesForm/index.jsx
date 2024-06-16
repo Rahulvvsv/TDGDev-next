@@ -212,8 +212,8 @@
 //             {/* <ReCAPTCHA ref={captcha}       size="invisible" sitekey={process.env.NEXT_PUBLIC_GOOGLE_SITE_KEY}></ReCAPTCHA> */}
 //             <Button
 //               onClick={handleSubmit}
-//               placeholder={"Submit"}
-//               content={"Submit"}
+//               placeholder={"SUBMIT"}
+//               content={"SUBMIT"}
 //               href={""}
 //               fontColor={"white"}
 //             />
@@ -491,8 +491,8 @@ const UploadForm = () => {
             {errors.desc && <div className={style.error}>{errors.desc}</div>}
             <Button
               onClick={handleSubmit}
-              placeholder={"Submit"}
-              content={"Submit"}
+              placeholder={"SUBMIT"}
+              content={"SUBMIT"}
               href={""}
               fontColor={"white"}
             />

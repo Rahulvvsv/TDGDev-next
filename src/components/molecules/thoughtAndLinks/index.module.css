@@ -51,8 +51,8 @@
 @media screen and (max-width:460px) {
     .main{
         /* height: auto; */
-        height: 250px;
-        padding-bottom: 20px !important;
+        height: 200px;
+        /* padding-bottom: 20px !important; */
     }
     .heading,.name{
         font-family: Montserrat;

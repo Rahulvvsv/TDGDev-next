@@ -109,14 +109,20 @@
     /* background-color:aqua; */
 
   }
-  .grid-container > div:last-child{
+  .grid-container > a:last-child{
     /* background-color:aqua; */
     margin-left: 50%;
 
   }
 
-  .grid-container > div > div{
-    width: 100% !important;
+
+  .grid-container > a:last-child{
+    /* background-color:aqua; */
+    margin-left: 50%;
+
+  }
+  .grid-container > a {
+    width: 90% !important;
     /* background-color: black !important; */
   }
 

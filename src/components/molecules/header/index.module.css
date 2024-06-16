@@ -84,7 +84,7 @@
     .main2{
         height: 100px !important;
         width: 250px !important;
-
+        transform: translateX(-5%);
     }
 
     .main3{

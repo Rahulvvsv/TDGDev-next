@@ -91,7 +91,7 @@ const Status = (props) => {
     <div className={style.status + " " + style[status]}>
       <div className={style.dropdownContainer}>
         <select
-          className={style.dropdown}
+          className={style.dropdown+  " " + style[status]}
           value={status}
           onChange={handleChange}
         >

@@ -35,7 +35,7 @@
 //                 if(href!=""){
 //                     window.location.href=href
 //                 }
-//             }} content={"Submit"}></Button>
+//             }} content={"SUBMIT"}></Button>
 // </>:<>
 
 //             <motion.div  initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}}className={style.main5}>
@@ -163,7 +163,7 @@ const DonateServiceForm = ({ href }) => {
           {errors.service && (
             <div className={style.error}>{errors.service}</div>
           )}
-          <Button type="submit" content={"Submit"} onClick={handleSubmit} />
+          <Button type="submit" content={"SUBMIT"} onClick={handleSubmit} />
         </>
       ) : (
         <>

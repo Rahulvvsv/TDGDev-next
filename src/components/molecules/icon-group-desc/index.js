@@ -16,7 +16,7 @@ const IconGroupDesc = () => {
         </div>
         <Icondesc src={"1.png"} first={"Choose Location"} second={"Pick a location from our options."}></Icondesc>
         <Icondesc  src={"2.png"} first={"Select Furniture"} second={"Browse the furniture and select what you need."}></Icondesc>
-        <Icondesc  src={"3.png"} first={"Click to Submit"} second={"You are all set! The donor will contact you with next steps."}></Icondesc>
+        <Icondesc  src={"3.png"} first={"Click to SUBMIT"} second={"You are all set! The donor will contact you with next steps."}></Icondesc>
     </div> 
         </AOSComponent>
     );

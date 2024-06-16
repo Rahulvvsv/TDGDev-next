@@ -74,7 +74,7 @@ const ContactDonarPopUP = ({ data, setData, modalCloser }) => {
               placeholder={"ANY QUESTIONS"}
               name={"question"}
             ></InputField>
-            <Button onClick={handleSubmit} content={"Submit"}></Button>
+            <Button onClick={handleSubmit} content={"SUBMIT"}></Button>
           </>
         )}
       </div>

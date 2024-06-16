@@ -12,8 +12,8 @@ export default function handler(req, res) {
   limiter(req, res, () => {
     const { username, password } = req.body;
 
-    const validUsername = "admin";
-    const validPassword = "password123";
+    const validUsername = "info@tdgfurnitureexchange.com";
+    const validPassword = "#12TdgAdmin21";
 
     if (username === validUsername && password === validPassword) {
       res.status(200).json({ success: true });
