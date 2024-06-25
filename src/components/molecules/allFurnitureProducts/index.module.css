@@ -1,8 +1,11 @@
 .mains{
+    position: relative;
     display: flex;
     gap: 16px;
-    row-gap: 24px !important;
+    overflow-y: hidden;
+    /* row-gap: 10px !important; */
     flex-wrap: wrap;
+    /* background-color: red; */
     /* background-color: red; */
     /* background-color: red; */
 }
@@ -13,6 +16,15 @@
 /* .heading{
     font-size: 26px;
 } */
+
+/* pagination  */
+.pagination {
+  position: relative;
+  bottom: 10px;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
 @media screen and (max-width:460px) {
     .mains{
         /* background-color: red; */
@@ -35,3 +47,4 @@
     }
     
 }
+

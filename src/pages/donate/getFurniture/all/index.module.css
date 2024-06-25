@@ -6,7 +6,7 @@
 }
 
 .left {
-  width: 250%;
+  width: 350px;
   display: flex;
   flex-direction: column;
   gap: 30px;
