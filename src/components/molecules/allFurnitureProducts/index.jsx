@@ -33,11 +33,11 @@ import { Pagination } from "@mui/material";
 import style from "./index.module.css";
 import FurnitureComp from "../furnitureComp";
 
-const ITEMS_PER_PAGE = 10;
+const ITEMS_PER_PAGE = 8;
 
 const AllFurnitureProducts = ({ data }) => {
   const [currentPage, setCurrentPage] = useState(1);
-  const filteredData = data.filter(e => e.status === "showOnPage");
+  const filteredData = data.filter((e) => e.status === "showOnPage");
 
   // Calculate total pages
   const totalPages = Math.ceil(filteredData.length / ITEMS_PER_PAGE);
@@ -55,17 +55,17 @@ const AllFurnitureProducts = ({ data }) => {
     <>
       <div className={style.mains}>
         {currentData.map((e, key) => {
-            return (
-              <FurnitureComp
-                unqId={e.id}
-                key={key}
-                Img={e?.imageUrl}
-                name={e.productName}
-                desc={e.description}
-                location={e.location}
-                date={e.date}
-              />
-            );
+          return (
+            <FurnitureComp
+              unqId={e.id}
+              key={key}
+              Img={e?.imageUrl}
+              name={e.productName}
+              desc={e.description}
+              location={e.location}
+              date={e.date}
+            />
+          );
         })}
         {currentData.length === 0 && (
           <h1 style={{ height: "50vh" }} className={style.heading}>
@@ -81,7 +81,7 @@ const AllFurnitureProducts = ({ data }) => {
           count={totalPages}
           page={currentPage}
           onChange={handlePageChange}
-          color="primary"
+          color="standard"
         />
       </div>
     </>
