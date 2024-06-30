@@ -1,0 +1,86 @@
+.main{
+    display: flex;
+    width: 80%;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    flex-direction: column;
+    gap: 30px;
+    /* background-color: red; */
+}
+.error{
+    color: red;
+}
+.main2{
+    display: flex;
+    /* gap: 100px; */
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 24px;
+    justify-content: space-between;
+
+}
+
+.main2 > div{
+    width: 48%;
+}
+.secc{
+    width: 100%;
+}
+
+.main5{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.heading{
+    font-family: Montserrat;
+font-size: 14px;
+font-weight: 400;
+line-height: 20px;
+text-align: center;
+width: 50%;
+
+}
+
+.heading2{
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+}
+.heading3{
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+@media screen and ( max-width:600px) {
+    
+    .main{
+        width: 90%;
+        
+
+        /* margin-right: 10px !important; */
+        /* margin-left: 10px !important; */
+    }
+    .main2{
+        flex-direction: column;
+        gap: 30px;
+    
+    }
+    .main2> div{
+        width: 100%;
+    }
+    .main:last-child > div:last-child {
+
+        /* background-color: red; */
+        width: 100%;
+    }
+
+    .main:last-child > div:last-child >div {
+        width: 100% !important;
+    }
+
+}

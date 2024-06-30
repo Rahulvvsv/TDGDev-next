@@ -45,15 +45,13 @@ const storage = getStorage(app);
 export const Firebase = async () => {
   //console.log(app);
 };
-export const  updateDocument = async (documentId, newData) => {
-    // Reference to the document you want to update
-    let docRef = doc(db,"newData",documentId)
+export const updateDocument = async (documentId, newData) => {
+  // Reference to the document you want to update
+  let docRef = doc(db, "newData", documentId);
 
-
-    // Update the document
-  let result = await    setDoc(docRef, newData, { merge: true })
-
-}
+  // Update the document
+  let result = await setDoc(docRef, newData, { merge: true });
+};
 
 export function sortByTimestamp(data) {
   return data.sort((a, b) => {
@@ -63,15 +61,13 @@ export function sortByTimestamp(data) {
     return b?.date?.seconds - a?.date?.seconds;
   });
 }
-export const  updateClientDetails = async (documentId, newData) => {
-    // Reference to the document you want to update
-    let docRef = doc(db,"contactDonarList",documentId)
+export const updateClientDetails = async (documentId, newData) => {
+  // Reference to the document you want to update
+  let docRef = doc(db, "contactDonarList", documentId);
 
-
-    // Update the document
-  let result = await    setDoc(docRef, newData, { merge: true })
-
-}
+  // Update the document
+  let result = await setDoc(docRef, newData, { merge: true });
+};
 
 export const fetchDataLocation = async (location) => {
   //console.log("heree")
@@ -83,43 +79,35 @@ export const fetchDataLocation = async (location) => {
   querySnapshot.forEach((doc) => {
     fetchedData.push({ id: doc.id, ...doc.data() });
   });
-  let sortedElements = sortByTimestamp(fetchedData)
+  let sortedElements = sortByTimestamp(fetchedData);
   return sortedElements;
 };
-export const fetchDataBasedOnId  = async () =>{
-
+export const fetchDataBasedOnId = async () => {
   let AllData = await fetchClientData();
-  
-  let OwnerAndClientDetails =  AllData.map(async(e)=>{
-    if(e.donarId!=undefined){
 
-      let docRef = doc(db,"newData",e.donarId)
+  let OwnerAndClientDetails = AllData.map(async (e) => {
+    if (e.donarId != undefined) {
+      let docRef = doc(db, "newData", e.donarId);
       const querySnapshot = await getDoc(docRef);
       let donarDetails = querySnapshot.data();
-      return {"client":e,"owner":donarDetails}
-
+      return { client: e, owner: donarDetails };
     }
+  });
 
-  
-
-  })
-
-  return  Promise.all( OwnerAndClientDetails);
-}
-
-
+  return Promise.all(OwnerAndClientDetails);
+};
 
 export const fetchData = async () => {
   const querySnapshot = await getDocs(collection(db, "newData"));
   const fetchedData = [];
-  console.log("calling")
+  console.log("calling");
   querySnapshot.forEach((doc) => {
     fetchedData.push({ id: doc.id, ...doc.data() });
   });
   let sortedElements = sortByTimestamp(fetchedData);
   // //console.log(sortedElements)
   // console.log(fetchedData)
-  console.log("running")
+  console.log("running");
   return sortedElements;
 };
 
@@ -138,11 +126,11 @@ export const upLoadData = async (formData) => {
       productName: formData.tof || "",
       description: formData.desc || "",
       email: formData.email || "",
-      phone:formData.phone || "",
+      phone: formData.phone || "",
       location: formData.location || "",
       imageUrl: imageUrls,
-      date:new Date(),
-      status:"hidden"
+      date: new Date(),
+      status: "hidden",
     });
     //console.log("Document written with ID: ", docRef.id);
   } catch (error) {
@@ -150,33 +138,43 @@ export const upLoadData = async (formData) => {
   }
 };
 
-
-export const uploadContactForm = async (formData) =>{
-
+export const uploadContactForm = async (formData) => {
   try {
     const docRef = await addDoc(collection(db, "contactDonarList"), {
       name: formData.name || "",
       email: formData.email || "",
-      phone:formData.phone ||"",
+      phone: formData.phone || "",
       anyQuestions: formData.question || "",
-      donarId:formData.donarId || "",
-      date:new Date(),
-      status:"newReq"
-
+      donarId: formData.donarId || "",
+      date: new Date(),
+      status: "newReq",
     });
     //console.log("Document written with ID: ", docRef.id);
   } catch (error) {
     console.error("Error adding document: ", error);
   }
-}
+};
 
-
-export const fetchClientData =  async () =>{
-
+export const fetchClientData = async () => {
   const querySnapshot = await getDocs(collection(db, "contactDonarList"));
   const fetchedData = [];
   querySnapshot.forEach((doc) => {
     fetchedData.push({ id: doc.id, ...doc.data() });
   });
   return fetchedData;
-}
+};
+
+export const fetchSingleBasedOnId = async (donarId) => {
+  try{
+
+    let docRef = doc(db, "newData", donarId);
+    const querySnapshot = await getDoc(docRef);
+    let donarDetails = querySnapshot.data();
+    return { donarDetails: donarDetails };
+  }catch(e){
+    console.log(e)
+    console.log(
+      "invalid donar"
+    )
+  }
+};
